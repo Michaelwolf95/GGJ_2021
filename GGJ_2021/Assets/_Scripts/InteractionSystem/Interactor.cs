@@ -47,6 +47,7 @@ public class Interactor : MonoBehaviour
         {
             if (currentPointerTarget != null)
             {
+                Debug.Log("Begin");
                 BeginInteraction(currentPointerTarget);
             }
         }

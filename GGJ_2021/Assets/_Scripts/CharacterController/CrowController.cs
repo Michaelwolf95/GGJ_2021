@@ -16,8 +16,11 @@ namespace CrowGame
         //private Transform characterRoot => animator.transform;
         [SerializeField] private Transform characterRoot;
         [SerializeField] private Camera camera;
-        [SerializeField] private float flapForce; 
+        [SerializeField] private float flapForce;
 
+        [SerializeField] private int maxJumps;
+        private int currentJumpsSinceGrounded;
+        private bool lastFramePress = false; 
         public enum ControlState
         {
             Grounded,
@@ -53,28 +56,22 @@ namespace CrowGame
 
             bool jump = inputController.actions["Jump"].ReadValue<float>() != 0;
 
-            switch (jumpButton.state)
-            {
-                case EventButton.ButtonState.None:
-                    Debug.Log("None");
-                    break;
-                case EventButton.ButtonState.Pressed:
-                    Debug.Log("Pressed");
-                    break;
-                case EventButton.ButtonState.Hold:
-                    Debug.Log("Hold");
-                    break;
-                case EventButton.ButtonState.Released:
-                    Debug.Log("Released");
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+
             
+
+            if(!lastFramePress && jump)
+            {
+                lastFramePress = true; 
+            }
+            else
+            {
+                lastFramePress = false; 
+            }
 
             Vector3 moveDelta = Vector3.zero;
             if (moveController.isGrounded)
             {
+                currentJumpsSinceGrounded = 0; 
                 float slopeAngle = 0f;
                 if (currentControllerHit != null)
                 {
@@ -112,12 +109,34 @@ namespace CrowGame
                 
             }
 
-            if (jump)
+
+            // Is pressed not working as intended. Just using switch statements for time being. 
+            switch (jumpButton.state)
             {
-                Debug.Log("jump");
-                moveDelta.y = flapForce;
+                case EventButton.ButtonState.None:
+                    //Debug.Log("None");
+                    break;
+                case EventButton.ButtonState.Pressed:
+                    if (currentJumpsSinceGrounded < 3)
+                    {
+                        currentJumpsSinceGrounded++;
+                        moveDelta.y += flapForce * Time.deltaTime;
+
+                        Debug.Log("Pressed");
+                    }
+                    break;
+                case EventButton.ButtonState.Hold:
+                    Debug.Log("Hold");
+                    break;
+                case EventButton.ButtonState.Released:
+                    //Debug.Log("Released");
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
-            moveDelta += Physics.gravity * Time.deltaTime;
+
+            
+            moveDelta.y += Physics.gravity.y * Time.deltaTime;
             moveController.Move(moveDelta);
         }
         
