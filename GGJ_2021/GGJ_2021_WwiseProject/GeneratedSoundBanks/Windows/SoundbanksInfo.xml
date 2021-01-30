@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3276913723">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3007919746">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="334512546" Name="Play_CHR_Crow_Caw_One_Off" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_CHR_Crow_Caw_One_Off" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.921453" DurationMax="3.988548">
+					<IncludedMemoryFiles>
+						<File Id="57331924" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Caw_05.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Caw_05_10C4C929.wem</Path>
+						</File>
+						<File Id="421901860" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Caw_02.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Caw_02_10C4C929.wem</Path>
+						</File>
+						<File Id="431911012" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Caw_03.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Caw_03_10C4C929.wem</Path>
+						</File>
+						<File Id="744932976" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Caw_01.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Caw_01_10C4C929.wem</Path>
+						</File>
+						<File Id="943325500" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Caw_06.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Caw_06_10C4C929.wem</Path>
+						</File>
+						<File Id="961838480" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Caw_04.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Caw_04_10C4C929.wem</Path>
+						</File>
+						<File Id="1034617105" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Caw_07.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Caw_07_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3855289715" Name="Play_CHR_Crow_Rasp_One_Off" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_CHR_Crow_Rasp_One_Off" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.123201" DurationMax="5.056464">
+					<IncludedMemoryFiles>
+						<File Id="3892725" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Rasp_06.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Rasp_06_10C4C929.wem</Path>
+						</File>
+						<File Id="134072453" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Rasp_04.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Rasp_04_10C4C929.wem</Path>
+						</File>
+						<File Id="299803407" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Rasp_03.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Rasp_03_10C4C929.wem</Path>
+						</File>
+						<File Id="450070898" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Rasp_05.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Rasp_05_10C4C929.wem</Path>
+						</File>
+						<File Id="653231675" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Rasp_01.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Rasp_01_10C4C929.wem</Path>
+						</File>
+						<File Id="700725918" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Rasp_02.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Rasp_02_10C4C929.wem</Path>
+						</File>
+						<File Id="821351752" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Rasp_07.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Rasp_07_10C4C929.wem</Path>
+						</File>
+						<File Id="883111834" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Single_Rasp_08.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Single_Rasp_08_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

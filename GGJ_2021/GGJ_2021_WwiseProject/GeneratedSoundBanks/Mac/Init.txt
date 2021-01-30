@@ -1,0 +1,14 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\Objects	
+	3196610217	Hero			\Default Work Unit\Master Audio Bus\Hero	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
