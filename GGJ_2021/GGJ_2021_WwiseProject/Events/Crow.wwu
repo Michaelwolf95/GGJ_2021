@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CHR_Crow_Rasp_One_Off" ID="{2DB717FF-556C-40B7-8A5B-14B08FC9B9F1}">
+					<ChildrenList>
+						<Action Name="" ID="{5B520B04-0D29-40A7-86FF-97616320A4AE}" ShortID="544587893">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Crow_Rasp_One_Offs" ID="{61E83EB2-9196-4EE3-BF38-B00DE208C201}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

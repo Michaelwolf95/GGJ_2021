@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{3BACAA80-4FE1-448C-A26C-4F8876869405}">
 			<PropertyList>
 				<Property Name="Event Action List\{0B4EC64E-2144-42EA-97CA-4381B8B3519B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2DB717FF-556C-40B7-8A5B-14B08FC9B9F1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
