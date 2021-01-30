@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CrowAnimationAudio : MonoBehaviour
 {
+    // Script to trigger audio with animation events
+
     [Header("Wwise Events")]
 
     public AK.Wwise.Event Wingflap;
