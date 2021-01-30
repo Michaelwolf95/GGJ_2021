@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D292A4AC-58EF-483E-996C-37E1B7D9A68A}" SchemaVersion="97" RootDocumentID="{0D49C615-A7E9-476F-8764-69D95E19282C}">
+	<Events>
+		<WorkUnit Name="Crow" ID="{D292A4AC-58EF-483E-996C-37E1B7D9A68A}" OwnerID="{08B9B724-F080-4793-A52C-DDBA275CD144}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_CHR_Crow_Caw_One_Off" ID="{0B4EC64E-2144-42EA-97CA-4381B8B3519B}">
+					<ChildrenList>
+						<Action Name="" ID="{0453A307-6E07-46EB-B095-144D5FB7680A}" ShortID="349724025">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Crow_Caw_One_Offs" ID="{038DBC4D-7500-42E1-B8AC-80674A78B650}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
