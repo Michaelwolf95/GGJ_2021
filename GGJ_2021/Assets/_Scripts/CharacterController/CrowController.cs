@@ -15,8 +15,11 @@ namespace CrowGame
         //private Transform characterRoot => animator.transform;
         [SerializeField] private Transform characterRoot;
         [SerializeField] private Camera camera;
-        [SerializeField] private float flapForce; 
+        [SerializeField] private float flapForce;
 
+        [SerializeField] private int maxJumps;
+        private int currentJumpsSinceGrounded;
+        private bool lastFramePress = false; 
         public enum ControlState
         {
             Grounded,
@@ -45,11 +48,21 @@ namespace CrowGame
             Vector2 moveInput = inputController.actions["Move"].ReadValue<Vector2>();
 
             bool jump = inputController.actions["Jump"].ReadValue<float>() != 0;
-            
+            Debug.Log("Last frame " + lastFramePress);
+
+            if(!lastFramePress && jump)
+            {
+                lastFramePress = true; 
+            }
+            else
+            {
+                lastFramePress = false; 
+            }
 
             Vector3 moveDelta = Vector3.zero;
             if (moveController.isGrounded)
             {
+                currentJumpsSinceGrounded = 0; 
                 float slopeAngle = 0f;
                 if (currentControllerHit != null)
                 {
@@ -87,11 +100,14 @@ namespace CrowGame
                 
             }
 
-            if (jump)
+            if (jump && currentJumpsSinceGrounded <= maxJumps && !lastFramePress)
             {
-                Debug.Log("jump");
-                moveDelta.y = flapForce;
+            
+                currentJumpsSinceGrounded++; 
+                Debug.Log("jumps since grounded " + currentJumpsSinceGrounded);
+                moveDelta.y += flapForce;
             }
+            
             moveDelta += Physics.gravity * Time.deltaTime;
             moveController.Move(moveDelta);
         }
