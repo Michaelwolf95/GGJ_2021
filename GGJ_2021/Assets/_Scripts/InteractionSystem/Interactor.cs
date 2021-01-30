@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MichaelWolfGames;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Interactor : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float interactRange = 1f;
 
     [SerializeField] private LayerMask interactionLayerMask = new LayerMask();
+    [SerializeField] private PlayerInput playerInput = null;
     
     private InteractableBase currentPointerTarget = null;        // Currently being looked at.
     private InteractableBase currentInteractionTarget = null;    // Actively interacting with
