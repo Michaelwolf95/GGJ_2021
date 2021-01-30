@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MichaelWolfGames;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Interactor : MonoBehaviour
 {
@@ -27,26 +28,30 @@ public class Interactor : MonoBehaviour
 
     public Action onBeginInteractionEvent = delegate {  };
     public Action onFinishInteractionEvent = delegate {  };
+
+    [SerializeField] private PlayerInput inputController;
     
     private void Awake()
     {
         instance = this;
+        
+        inputController.actions["Grab"].performed += ctx =>
+        {
+            HandleGrabInput();
+        };
     }
 
-    private void Update()
+    private void HandleGrabInput()
     {
         if (isInteracting == false && canInteract)
         {
             if (currentPointerTarget != null)
             {
-                if (InputManager.GetButtonDown(InputManager.InputButton.Use))
-                {
-                    BeginInteraction(currentPointerTarget);
-                }
+                BeginInteraction(currentPointerTarget);
             }
         }
     }
-
+    
     public void FixedUpdate()
     {
         if (isInteracting)
