@@ -14,4 +14,9 @@ public class CrowAnimationAudio : MonoBehaviour
     {
         Wingflap.Post(gameObject);
     }
+
+    private void ResetHopInt()
+    {
+        // Nothing
+    }
 }

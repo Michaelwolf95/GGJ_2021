@@ -2223,7 +2223,6 @@ GameObject:
   - component: {fileID: 4696075141378375598}
   - component: {fileID: 4696075141378375599}
   - component: {fileID: 4696075141378375587}
-  - component: {fileID: 4696075141378375585}
   - component: {fileID: 1917883185773871179}
   m_Layer: 0
   m_Name: Player
@@ -2279,11 +2278,11 @@ MonoBehaviour:
   characterRoot: {fileID: 4696075141378375584}
   camera: {fileID: 0}
   groundedMoveSpeed: 4
-  glideMoveSpeed: 4
-  flapForce: 5
+  glideMoveSpeed: 7
+  flapForce: 6
   maxJumps: 3
   defaultGravity: -10
-  glideGravity: -4.5
+  glideGravity: -2
 --- !u!114 &4696075141378375599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2332,20 +2331,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!136 &4696075141378375585
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4696075141378375586}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.25
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &1917883185773871179
 MonoBehaviour:
   m_ObjectHideFlags: 0
