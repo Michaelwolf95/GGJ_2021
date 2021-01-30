@@ -445,6 +445,322 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="CHR_Crow_Flaps" ID="{A2FEF3A9-02B8-411B-9563-46DA0DEB4E39}" ShortID="409761762">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="CHR_Crow_Flaps_Oneoff_Med" ID="{6448EDFF-7503-4493-8D42-22AD032AD7FB}" ShortID="182091954">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1DE72B9E-18CB-4C56-B9BE-F1EAACB360DE}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Med_01" ID="{0C4DF99D-5FB0-41A3-BC99-9003FAA3836C}" ShortID="226778870">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Med_01" ID="{8CD51455-45ED-44B7-840C-D464B7404678}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Med_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="390481715"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Med_01" ID="{8CD51455-45ED-44B7-840C-D464B7404678}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Med_02" ID="{407343B9-D0AE-41BD-B243-78FC471939E1}" ShortID="149526128">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Med_02" ID="{050AF746-6F8A-4AD0-A653-B5AFB738C739}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Med_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="244151685"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Med_02" ID="{050AF746-6F8A-4AD0-A653-B5AFB738C739}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Med_03" ID="{E293A8BF-44F3-49E8-9B07-3D2FE7BA748D}" ShortID="465197601">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Med_03" ID="{D1D50BB0-6C60-4C9B-81FA-120E9DE75B39}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Med_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="856823601"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Med_03" ID="{D1D50BB0-6C60-4C9B-81FA-120E9DE75B39}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Med_04" ID="{880E641F-F4A0-4566-80A2-02CCD0DBD793}" ShortID="162362074">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Med_04" ID="{D0DFFBD3-22A0-425D-91F3-7F4D3F19B4FE}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.045459046803653"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0292236729452055"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Med_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="286875931"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Med_04" ID="{D0DFFBD3-22A0-425D-91F3-7F4D3F19B4FE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Med_05" ID="{441E2E44-0A25-4BF9-9AB9-0F72C9FCFA17}" ShortID="448803960">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Med_05" ID="{2379F67B-6816-4A2E-B685-25669DBA9988}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0301786529680365"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0301786529680365"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Med_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="534142002"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Med_05" ID="{2379F67B-6816-4A2E-B685-25669DBA9988}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="CHR_Crow_Flaps_Oneoff_Large" ID="{279C0460-D104-4473-9887-CC1E4A4788F4}" ShortID="446788056">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8BDBFEB0-D5A7-4333-88B7-A2EC0353DEA0}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Crow_Outdoors" ID="{1E7F7167-4A8B-49EC-BA68-70D252C2C7DD}" WorkUnitID="{90356D04-4CB4-4D86-890C-232914E27FE8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Hero" ID="{8A2B7578-9E43-41C9-B03A-1D4B8401FF09}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Large_01" ID="{7476C5BD-2E5B-4620-99E4-9EFFBDD562D7}" ShortID="295603280">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Large_01" ID="{F48316D5-BF19-4DCD-855F-1969491C510A}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Large_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="275916046"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Large_01" ID="{F48316D5-BF19-4DCD-855F-1969491C510A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Large_02" ID="{C2727E2D-BE1D-48FB-AD44-3F93043E06CC}" ShortID="922848404">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Large_02" ID="{16740F39-09E1-43D9-9247-207D5903F3FB}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Large_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="705900197"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Large_02" ID="{16740F39-09E1-43D9-9247-207D5903F3FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Large_03" ID="{102506D0-0942-43DD-AB33-DA4FD294D375}" ShortID="948938885">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Large_03" ID="{18FA0215-639B-4573-8E36-EB8447F31831}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Large_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="915925644"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Large_03" ID="{18FA0215-639B-4573-8E36-EB8447F31831}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Large_04" ID="{04509429-ED9C-4F27-B59C-8903DBDBD67B}" ShortID="413610640">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Large_04" ID="{F8CD58F4-7381-4AE1-BDAA-0F6E65E7EBA2}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Large_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="27181037"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Large_04" ID="{F8CD58F4-7381-4AE1-BDAA-0F6E65E7EBA2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_CHR_Crow_Wing_Flap_Large_05" ID="{74719A48-8F57-4C33-A071-634CDE5B5A51}" ShortID="20165987">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_CHR_Crow_Wing_Flap_Large_05" ID="{932924DF-C2EC-43D8-BB7E-3DF61433A578}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_CHR_Crow_Wing_Flap_Large_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="969674536"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_CHR_Crow_Wing_Flap_Large_05" ID="{932924DF-C2EC-43D8-BB7E-3DF61433A578}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>

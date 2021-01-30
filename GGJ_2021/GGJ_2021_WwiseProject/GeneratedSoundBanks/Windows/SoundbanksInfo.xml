@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3007919746">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1171500312">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -86,6 +86,54 @@
 						<File Id="883111834" Language="SFX">
 							<ShortName>SFX_CHR_Crow_Single_Rasp_08.wav</ShortName>
 							<Path>SFX\SFX_CHR_Crow_Single_Rasp_08_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2429354859" Name="Play_CHR_Crow_Wing_Flap_Large" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_CHR_Crow_Wing_Flap_Large" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.762277" DurationMax="2.511303">
+					<IncludedMemoryFiles>
+						<File Id="244151685" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_02.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_02_10C4C929.wem</Path>
+						</File>
+						<File Id="286875931" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_04.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_04_30484019.wem</Path>
+						</File>
+						<File Id="390481715" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_01.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_01_10C4C929.wem</Path>
+						</File>
+						<File Id="534142002" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_05.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_05_9B625EBB.wem</Path>
+						</File>
+						<File Id="856823601" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_03.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="389654952" Name="Play_CHR_Crow_Wing_Flap_Med" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_CHR_Crow_Wing_Flap_Med" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.762277" DurationMax="2.511303">
+					<IncludedMemoryFiles>
+						<File Id="244151685" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_02.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_02_10C4C929.wem</Path>
+						</File>
+						<File Id="286875931" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_04.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_04_30484019.wem</Path>
+						</File>
+						<File Id="390481715" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_01.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_01_10C4C929.wem</Path>
+						</File>
+						<File Id="534142002" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_05.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_05_9B625EBB.wem</Path>
+						</File>
+						<File Id="856823601" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_03.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_03_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

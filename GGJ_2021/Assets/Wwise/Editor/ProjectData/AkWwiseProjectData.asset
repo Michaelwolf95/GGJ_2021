@@ -12,14 +12,250 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdd3c7f8d024834682cf846e2be043a, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: a399449c0f45604f82a615e25973b7b8
+    GuidInternal: 
+    m_lastTime: -8585896275084249014
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 484cd7635dfab345ad5693fb796158c4
+    GuidInternal: 
+    m_lastTime: -8585896229138336530
+    List:
+    - name: AMB
+      guid: 7ce060159fbf1944a79d7bbf1f46c269
+      id: 1117531639
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: AMB
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\AMB
+    - name: Hero
+      guid: 78752b8a439ec941b03a1d4b8401ff09
+      id: 3196610217
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Hero
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Hero
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+    - name: Objects
+      guid: 035b80bc5a2dfa4692eeb55286a504bc
+      id: 1695690031
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Objects
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Objects
+    - name: UI
+      guid: d9e2a5bca632b746a0fcf177b56ef9aa
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: UI
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\UI
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: d4f52954c67b7145af9dfdbd120f52aa
+    GuidInternal: 
+    m_lastTime: -8585896201614451320
+    List:
+    - name: Main
+      guid: c4253a475d0b8e4dbf0e1517b8c298e6
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Ambience.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Ambience
+      ObjectType: 12
+    ParentPath: Default Work Unit\Ambience
+    guid: 083c2252849cc745a0258aacb086c456
+    GuidInternal: 
+    m_lastTime: -8585896265776809646
+    List: []
+  - PhysicalPath: Events\Crow.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Hero
+      ObjectType: 12
+    - ElementName: Crow
+      ObjectType: 12
+    ParentPath: Default Work Unit\Hero\Crow
+    guid: aca492d2ef583e48996c37e1b7d9a68a
+    GuidInternal: 
+    m_lastTime: -8585896228822649339
+    List:
+    - name: Play_CHR_Crow_Caw_One_Off
+      guid: 4ec64e0b4421ea4297ca4381b8b3519b
+      id: 334512546
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hero
+        ObjectType: 12
+      - ElementName: Crow
+        ObjectType: 12
+      - ElementName: Play_CHR_Crow_Caw_One_Off
+        ObjectType: 3
+      Path: Default Work Unit\Hero\Crow\Play_CHR_Crow_Caw_One_Off
+      maxAttenuation: 100
+      maxDuration: 3.988548
+      minDuration: 1.921453
+    - name: Play_CHR_Crow_Rasp_One_Off
+      guid: ff17b72d6c55b7408a5b14b08fc9b9f1
+      id: 3855289715
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hero
+        ObjectType: 12
+      - ElementName: Crow
+        ObjectType: 12
+      - ElementName: Play_CHR_Crow_Rasp_One_Off
+        ObjectType: 3
+      Path: Default Work Unit\Hero\Crow\Play_CHR_Crow_Rasp_One_Off
+      maxAttenuation: 100
+      maxDuration: 5.056464
+      minDuration: 3.123201
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 15c6490de9a76f47876469d95e19282c
+    GuidInternal: 
+    m_lastTime: -8585896265758351543
+    List: []
+  - PhysicalPath: Events\Hero.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Hero
+      ObjectType: 12
+    ParentPath: Default Work Unit\Hero
+    guid: 24b7b90880f09347a52cddba275cd144
+    GuidInternal: 
+    m_lastTime: -8585896237381399644
+    List: []
+  - PhysicalPath: Events\Human.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Hero
+      ObjectType: 12
+    - ElementName: Human
+      ObjectType: 12
+    ParentPath: Default Work Unit\Hero\Human
+    guid: 44c48db87978b944b580377046055d63
+    GuidInternal: 
+    m_lastTime: -8585896239500514566
+    List: []
+  - PhysicalPath: Events\Objects.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Objects
+      ObjectType: 12
+    ParentPath: Default Work Unit\Objects
+    guid: 6743f9cb84655d4ea3e5f7e6f06a0ec2
+    GuidInternal: 
+    m_lastTime: -8585896265896304542
+    List: []
+  - PhysicalPath: Events\UI.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: UI
+      ObjectType: 12
+    ParentPath: Default Work Unit\UI
+    guid: 7f31a0c1585c984aa3d7c2671e6301b3
+    GuidInternal: 
+    m_lastTime: -8585896265815384513
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 18a4eac13df0fb4da1dfdc572ba995f8
+    GuidInternal: 
+    m_lastTime: -8585896275084994146
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 8149f05a1685ce47995a271cea586921
+    GuidInternal: 
+    m_lastTime: -8585896275085334202
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: eb2f5f93fad132448445b01c06592749
+    GuidInternal: 
+    m_lastTime: -8585896275084659076
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 311cb2e57dd6fe4fa071dcac7e29896b
+    GuidInternal: 
+    m_lastTime: -8585896275084794105
+    List: []
   ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
