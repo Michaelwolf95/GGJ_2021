@@ -61,4 +61,3 @@ crashlytics-build.properties
 *.validationcache
 *.wem
 *.wsettings
-*.xml

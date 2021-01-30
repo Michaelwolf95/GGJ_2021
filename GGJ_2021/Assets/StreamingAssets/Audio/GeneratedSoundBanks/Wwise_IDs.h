@@ -15,8 +15,6 @@ namespace AK
     {
         static const AkUniqueID PLAY_CHR_CROW_CAW_ONE_OFF = 334512546U;
         static const AkUniqueID PLAY_CHR_CROW_RASP_ONE_OFF = 3855289715U;
-        static const AkUniqueID PLAY_CHR_CROW_WING_FLAP_LARGE = 2429354859U;
-        static const AkUniqueID PLAY_CHR_CROW_WING_FLAP_MED = 389654952U;
     } // namespace EVENTS
 
     namespace BANKS

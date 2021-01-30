@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B88DC444-7879-44B9-B580-377046055D63}" SchemaVersion="97" RootDocumentID="{0D49C615-A7E9-476F-8764-69D95E19282C}">
 	<Events>
-		<WorkUnit Name="Human" ID="{B88DC444-7879-44B9-B580-377046055D63}" OwnerID="{CBF94367-6584-4E5D-A3E5-F7E6F06A0EC2}" PersistMode="Nested"/>
+		<WorkUnit Name="Human" ID="{B88DC444-7879-44B9-B580-377046055D63}" OwnerID="{08B9B724-F080-4793-A52C-DDBA275CD144}" PersistMode="Nested"/>
 	</Events>
 </WwiseDocument>

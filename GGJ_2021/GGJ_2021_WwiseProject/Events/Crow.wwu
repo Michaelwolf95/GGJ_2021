@@ -25,28 +25,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_CHR_Crow_Wing_Flap_Med" ID="{C17F78D2-C0DF-4059-AA4E-CD0F2609F376}">
-					<ChildrenList>
-						<Action Name="" ID="{A4C50461-7489-428D-9DBC-35EBCC85FF1D}" ShortID="95413901">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CHR_Crow_Flaps_Oneoff_Med" ID="{6448EDFF-7503-4493-8D42-22AD032AD7FB}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_CHR_Crow_Wing_Flap_Large" ID="{CC4124A6-112C-4F2E-B6AF-38EDBA13B0F7}">
-					<ChildrenList>
-						<Action Name="" ID="{ECDC0F10-26E2-4C9A-93EB-ACEB4C33F3EB}" ShortID="731217582">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CHR_Crow_Flaps_Oneoff_Med" ID="{6448EDFF-7503-4493-8D42-22AD032AD7FB}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

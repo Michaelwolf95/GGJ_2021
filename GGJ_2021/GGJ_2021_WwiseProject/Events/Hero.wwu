@@ -4,6 +4,7 @@
 		<WorkUnit Name="Hero" ID="{08B9B724-F080-4793-A52C-DDBA275CD144}" OwnerID="{0D49C615-A7E9-476F-8764-69D95E19282C}" PersistMode="Nested">
 			<ChildrenList>
 				<WorkUnit Name="Crow" ID="{D292A4AC-58EF-483E-996C-37E1B7D9A68A}" PersistMode="Reference"/>
+				<WorkUnit Name="Human" ID="{B88DC444-7879-44B9-B580-377046055D63}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
