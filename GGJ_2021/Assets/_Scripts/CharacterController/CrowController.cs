@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using MichaelWolfGames;
 using UnityEngine;
 using UnityEngine.InputSystem;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace CrowGame
 {
@@ -39,6 +42,8 @@ namespace CrowGame
         private ControllerColliderHit currentControllerHit = null;
 
         private EventButton jumpButton = null;
+
+        private bool wasGrounded = false;
         
         private void Awake()
         {
@@ -56,6 +61,7 @@ namespace CrowGame
             jumpButton.HandleUpdate(Time.deltaTime);
 
             Vector3 currentVelocity = moveController.velocity;
+            //Debug.Log("Current Velocity: " + currentVelocity);
             
             Vector2 moveInput = inputController.actions["Move"].ReadValue<Vector2>();
             Vector3 moveDelta = Vector3.zero;
@@ -68,7 +74,7 @@ namespace CrowGame
                 if (jumpButton.isPressedDown)
                 {
                     // JUMP FROM GROUND ====
-                    Debug.Log("Jump From Ground");
+                    Debug.Log("Jump From Ground ==========");
                     //currentVelocity.y = 0f;
                     moveDelta.y = flapForce * Time.deltaTime;
                     
@@ -77,44 +83,49 @@ namespace CrowGame
                 }
                 else
                 {
-                    Debug.Log("On Ground");
+                    //Debug.Log("On Ground");
                     HandleGroundedMovement(moveInput, ref moveDelta);
                 }
+
+                if (wasGrounded == false)
+                {
+                    Debug.Log("LAND");
+                }
+                
             }
             else // Not grounded
             {
                 Vector3 moveDir = GetMoveDirectionXZ(moveInput);
                 Debug.Log("MOVE DIR: " + moveDir);
-                
-                moveDelta = currentVelocity;
-                //Debug.Log("MOVE DIR: " + moveDir);
-                
+
                 if (jumpButton.isPressedDown && currentJumpsSinceGrounded < maxJumps)
                 {
-                    Debug.Log("Mid Air Jump");
+                    Debug.Log("Mid Air Jump ========");
                     // Mid Air Jump
                     currentJumpsSinceGrounded++;
                     moveDelta.y = flapForce * Time.deltaTime;
                 }
                 else
                 {
-                    Debug.Log("Falling or Gliding");
-                    //moveDelta = moveController.velocity;
+                    moveDelta.y = currentVelocity.y * Time.deltaTime;
                     
                     if (jumpButton.isPressed) // Held or pressed
                     {
-                        //Debug.Log("Glide Gravity");
+                        Debug.Log("Glide Gravity");
                         // Glide gravity
-                        moveDelta.y += glideGravity * Time.deltaTime;
+                        moveDelta.y += glideGravity * Time.deltaTime * Time.deltaTime;
                     }
                     else
                     {
+                        Debug.Log("Fall Gravity");
                         //Debug.Log("Fall Gravity: " + defaultGravity * Time.deltaTime + ", " + currentVelocity + ", " );
                         // Fall Gravity
-                        moveDelta.y += defaultGravity * Time.deltaTime;
+                        moveDelta.y += defaultGravity * Time.deltaTime * Time.deltaTime;
                     }
                     
-                    moveDelta += moveDir * glideMoveSpeed * Time.deltaTime;
+                    //Debug.Log("move Before: " + moveDir + ", moveDelta: " + moveDelta);
+                    moveDelta += moveDir * (glideMoveSpeed * Time.deltaTime);
+                    //Debug.Log("move After: " + moveDir + ", moveDelta: " + moveDelta);
                     
                     // ToDo: Smooth this.
                     characterRoot.LookAt(characterRoot.transform.position + moveDir.normalized);
@@ -122,8 +133,13 @@ namespace CrowGame
                 
             }
             
-            
+            wasGrounded = moveController.isGrounded;
+
+            //Vector3 posBefore = transform.position;
             moveController.Move(moveDelta);
+            //currentVelocity = (transform.position - posBefore) / Time.deltaTime;
+            //Debug.Log(posBefore + ", " + transform.position + ", " + currentVelocity);
+
         }
 
         private void HandleGroundedMovement(Vector2 moveInput, ref Vector3 moveDelta)
@@ -177,5 +193,19 @@ namespace CrowGame
             currentControllerHit = hit;
         }
 
+#if UNITY_EDITOR
+        
+        private void OnDrawGizmos()
+        {
+            if (EditorApplication.isPlaying && moveController != null)
+            {
+                Vector3 textPos = transform.position + new Vector3(0f, moveController.height + 0.2f, 0f);
+                Color prevColor = Handles.color;
+                Handles.color = (moveController.isGrounded) ? Color.cyan : new Color(1f, 0.5f, 0.2f);
+                Handles.Label(textPos, string.Format("V:{0}", moveController.velocity));
+                Handles.color = prevColor;
+            }
+        }
+#endif
     }
 }
