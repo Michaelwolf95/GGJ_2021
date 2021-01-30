@@ -36,6 +36,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Crow_Footstep_Grass" ID="{81701A41-5210-4F10-8483-3927AC00D628}">
+					<ChildrenList>
+						<Action Name="" ID="{EBFA827A-6BBA-4EAA-B5B3-47CCAF948A3E}" ShortID="733912768">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Crow_Footsteps_Grass" ID="{CEC2EBF2-8BDD-4FF2-A0BB-EB58D8C2C31D}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Crow_Wing_Flap_Large" ID="{36950F05-D681-4FED-B332-B2D6F0757CC1}">
+					<ChildrenList>
+						<Action Name="" ID="{533D7787-1EC8-4210-8601-5E76317E0202}" ShortID="797311931">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Crow_Wing_Flap_Oneoffs_Large" ID="{C19938F2-4212-4570-8E22-D7A50058E167}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

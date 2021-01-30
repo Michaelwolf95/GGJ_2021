@@ -14,7 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_CROW_CAW = 3489561965U;
+        static const AkUniqueID PLAY_CROW_FOOTSTEP_GRASS = 8747203U;
         static const AkUniqueID PLAY_CROW_RASP = 797577932U;
+        static const AkUniqueID PLAY_CROW_WING_FLAP_LARGE = 1074723603U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
     } // namespace EVENTS
 

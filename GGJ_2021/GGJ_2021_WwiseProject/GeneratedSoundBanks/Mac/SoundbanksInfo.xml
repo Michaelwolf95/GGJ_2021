@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="678432697">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1688081670">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -59,6 +59,50 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="8747203" Name="Play_Crow_Footstep_Grass" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Footstep_Grass" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.671104" DurationMax="1.837271">
+					<IncludedMemoryFiles>
+						<File Id="16189319" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_09.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_09_10C4C929.wem</Path>
+						</File>
+						<File Id="400254867" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_02.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_02_10C4C929.wem</Path>
+						</File>
+						<File Id="409692427" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_04.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_04_10C4C929.wem</Path>
+						</File>
+						<File Id="586237318" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_01.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_01_10C4C929.wem</Path>
+						</File>
+						<File Id="606134740" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_07.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_07_10C4C929.wem</Path>
+						</File>
+						<File Id="668472154" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_06.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_06_10C4C929.wem</Path>
+						</File>
+						<File Id="746728640" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_05.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_05_10C4C929.wem</Path>
+						</File>
+						<File Id="849112773" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_10.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_10_10C4C929.wem</Path>
+						</File>
+						<File Id="937310878" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_08.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_08_10C4C929.wem</Path>
+						</File>
+						<File Id="1044726172" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_03.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="797577932" Name="Play_Crow_Rasp" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Rasp" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.123201" DurationMax="5.056464">
 					<IncludedMemoryFiles>
 						<File Id="3892725" Language="SFX">
@@ -92,6 +136,30 @@
 						<File Id="883111834" Language="SFX">
 							<ShortName>SFX_CHR_Crow_Single_Rasp_08.wav</ShortName>
 							<Path>SFX\SFX_CHR_Crow_Single_Rasp_08_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1074723603" Name="Play_Crow_Wing_Flap_Large" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Wing_Flap_Large" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.312813" DurationMax="3.118896">
+					<IncludedMemoryFiles>
+						<File Id="67392688" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Large_01.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Large_01_10C4C929.wem</Path>
+						</File>
+						<File Id="341814247" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Large_03.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Large_03_10C4C929.wem</Path>
+						</File>
+						<File Id="452966496" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Large_04.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Large_04_10C4C929.wem</Path>
+						</File>
+						<File Id="642906664" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Large_02.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Large_02_10C4C929.wem</Path>
+						</File>
+						<File Id="880900297" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Large_05.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Large_05_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
