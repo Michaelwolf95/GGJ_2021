@@ -26,9 +26,17 @@ namespace CrowGame
         private Vector3 groundNormal;
         private ControllerColliderHit currentControllerHit = null;
 
-        private void Start()
+        private void Awake()
         {
-            
+            inputController.actions["Jump"].performed += ctx =>
+            {
+                HandleJumpInput();
+            };
+        }
+
+        private void HandleJumpInput()
+        {
+            Debug.Log("Jump");
         }
 
         private void Update()
