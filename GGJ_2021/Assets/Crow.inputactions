@@ -30,7 +30,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Grab/Drop",
+                    "name": "Grab",
                     "type": "Button",
                     "id": "1783a421-3409-4620-addd-48687b38494e",
                     "expectedControlType": "Button",
@@ -266,7 +266,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Grab/Drop",
+                    "action": "Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
