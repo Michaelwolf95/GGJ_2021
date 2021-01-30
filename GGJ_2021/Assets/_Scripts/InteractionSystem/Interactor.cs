@@ -34,6 +34,11 @@ public class Interactor : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+        if (mainCamera == null)
+        {
+            mainCamera = Camera.main;
+        }
         
         inputController.actions["Grab"].performed += ctx =>
         {

@@ -35,6 +35,12 @@ namespace CrowGame
         
         private void Awake()
         {
+            if (camera == null)
+            {
+                camera = Camera.main;
+            }
+            inputController.camera = camera;
+            
             inputController.actions["Jump"].performed += ctx =>
             {
                 HandleJumpInput();
