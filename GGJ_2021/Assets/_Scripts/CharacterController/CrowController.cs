@@ -120,7 +120,7 @@ namespace CrowGame
                     if (currentJumpsSinceGrounded < 3)
                     {
                         currentJumpsSinceGrounded++;
-                        moveDelta.y += flapForce * Time.deltaTime;
+                        moveDelta.y = moveController.velocity.y + Mathf.Sqrt(flapForce * -2.0f * Physics.gravity.y);
 
                         Debug.Log("Pressed");
                     }
@@ -135,9 +135,26 @@ namespace CrowGame
                     throw new ArgumentOutOfRangeException();
             }
 
-            
+            Debug.Log(moveDelta.y);
+
+
+            if (moveDelta.y > 0)
+            {
+                animator.SetBool("flying", true);
+            }
+            else if (moveDelta.y < 0 || moveController.isGrounded)
+            {
+                animator.SetBool("flying", false);
+
+
+            }
+
             moveDelta.y += Physics.gravity.y * Time.deltaTime;
-            moveController.Move(moveDelta);
+
+
+
+
+            moveController.Move(moveDelta * Time.deltaTime);
         }
         
         
