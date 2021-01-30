@@ -23,12 +23,12 @@ public class InteractableReticle : MonoBehaviour
     
     private void Awake()
     {
-        /*
+        
         activatedReticle.gameObject.SetActive(false);
         lookReticle.gameObject.SetActive(false);
-        investigateReticle.gameObject.SetActive(false);
-        handReticle.gameObject.SetActive(false);
-        */
+        //investigateReticle.gameObject.SetActive(false);
+        //handReticle.gameObject.SetActive(false);
+        
     }
 
     public GameObject GetInteractReticleGameObject(InteractReticleType argType)
