@@ -116,32 +116,27 @@ namespace CrowGame
             }
 
 
+
             // Is pressed not working as intended. Just using switch statements for time being. 
             switch (jumpButton.state)
             {
                 case EventButton.ButtonState.None:
-                    //Debug.Log("None");
                     break;
                 case EventButton.ButtonState.Pressed:
                     if (currentJumpsSinceGrounded < 3)
                     {
                         currentJumpsSinceGrounded++;
                         moveDelta.y = moveController.velocity.y + Mathf.Sqrt(flapForce * -2.0f * Physics.gravity.y);
-
-                        Debug.Log("Pressed");
                     }
                     break;
                 case EventButton.ButtonState.Hold:
-                    Debug.Log("Hold");
                     break;
                 case EventButton.ButtonState.Released:
-                    //Debug.Log("Released");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
 
-            Debug.Log(moveDelta.y);
 
 
             if (moveDelta.y > 0)
@@ -160,7 +155,7 @@ namespace CrowGame
 
 
 
-            moveController.Move(moveDelta * Time.deltaTime);
+            moveController.Move(moveDelta);
         }
         
         
