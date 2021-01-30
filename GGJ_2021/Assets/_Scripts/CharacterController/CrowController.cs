@@ -11,14 +11,21 @@ namespace CrowGame
     {
         [SerializeField] private CharacterController moveController;
         [SerializeField] private PlayerInput inputController;
-        [SerializeField] private float moveSpeed = 4f;
         [SerializeField] private Animator animator;
         //private Transform characterRoot => animator.transform;
         [SerializeField] private Transform characterRoot;
         [SerializeField] private Camera camera;
-        [SerializeField] private float flapForce;
+        
+        [Header("Control Parameters")]
+        [SerializeField] private float groundedMoveSpeed = 4f;
+        [SerializeField] private float glideMoveSpeed = 4f;
+        [SerializeField] private float flapForce = 5f;
+        [SerializeField] private int maxJumps = 3;
+        [SerializeField] private float defaultGravity = -9.8f;
+        [SerializeField] private float glideGravity = -4.5f;
+        
+        
 
-        [SerializeField] private int maxJumps;
         private int currentJumpsSinceGrounded;
         private bool lastFramePress = false; 
         public enum ControlState
@@ -40,122 +47,127 @@ namespace CrowGame
                 camera = Camera.main;
             }
             inputController.camera = camera;
-            
-            inputController.actions["Jump"].performed += ctx =>
-            {
-                HandleJumpInput();
-            };
 
             jumpButton = new EventButton(inputController, "Jump");
-        }
-
-        private void HandleJumpInput()
-        {
-            //Debug.Log("Jump");
         }
 
         private void Update()
         {
             jumpButton.HandleUpdate(Time.deltaTime);
+
+            Vector3 currentVelocity = moveController.velocity;
             
             Vector2 moveInput = inputController.actions["Move"].ReadValue<Vector2>();
-
-            bool jump = inputController.actions["Jump"].ReadValue<float>() != 0;
-
-
-            
-
-            if(!lastFramePress && jump)
-            {
-                lastFramePress = true; 
-            }
-            else
-            {
-                lastFramePress = false; 
-            }
-
             Vector3 moveDelta = Vector3.zero;
+            
             if (moveController.isGrounded)
             {
                 currentJumpsSinceGrounded = 0; 
-                float slopeAngle = 0f;
-                if (currentControllerHit != null)
-                {
-                    // ToDo: Reenable this later.
-                    //slopeAngle = Vector3.Angle(Vector3.up, currentControllerHit.normal);
-                }
+                animator.SetBool("flying", false);
                 
-                if (slopeAngle > moveController.slopeLimit) // && currentControllerHit != null
+                if (jumpButton.isPressedDown)
                 {
-                    Vector3 g = Vector3.Cross(Vector3.Cross(currentControllerHit.normal, Vector3.down), currentControllerHit.normal);
-                    g *= moveSpeed * Time.deltaTime;
-                    //moveDelta += g;
-                    //Debug.Log(slopeAngle + ", " + currentControllerHit.collider.gameObject.name + ", " + currentControllerHit.normal);
-                    Debug.DrawLine(currentControllerHit.point + currentControllerHit.normal, currentControllerHit.point + currentControllerHit.normal + (g * 2f), Color.magenta, 0.1f);
+                    // JUMP FROM GROUND ====
+                    Debug.Log("Jump From Ground");
+                    //currentVelocity.y = 0f;
+                    moveDelta.y = flapForce * Time.deltaTime;
+                    
+                    currentJumpsSinceGrounded++;
+                    animator.SetBool("flying", true);
                 }
                 else
                 {
-                    Vector3 cameraForward = Vector3.ProjectOnPlane(camera.transform.forward, Vector3.up).normalized;
-                    Vector3 cameraRight = Quaternion.AngleAxis(90f, Vector3.up) * cameraForward;
-                    
-                    Debug.DrawLine(transform.position, transform.position + cameraForward * 2f, Color.blue);
-                    Debug.DrawLine(transform.position, transform.position + cameraRight * 2f, Color.red);
-
-                    Vector3 moveDir = ((cameraForward * moveInput.y) + (cameraRight * moveInput.x)); //ToDo: Normalize this?
-
-                    moveDelta += moveDir * moveSpeed * Time.deltaTime;
-                    
-                    characterRoot.LookAt(characterRoot.transform.position + moveDir.normalized);
+                    Debug.Log("On Ground");
+                    HandleGroundedMovement(moveInput, ref moveDelta);
                 }
-                
-                //animator.SetFloat("Speed", moveInput.magnitude);
             }
             else // Not grounded
             {
+                Vector3 moveDir = GetMoveDirectionXZ(moveInput);
+                Debug.Log("MOVE DIR: " + moveDir);
+                
+                moveDelta = currentVelocity;
+                //Debug.Log("MOVE DIR: " + moveDir);
+                
+                if (jumpButton.isPressedDown && currentJumpsSinceGrounded < maxJumps)
+                {
+                    Debug.Log("Mid Air Jump");
+                    // Mid Air Jump
+                    currentJumpsSinceGrounded++;
+                    moveDelta.y = flapForce * Time.deltaTime;
+                }
+                else
+                {
+                    Debug.Log("Falling or Gliding");
+                    //moveDelta = moveController.velocity;
+                    
+                    if (jumpButton.isPressed) // Held or pressed
+                    {
+                        //Debug.Log("Glide Gravity");
+                        // Glide gravity
+                        moveDelta.y += glideGravity * Time.deltaTime;
+                    }
+                    else
+                    {
+                        //Debug.Log("Fall Gravity: " + defaultGravity * Time.deltaTime + ", " + currentVelocity + ", " );
+                        // Fall Gravity
+                        moveDelta.y += defaultGravity * Time.deltaTime;
+                    }
+                    
+                    moveDelta += moveDir * glideMoveSpeed * Time.deltaTime;
+                    
+                    // ToDo: Smooth this.
+                    characterRoot.LookAt(characterRoot.transform.position + moveDir.normalized);
+                }
                 
             }
-
-
-
-            // Is pressed not working as intended. Just using switch statements for time being. 
-            switch (jumpButton.state)
-            {
-                case EventButton.ButtonState.None:
-                    break;
-                case EventButton.ButtonState.Pressed:
-                    if (currentJumpsSinceGrounded < 3)
-                    {
-                        currentJumpsSinceGrounded++;
-                        moveDelta.y = moveController.velocity.y + Mathf.Sqrt(flapForce * -2.0f * Physics.gravity.y);
-                    }
-                    break;
-                case EventButton.ButtonState.Hold:
-                    break;
-                case EventButton.ButtonState.Released:
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-
-
-
-            if (moveDelta.y > 0)
-            {
-                animator.SetBool("flying", true);
-            }
-            else if (moveDelta.y < 0 || moveController.isGrounded)
-            {
-                animator.SetBool("flying", false);
-
-
-            }
-
-            moveDelta.y += Physics.gravity.y * Time.deltaTime;
-
-
-
-
+            
+            
             moveController.Move(moveDelta);
+        }
+
+        private void HandleGroundedMovement(Vector2 moveInput, ref Vector3 moveDelta)
+        {
+            float slopeAngle = 0f;
+            if (currentControllerHit != null)
+            {
+                // ToDo: Reenable this later.
+                //slopeAngle = Vector3.Angle(Vector3.up, currentControllerHit.normal);
+            }
+            
+            // Slide down slope (Not used)
+            if (slopeAngle > moveController.slopeLimit) // && currentControllerHit != null
+            {
+                Vector3 g = Vector3.Cross(Vector3.Cross(currentControllerHit.normal, Vector3.down), currentControllerHit.normal);
+                g *= groundedMoveSpeed * Time.deltaTime;
+                //moveDelta += g;
+                //Debug.Log(slopeAngle + ", " + currentControllerHit.collider.gameObject.name + ", " + currentControllerHit.normal);
+                Debug.DrawLine(currentControllerHit.point + currentControllerHit.normal, currentControllerHit.point + currentControllerHit.normal + (g * 2f), Color.magenta, 0.1f);
+            }
+            else
+            {
+                Vector3 moveDir = GetMoveDirectionXZ(moveInput);
+                moveDelta += moveDir * groundedMoveSpeed * Time.deltaTime;
+                
+                // ToDo: Smooth this.
+                characterRoot.LookAt(characterRoot.transform.position + moveDir.normalized);
+            }
+            
+            
+            //animator.SetInteger("hop", (int)moveInput.magnitude);
+            
+            moveDelta.y += defaultGravity * Time.deltaTime;
+        }
+
+        private Vector3 GetMoveDirectionXZ(Vector2 moveInput)
+        {
+            Vector3 cameraForward = Vector3.ProjectOnPlane(camera.transform.forward, Vector3.up).normalized;
+            Vector3 cameraRight = Quaternion.AngleAxis(90f, Vector3.up) * cameraForward;
+                    
+            Debug.DrawLine(transform.position, transform.position + cameraForward * 2f, Color.blue);
+            Debug.DrawLine(transform.position, transform.position + cameraRight * 2f, Color.red);
+
+            return ((cameraForward * moveInput.y) + (cameraRight * moveInput.x)).normalized;
         }
         
         
