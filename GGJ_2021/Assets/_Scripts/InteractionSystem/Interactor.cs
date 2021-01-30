@@ -14,7 +14,6 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float interactRange = 1f;
 
     [SerializeField] private LayerMask interactionLayerMask = new LayerMask();
-    [SerializeField] private PlayerInput playerInput = null;
     
     private InteractableBase currentPointerTarget = null;        // Currently being looked at.
     private InteractableBase currentInteractionTarget = null;    // Actively interacting with
@@ -48,6 +47,7 @@ public class Interactor : MonoBehaviour
         {
             if (currentPointerTarget != null)
             {
+                Debug.Log("Begin");
                 BeginInteraction(currentPointerTarget);
             }
         }
