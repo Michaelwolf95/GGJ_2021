@@ -56,23 +56,7 @@ namespace CrowGame
 
             bool jump = inputController.actions["Jump"].ReadValue<float>() != 0;
 
-            switch (jumpButton.state)
-            {
-                case EventButton.ButtonState.None:
-                    Debug.Log("None");
-                    break;
-                case EventButton.ButtonState.Pressed:
-                    Debug.Log("Pressed");
-                    break;
-                case EventButton.ButtonState.Hold:
-                    Debug.Log("Hold");
-                    break;
-                case EventButton.ButtonState.Released:
-                    Debug.Log("Released");
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+
             
 
             if(!lastFramePress && jump)
@@ -125,15 +109,34 @@ namespace CrowGame
                 
             }
 
-            if (jump && currentJumpsSinceGrounded <= maxJumps && !lastFramePress)
+
+            // Is pressed not working as intended. Just using switch statements for time being. 
+            switch (jumpButton.state)
             {
-            
-                currentJumpsSinceGrounded++; 
-                Debug.Log("jumps since grounded " + currentJumpsSinceGrounded);
-                moveDelta.y += flapForce;
+                case EventButton.ButtonState.None:
+                    //Debug.Log("None");
+                    break;
+                case EventButton.ButtonState.Pressed:
+                    if (currentJumpsSinceGrounded < 3)
+                    {
+                        currentJumpsSinceGrounded++;
+                        moveDelta.y += flapForce * Time.deltaTime;
+
+                        Debug.Log("Pressed");
+                    }
+                    break;
+                case EventButton.ButtonState.Hold:
+                    Debug.Log("Hold");
+                    break;
+                case EventButton.ButtonState.Released:
+                    //Debug.Log("Released");
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
+
             
-            moveDelta += Physics.gravity * Time.deltaTime;
+            moveDelta.y += Physics.gravity.y * Time.deltaTime;
             moveController.Move(moveDelta);
         }
         
