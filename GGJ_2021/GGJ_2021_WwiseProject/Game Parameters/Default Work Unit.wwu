@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C1EAA418-F03D-4DFB-A1DF-DC572BA995F8}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{C1EAA418-F03D-4DFB-A1DF-DC572BA995F8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C1EAA418-F03D-4DFB-A1DF-DC572BA995F8}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="SFXVolume" ID="{CB114BBD-4D80-4460-9198-1327B7387890}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MXVolume" ID="{72E1F20E-B40F-4455-95E6-F1FB2CC70D5F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="AMBVolume" ID="{415365A0-8DB0-4979-A865-2574384A878D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MasterVolume" ID="{E88D2963-454C-48BF-B968-88FF1275C0CB}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

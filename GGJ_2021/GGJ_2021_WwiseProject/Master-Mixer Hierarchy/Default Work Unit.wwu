@@ -13,10 +13,15 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="UI" ID="{BCA5E2D9-32A6-46B7-A0FC-F177B56EF9AA}"/>
-						<Bus Name="Hero" ID="{8A2B7578-9E43-41C9-B03A-1D4B8401FF09}"/>
-						<Bus Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}"/>
 						<Bus Name="AMB" ID="{1560E07C-BF9F-4419-A79D-7BBF1F46C269}"/>
+						<Bus Name="SFX" ID="{03A2F838-6084-4331-AC7B-5380B8A87DFE}">
+							<ChildrenList>
+								<Bus Name="Hero" ID="{8A2B7578-9E43-41C9-B03A-1D4B8401FF09}"/>
+								<Bus Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}"/>
+								<Bus Name="UI" ID="{BCA5E2D9-32A6-46B7-A0FC-F177B56EF9AA}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Music" ID="{257C0CA3-F827-4A87-82E4-86BACDFAF0B4}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
