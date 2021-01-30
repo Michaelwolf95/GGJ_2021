@@ -7,6 +7,7 @@ namespace MichaelWolfGames
 	[Serializable]
 	public class EventButton
 	{
+		[Serializable]
 		public enum ButtonState
 		{
 			None,
@@ -14,7 +15,7 @@ namespace MichaelWolfGames
 			Hold,
 			Released
 		}
-		public ButtonState _state = ButtonState.None;
+		private ButtonState _state = ButtonState.None;
 		public ButtonState state
 		{
 			get => _state;
@@ -50,15 +51,15 @@ namespace MichaelWolfGames
 					}
 					break;
 				case ButtonState.Pressed:
+					timeHeld = 0;
 					if (isPressed)
 					{
 						state = ButtonState.Hold;
-						timeHeld = 0;
+						
 					}
 					else
 					{
 						state = ButtonState.Released;
-						timeHeld = 0f;
 					}
 					break;
 				case ButtonState.Hold:
@@ -73,10 +74,14 @@ namespace MichaelWolfGames
 					}
 					break;
 				case ButtonState.Released:
+					timeHeld = 0f;
 					if (isPressed)
 					{
+						state = ButtonState.Pressed;
+					}
+					else
+					{
 						state = ButtonState.None;
-						timeHeld = 0f;
 					}
 					break;
 				default:
