@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrabObject : InteractableBase
 {
-    public bool isGrabbed { get; set; }
+    public bool isGrabbed { get; protected set; }
 
     [SerializeField] private GameObject grabObjectTarget;
 
@@ -32,8 +32,9 @@ public class GrabObject : InteractableBase
     {
         isGrabbed = true;
         // Snap to beak position and disable rigidbody
-        this.gameObject.transform.position = grabObjectTarget.transform.position;
-        this.gameObject.transform.SetParent(grabObjectTarget.transform);
         this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        //this.gameObject.transform.position = grabObjectTarget.transform.position;
+        this.gameObject.transform.SetParent(grabObjectTarget.transform);
+        
     }
 }

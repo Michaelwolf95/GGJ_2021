@@ -64,8 +64,9 @@ public class Interactor : MonoBehaviour
         {
             return;
         }
-        
-        Ray ray = new Ray(viewOrigin.position, viewOrigin.forward);
+
+        /*
+        Ray ray = new Ray(this.gameObject.transform.position, viewOrigin.forward);
         RaycastHit[] hits = Physics.RaycastAll(ray, interactRange, interactionLayerMask, QueryTriggerInteraction.Collide);
         if (hits.Length > 0)
         {
@@ -86,7 +87,8 @@ public class Interactor : MonoBehaviour
                         nearestDist = hits[i].distance;
                     }
                 }
-            }
+            } 
+            
 
             if (raycastResultTarget != null)
             {
@@ -105,7 +107,48 @@ public class Interactor : MonoBehaviour
                 ClearPointerTarget();
             }
         }
+        */
+
+        RaycastHit[] hits = Physics.RaycastAll(this.gameObject.transform.position, this.gameObject.transform.forward);
+        if (hits.Length > 0)
+        {
+            InteractableBase raycastResultTarget = null;
+            float nearestDist = float.MaxValue;
+            for (int i = 0; i < hits.Length; i++)
+            {
+                InteractableBase raycastInteractable = hits[i].collider.GetComponent<InteractableBase>();
+                if (raycastInteractable == null && hits[i].rigidbody != null)
+                {
+                    raycastInteractable = hits[i].rigidbody.GetComponent<InteractableBase>();
+                }
+                if (raycastInteractable != null && raycastInteractable.isInteractable)
+                {
+                    if (hits[i].distance < nearestDist)
+                    {
+                        raycastResultTarget = raycastInteractable;
+                        nearestDist = hits[i].distance;
+                    }
+                }
+            }
+            if (raycastResultTarget != null)
+            {
+                if (currentPointerTarget != null && currentPointerTarget != raycastResultTarget)
+                {
+                    ClearPointerTarget();
+                }
+
+                SetPointerTarget(raycastResultTarget);
+            }
+        }
+        else
+        {
+            if (currentPointerTarget != null)
+            {
+                ClearPointerTarget();
+            }
+        }
     }
+    
 
     public void BeginInteraction(InteractableBase interactable)
     {
