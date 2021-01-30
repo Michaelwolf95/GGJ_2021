@@ -15,6 +15,7 @@ namespace CrowGame
         //private Transform characterRoot => animator.transform;
         [SerializeField] private Transform characterRoot;
         [SerializeField] private Camera camera;
+        [SerializeField] private float flapForce; 
 
         public enum ControlState
         {
@@ -84,6 +85,12 @@ namespace CrowGame
             else // Not grounded
             {
                 
+            }
+
+            if (jump)
+            {
+                Debug.Log("jump");
+                moveDelta.y = flapForce;
             }
             moveDelta += Physics.gravity * Time.deltaTime;
             moveController.Move(moveDelta);
