@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MichaelWolfGames;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -30,12 +31,16 @@ namespace CrowGame
         private Vector3 groundNormal;
         private ControllerColliderHit currentControllerHit = null;
 
+        private EventButton jumpButton = null;
+        
         private void Awake()
         {
             inputController.actions["Jump"].performed += ctx =>
             {
                 HandleJumpInput();
             };
+
+            jumpButton = new EventButton(inputController, "Jump");
         }
 
         private void HandleJumpInput()
@@ -45,10 +50,30 @@ namespace CrowGame
 
         private void Update()
         {
+            jumpButton.HandleUpdate(Time.deltaTime);
+            
             Vector2 moveInput = inputController.actions["Move"].ReadValue<Vector2>();
 
             bool jump = inputController.actions["Jump"].ReadValue<float>() != 0;
-            Debug.Log("Last frame " + lastFramePress);
+
+            switch (jumpButton.state)
+            {
+                case EventButton.ButtonState.None:
+                    Debug.Log("None");
+                    break;
+                case EventButton.ButtonState.Pressed:
+                    Debug.Log("Pressed");
+                    break;
+                case EventButton.ButtonState.Hold:
+                    Debug.Log("Hold");
+                    break;
+                case EventButton.ButtonState.Released:
+                    Debug.Log("Released");
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+            
 
             if(!lastFramePress && jump)
             {
