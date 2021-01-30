@@ -36,12 +36,15 @@ namespace CrowGame
 
         private void HandleJumpInput()
         {
-            Debug.Log("Jump");
+            //Debug.Log("Jump");
         }
 
         private void Update()
         {
             Vector2 moveInput = inputController.actions["Move"].ReadValue<Vector2>();
+
+            bool jump = inputController.actions["Jump"].ReadValue<float>() != 0;
+            
 
             Vector3 moveDelta = Vector3.zero;
             if (moveController.isGrounded)
