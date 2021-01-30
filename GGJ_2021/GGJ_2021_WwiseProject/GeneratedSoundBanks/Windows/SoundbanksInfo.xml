@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3276913723">
+		<SoundBank Id="1355168291" Language="SFX" Hash="711093001">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
+				<GameParameter Id="1515499284" Name="MXVolume" ObjectPath="\Game Parameters\Default Work Unit\MXVolume"/>
+				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\MasterVolume"/>
+				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3007919746">
+		<SoundBank Id="3161908922" Language="SFX" Hash="678432697">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="334512546" Name="Play_CHR_Crow_Caw_One_Off" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_CHR_Crow_Caw_One_Off" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.921453" DurationMax="3.988548">
+				<Event Id="3489561965" Name="Play_Crow_Caw" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Caw" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.921453" DurationMax="3.988548">
 					<IncludedMemoryFiles>
 						<File Id="57331924" Language="SFX">
 							<ShortName>SFX_CHR_Crow_Single_Caw_05.wav</ShortName>
@@ -53,7 +59,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3855289715" Name="Play_CHR_Crow_Rasp_One_Off" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_CHR_Crow_Rasp_One_Off" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.123201" DurationMax="5.056464">
+				<Event Id="797577932" Name="Play_Crow_Rasp" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Rasp" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.123201" DurationMax="5.056464">
 					<IncludedMemoryFiles>
 						<File Id="3892725" Language="SFX">
 							<ShortName>SFX_CHR_Crow_Single_Rasp_06.wav</ShortName>
@@ -86,6 +92,30 @@
 						<File Id="883111834" Language="SFX">
 							<ShortName>SFX_CHR_Crow_Single_Rasp_08.wav</ShortName>
 							<Path>SFX\SFX_CHR_Crow_Single_Rasp_08_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="550970928" Name="Play_Crow_Wing_Flap_Med" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Wing_Flap_Med" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.867068" DurationMax="2.370354">
+					<IncludedMemoryFiles>
+						<File Id="96047074" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_03.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_03_10C4C929.wem</Path>
+						</File>
+						<File Id="106956982" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_02.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_02_10C4C929.wem</Path>
+						</File>
+						<File Id="472134357" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_04.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_04_6511B877.wem</Path>
+						</File>
+						<File Id="680890847" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_01.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_01_10C4C929.wem</Path>
+						</File>
+						<File Id="820903337" Language="SFX">
+							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_05.wav</ShortName>
+							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_05_C9754E5A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -13,9 +13,18 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_CHR_CROW_CAW_ONE_OFF = 334512546U;
-        static const AkUniqueID PLAY_CHR_CROW_RASP_ONE_OFF = 3855289715U;
+        static const AkUniqueID PLAY_CROW_CAW = 3489561965U;
+        static const AkUniqueID PLAY_CROW_RASP = 797577932U;
+        static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID AMBVOLUME = 4209755525U;
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
+        static const AkUniqueID MXVOLUME = 1515499284U;
+        static const AkUniqueID SFXVOLUME = 988953028U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
@@ -28,7 +37,9 @@ namespace AK
         static const AkUniqueID AMB = 1117531639U;
         static const AkUniqueID HERO = 3196610217U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID OBJECTS = 1695690031U;
+        static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 

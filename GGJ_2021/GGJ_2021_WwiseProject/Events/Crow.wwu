@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Crow" ID="{D292A4AC-58EF-483E-996C-37E1B7D9A68A}" OwnerID="{08B9B724-F080-4793-A52C-DDBA275CD144}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="Play_CHR_Crow_Caw_One_Off" ID="{0B4EC64E-2144-42EA-97CA-4381B8B3519B}">
+				<Event Name="Play_Crow_Caw" ID="{0B4EC64E-2144-42EA-97CA-4381B8B3519B}">
 					<ChildrenList>
 						<Action Name="" ID="{0453A307-6E07-46EB-B095-144D5FB7680A}" ShortID="349724025">
 							<ReferenceList>
@@ -14,12 +14,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_CHR_Crow_Rasp_One_Off" ID="{2DB717FF-556C-40B7-8A5B-14B08FC9B9F1}">
+				<Event Name="Play_Crow_Rasp" ID="{2DB717FF-556C-40B7-8A5B-14B08FC9B9F1}">
 					<ChildrenList>
 						<Action Name="" ID="{5B520B04-0D29-40A7-86FF-97616320A4AE}" ShortID="544587893">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="CHR_Crow_Rasp_One_Offs" ID="{61E83EB2-9196-4EE3-BF38-B00DE208C201}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Crow_Wing_Flap_Med" ID="{B88B2A32-02EC-4F40-A058-CC22EA8FF560}">
+					<ChildrenList>
+						<Action Name="" ID="{3647EB6A-60A4-4E26-9DFA-DFB2A2BFAF5D}" ShortID="948298681">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Crow_Wing_Flap_Oneoffs_Med" ID="{C5F187C9-E77D-42EE-9CA5-82E374C5C541}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
