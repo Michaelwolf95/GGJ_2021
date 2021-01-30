@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1688081670">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3486042928">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -102,6 +102,67 @@
 							<Path>SFX\CHR_Crow_Footstep_Grass_03_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2969808743" Name="Play_Crow_Footsteps" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Footsteps" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.837271">
+					<IncludedMemoryFiles>
+						<File Id="16189319" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_09.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_09_10C4C929.wem</Path>
+						</File>
+						<File Id="400254867" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_02.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_02_10C4C929.wem</Path>
+						</File>
+						<File Id="409692427" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_04.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_04_10C4C929.wem</Path>
+						</File>
+						<File Id="586237318" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_01.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_01_10C4C929.wem</Path>
+						</File>
+						<File Id="606134740" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_07.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_07_10C4C929.wem</Path>
+						</File>
+						<File Id="668472154" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_06.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_06_10C4C929.wem</Path>
+						</File>
+						<File Id="746728640" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_05.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_05_10C4C929.wem</Path>
+						</File>
+						<File Id="849112773" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_10.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_10_10C4C929.wem</Path>
+						</File>
+						<File Id="937310878" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_08.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_08_10C4C929.wem</Path>
+						</File>
+						<File Id="1044726172" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Grass_03.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Grass_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{FF275095-AE3F-4DA8-A08B-9D01CE89925B}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{FF275095-AE3F-4DA8-A08B-9D01CE89925B}">
+							<Media>
+								<File Id="586237318"/>
+								<File Id="400254867"/>
+								<File Id="1044726172"/>
+								<File Id="409692427"/>
+								<File Id="746728640"/>
+								<File Id="668472154"/>
+								<File Id="606134740"/>
+								<File Id="937310878"/>
+								<File Id="16189319"/>
+								<File Id="849112773"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="797577932" Name="Play_Crow_Rasp" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Rasp" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.123201" DurationMax="5.056464">
 					<IncludedMemoryFiles>
@@ -188,6 +249,16 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="1230601154" Name="Surface_Material" ObjectPath="\Switches\Default Work Unit\Surface_Material">
+					<Switches>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Surface_Material\Grass"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\Surface_Material\Metal"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Surface_Material\Wood"/>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Surface_Material\Concrete"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

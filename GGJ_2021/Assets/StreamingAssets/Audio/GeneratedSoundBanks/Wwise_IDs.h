@@ -15,10 +15,28 @@ namespace AK
     {
         static const AkUniqueID PLAY_CROW_CAW = 3489561965U;
         static const AkUniqueID PLAY_CROW_FOOTSTEP_GRASS = 8747203U;
+        static const AkUniqueID PLAY_CROW_FOOTSTEPS = 2969808743U;
         static const AkUniqueID PLAY_CROW_RASP = 797577932U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_LARGE = 1074723603U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace SURFACE_MATERIAL
+        {
+            static const AkUniqueID GROUP = 1230601154U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace SURFACE_MATERIAL
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
