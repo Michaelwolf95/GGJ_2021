@@ -9,10 +9,16 @@ public class CrowAnimationAudio : MonoBehaviour
     [Header("Wwise Events")]
 
     public AK.Wwise.Event Wingflap;
+    public AK.Wwise.Event Hop;
 
     public void PlayWingFlap()
     {
         Wingflap.Post(gameObject);
+    }
+
+    public void PlayHop()
+    {
+        Hop.Post(gameObject);
     }
 
     private void ResetHopInt()
