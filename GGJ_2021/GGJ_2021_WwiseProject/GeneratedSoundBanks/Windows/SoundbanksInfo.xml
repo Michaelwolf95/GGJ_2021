@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1508130480">
+		<SoundBank Id="3161908922" Language="SFX" Hash="256731403">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -363,6 +363,30 @@
 						<File Id="778566092" Language="SFX">
 							<ShortName>Crows don't have thumbs-02.wav</ShortName>
 							<Path>SFX\Crows don't have thumbs-02_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1568976433" Name="Play_OBJ_Drop_Generic" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Drop_Generic" DurationType="OneShot" DurationMin="0.464902" DurationMax="0.552865">
+					<IncludedMemoryFiles>
+						<File Id="64807053" Language="SFX">
+							<ShortName>OBJ_Drop_Generic.wav</ShortName>
+							<Path>SFX\OBJ_Drop_Generic_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4281314467" Name="Play_OBJ_Drop_Shiny" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Drop_Shiny" DurationType="OneShot" DurationMin="0.338699" DurationMax="0.466737">
+					<IncludedMemoryFiles>
+						<File Id="685380559" Language="SFX">
+							<ShortName>OBJ_Drop_Shiny_02.wav</ShortName>
+							<Path>SFX\OBJ_Drop_Shiny_02_10C4C929.wem</Path>
+						</File>
+						<File Id="780730696" Language="SFX">
+							<ShortName>OBJ_Drop_Shiny_03.wav</ShortName>
+							<Path>SFX\OBJ_Drop_Shiny_03_10C4C929.wem</Path>
+						</File>
+						<File Id="908601461" Language="SFX">
+							<ShortName>OBJ_Drop_Shiny_01.wav</ShortName>
+							<Path>SFX\OBJ_Drop_Shiny_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

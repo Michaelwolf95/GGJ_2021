@@ -22,6 +22,8 @@ namespace AK
         static const AkUniqueID PLAY_CROW_WING_FLAP_LARGE = 1074723603U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
         static const AkUniqueID PLAY_MUS_MAIN_GAME_LP = 3265397713U;
+        static const AkUniqueID PLAY_OBJ_DROP_GENERIC = 1568976433U;
+        static const AkUniqueID PLAY_OBJ_DROP_SHINY = 4281314467U;
         static const AkUniqueID PLAY_OBJ_PICKUP_GENERIC = 3741681902U;
         static const AkUniqueID PLAY_OBJ_PICKUP_SHINY = 1433800392U;
         static const AkUniqueID PLAY_OBJ_SHINY_OBJECT_LP = 1065595628U;
