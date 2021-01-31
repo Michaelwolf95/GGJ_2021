@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3486042928">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3599152587">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -59,56 +59,56 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="8747203" Name="Play_Crow_Footstep_Grass" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Footstep_Grass" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.671104" DurationMax="1.837271">
-					<IncludedMemoryFiles>
-						<File Id="16189319" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_09.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_09_10C4C929.wem</Path>
-						</File>
-						<File Id="400254867" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_02.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_02_10C4C929.wem</Path>
-						</File>
-						<File Id="409692427" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_04.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_04_10C4C929.wem</Path>
-						</File>
-						<File Id="586237318" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_01.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_01_10C4C929.wem</Path>
-						</File>
-						<File Id="606134740" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_07.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_07_10C4C929.wem</Path>
-						</File>
-						<File Id="668472154" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_06.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_06_10C4C929.wem</Path>
-						</File>
-						<File Id="746728640" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_05.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_05_10C4C929.wem</Path>
-						</File>
-						<File Id="849112773" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_10.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_10_10C4C929.wem</Path>
-						</File>
-						<File Id="937310878" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_08.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_08_10C4C929.wem</Path>
-						</File>
-						<File Id="1044726172" Language="SFX">
-							<ShortName>CHR_Crow_Footstep_Grass_03.wav</ShortName>
-							<Path>SFX\CHR_Crow_Footstep_Grass_03_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="2969808743" Name="Play_Crow_Footsteps" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Footsteps" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.837271">
 					<IncludedMemoryFiles>
 						<File Id="16189319" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_09.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_09_10C4C929.wem</Path>
 						</File>
+						<File Id="59923441" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_02.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_02_10C4C929.wem</Path>
+						</File>
+						<File Id="99108993" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_07.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_07_10C4C929.wem</Path>
+						</File>
+						<File Id="104078190" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_03.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_03_10C4C929.wem</Path>
+						</File>
+						<File Id="125547334" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_05.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_05_10C4C929.wem</Path>
+						</File>
+						<File Id="170764441" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_04.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_04_10C4C929.wem</Path>
+						</File>
+						<File Id="208100638" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_08.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_08_10C4C929.wem</Path>
+						</File>
+						<File Id="238169916" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_07.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_07_10C4C929.wem</Path>
+						</File>
+						<File Id="253755198" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_09.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_09_10C4C929.wem</Path>
+						</File>
+						<File Id="276165383" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_02.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_02_10C4C929.wem</Path>
+						</File>
+						<File Id="283736905" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_01.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_01_10C4C929.wem</Path>
+						</File>
+						<File Id="368732272" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_09.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_09_10C4C929.wem</Path>
+						</File>
 						<File Id="400254867" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_02.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_02_10C4C929.wem</Path>
@@ -116,6 +116,18 @@
 						<File Id="409692427" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_04.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_04_10C4C929.wem</Path>
+						</File>
+						<File Id="445059064" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_01.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_01_10C4C929.wem</Path>
+						</File>
+						<File Id="582019918" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_08.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_08_10C4C929.wem</Path>
+						</File>
+						<File Id="584840112" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_06.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_06_10C4C929.wem</Path>
 						</File>
 						<File Id="586237318" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_01.wav</ShortName>
@@ -129,9 +141,21 @@
 							<ShortName>CHR_Crow_Footstep_Grass_06.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_06_10C4C929.wem</Path>
 						</File>
+						<File Id="711107815" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_05.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_05_10C4C929.wem</Path>
+						</File>
 						<File Id="746728640" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_05.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_05_10C4C929.wem</Path>
+						</File>
+						<File Id="773044199" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Wood_04.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Wood_04_10C4C929.wem</Path>
+						</File>
+						<File Id="836214757" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_06.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_06_10C4C929.wem</Path>
 						</File>
 						<File Id="849112773" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_10.wav</ShortName>
@@ -140,6 +164,10 @@
 						<File Id="937310878" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_08.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_08_10C4C929.wem</Path>
+						</File>
+						<File Id="952903180" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Metal_03.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Metal_03_10C4C929.wem</Path>
 						</File>
 						<File Id="1044726172" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_03.wav</ShortName>
@@ -160,6 +188,32 @@
 								<File Id="937310878"/>
 								<File Id="16189319"/>
 								<File Id="849112773"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BA5ACE47-3CDC-4D4A-8457-995C11FA1472}">
+							<Media>
+								<File Id="445059064"/>
+								<File Id="59923441"/>
+								<File Id="104078190"/>
+								<File Id="773044199"/>
+								<File Id="711107815"/>
+								<File Id="584840112"/>
+								<File Id="99108993"/>
+								<File Id="582019918"/>
+								<File Id="253755198"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D4FB08D6-CB29-4128-861C-160A0C973B57}">
+							<Media>
+								<File Id="283736905"/>
+								<File Id="276165383"/>
+								<File Id="952903180"/>
+								<File Id="170764441"/>
+								<File Id="125547334"/>
+								<File Id="836214757"/>
+								<File Id="238169916"/>
+								<File Id="208100638"/>
+								<File Id="368732272"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
