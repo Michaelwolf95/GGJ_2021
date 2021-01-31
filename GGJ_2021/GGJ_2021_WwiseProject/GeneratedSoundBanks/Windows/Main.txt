@@ -9,7 +9,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1433800392	Play_OBJ_Pickup_Shiny			\Default Work Unit\Objects\Play_OBJ_Pickup_Shiny	
 	1520856432	Play_Crow_Caw_Misc			\Default Work Unit\Hero\Crow\Play_Crow_Caw_Misc	
 	1580643620	Play_UI_Game_Start			\Default Work Unit\UI\Play_UI_Game_Start	
+	2714774039	Stop_MUS_Main_Game_LP			\Default Work Unit\Music\Stop_MUS_Main_Game_LP	
 	2969808743	Play_Crow_Footsteps			\Default Work Unit\Hero\Crow\Play_Crow_Footsteps	
+	3265397713	Play_MUS_Main_Game_LP			\Default Work Unit\Music\Play_MUS_Main_Game_LP	
 	3489561965	Play_Crow_Caw			\Default Work Unit\Hero\Crow\Play_Crow_Caw	
 	3741681902	Play_OBJ_Pickup_Generic			\Default Work Unit\Objects\Play_OBJ_Pickup_Generic	
 
@@ -80,6 +82,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	746728640	CHR_Crow_Footstep_Grass_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Grass_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Grass\CHR_Crow_Footstep_Grass_05		172564
 	756975070	OBJ_Pickup_Shiny	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\OBJ_Pickup_Shiny_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Pickup_Shiny\OBJ_Pickup_Shiny		153448
 	773044199	CHR_Crow_Footstep_Wood_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Wood_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Wood\CHR_Crow_Footstep_Wood_04		141540
+	778566092	Crows don't have thumbs-02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\Crows don't have thumbs-02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Gameplay_Main\Main_Game\Crows_Dont_Have_Thumbs\Crows don't have thumbs-02		18674720
 	797708624	UI_Button_Press_Generic_02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\UI_Button_Press_Generic_02_256E4EAB.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\UI_Button_Press_Generic\UI_Button_Press_Generic_02		122032
 	820903337	SFX_CHR_Crow_Wing_Flap_Med_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Wing_Flap_Med_05_C9754E5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Wing_Flap_Oneoffs\CHR_Crow_Wing_Flap_Oneoffs_Med\SFX_CHR_Crow_Wing_Flap_Med_05		417976
 	821351752	SFX_CHR_Crow_Single_Rasp_07	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Rasp_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Rasp_One_Offs\SFX_CHR_Crow_Single_Rasp_07		815700

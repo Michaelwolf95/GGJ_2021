@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2852235848">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2112151350">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -342,6 +342,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3265397713" Name="Play_MUS_Main_Game_LP" ObjectPath="\Events\Default Work Unit\Music\Play_MUS_Main_Game_LP" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="778566092" Language="SFX">
+							<ShortName>Crows don't have thumbs-02.wav</ShortName>
+							<Path>SFX\Crows don't have thumbs-02_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3741681902" Name="Play_OBJ_Pickup_Generic" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Generic" DurationType="OneShot" DurationMin="0.472792" DurationMax="0.562248">
 					<IncludedMemoryFiles>
 						<File Id="363833007" Language="SFX">
@@ -414,6 +422,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2714774039" Name="Stop_MUS_Main_Game_LP" ObjectPath="\Events\Default Work Unit\Music\Stop_MUS_Main_Game_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="193541534" Name="STOP_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\STOP_OBJ_Shiny_Object_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>

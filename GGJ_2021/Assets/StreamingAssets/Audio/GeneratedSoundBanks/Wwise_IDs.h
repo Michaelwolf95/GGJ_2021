@@ -19,12 +19,14 @@ namespace AK
         static const AkUniqueID PLAY_CROW_RASP = 797577932U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_LARGE = 1074723603U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
+        static const AkUniqueID PLAY_MUS_MAIN_GAME_LP = 3265397713U;
         static const AkUniqueID PLAY_OBJ_PICKUP_GENERIC = 3741681902U;
         static const AkUniqueID PLAY_OBJ_PICKUP_SHINY = 1433800392U;
         static const AkUniqueID PLAY_OBJ_SHINY_OBJECT_LP = 1065595628U;
         static const AkUniqueID PLAY_UI_BUTTON_HOVER_GENERIC = 155552906U;
         static const AkUniqueID PLAY_UI_BUTTON_PRESS_GENERIC = 750236145U;
         static const AkUniqueID PLAY_UI_GAME_START = 1580643620U;
+        static const AkUniqueID STOP_MUS_MAIN_GAME_LP = 2714774039U;
         static const AkUniqueID STOP_OBJ_SHINY_OBJECT_LP = 193541534U;
     } // namespace EVENTS
 

@@ -7,6 +7,7 @@
 				<WorkUnit Name="Hero" ID="{08B9B724-F080-4793-A52C-DDBA275CD144}" PersistMode="Reference"/>
 				<WorkUnit Name="UI" ID="{C1A0317F-5C58-4A98-A3D7-C2671E6301B3}" PersistMode="Reference"/>
 				<WorkUnit Name="Ambience" ID="{52223C08-9C84-45C7-A025-8AACB086C456}" PersistMode="Reference"/>
+				<WorkUnit Name="Music" ID="{9B94B089-99E6-4761-88F1-4425508A0181}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

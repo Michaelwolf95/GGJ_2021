@@ -1,6 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{10472627-E9F5-4614-97B8-58924FF9534E}" SchemaVersion="97">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{10472627-E9F5-4614-97B8-58924FF9534E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{10472627-E9F5-4614-97B8-58924FF9534E}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="MUS_Gameplay_Main" ID="{B244C5B4-0E85-478E-8BCA-BED4E32F8B28}" ShortID="262761899">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{257C0CA3-F827-4A87-82E4-86BACDFAF0B4}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" ShortID="938975428">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Crows_Dont_Have_Thumbs" ID="{A7E92445-7B60-4D6A-AF43-68341EA15A59}" ShortID="949777016">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="105865.396825397"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{257C0CA3-F827-4A87-82E4-86BACDFAF0B4}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Crows don't have thumbs-02" ID="{BF9DD0DB-A2A6-4227-8B9A-33E251FF1FA9}" ShortID="245209811">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Crows don't have thumbs-02" ID="{3408AB4F-82B1-4A1B-9274-F319674E6A04}">
+													<Language>SFX</Language>
+													<AudioFile>Crows don't have thumbs-02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="778566092"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{2072C5A2-7DB2-4782-8809-434598F2EFB4}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{43BCB719-0552-4FFA-B0A9-FBC995B7C6CD}">
+													<ClipList>
+														<MusicClip Name="Crows don't have thumbs-02" ID="{2E7DFF48-E332-40C9-A5D8-826757F9241B}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="105865.396825397"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Crows don't have thumbs-02" ID="{3408AB4F-82B1-4A1B-9274-F319674E6A04}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{B5A53080-B1E6-4F1D-BE2B-6C01420078CD}"/>
+										<MusicCue Name="Exit Cue" ID="{F0BC113C-644E-4DDB-8934-4BEC3A9F42EE}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="105865.396825397"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{0348A4F1-54A9-4BA3-A1C0-962549F76490}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{4118DC6E-AABA-4E09-9861-E38D041E8767}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{97CBD7A3-FB8C-4244-868D-410EA73A02CA}" ShortID="319175162">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{00C05511-7C10-45DC-9466-F2F0ACC16ECE}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{1D34F850-A614-4B93-92E2-249389B0E444}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{4E903652-9699-47A4-B5FA-8FF986AD3A74}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
