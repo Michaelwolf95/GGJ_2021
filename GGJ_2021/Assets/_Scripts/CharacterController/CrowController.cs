@@ -89,10 +89,14 @@ namespace CrowGame
                     // LANDED
                     animationAudioController.PlayLandOnGroundSound();
                     rotationRoot.localRotation = Quaternion.identity;
-                    animator.SetBool("flying", false);
-                    animator.SetBool("Gliding", false);
                     numJumpsSinceGrounded = 0;
-                    isGliding = false;
+                    animator.SetBool("flying", false);
+                    if (isGliding)
+                    {
+                        animationAudioController.OnGlideStop();
+                        animator.SetBool("Gliding", false);
+                        isGliding = false;
+                    }
                 }
                 
                 if (jumpButton.isPressedDown)
@@ -166,6 +170,8 @@ namespace CrowGame
                         isGliding = true;
                         specialJumpFrame = true; // Why Not??
                         animator.SetBool("Gliding", true);
+                        
+                        animationAudioController.OnGlideStart();
                     }
                 }
 
@@ -202,6 +208,7 @@ namespace CrowGame
                             isGliding = false; // Fall instead.
                             animator.SetBool("Gliding", false);
                             rotationRoot.localRotation = Quaternion.identity;
+                            animationAudioController.OnGlideStop();
                         }
                     }
                     

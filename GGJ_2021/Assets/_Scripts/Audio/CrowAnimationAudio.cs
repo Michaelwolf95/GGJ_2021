@@ -43,7 +43,15 @@ public class CrowAnimationAudio : MonoBehaviour
         // Nothing
     }
 
+    public void OnGlideStart()
+    {
+        
+    }
     
+    public void OnGlideStop()
+    {
+        
+    }
 
     public void PlayCaw()
     {
