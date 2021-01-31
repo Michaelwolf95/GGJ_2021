@@ -297,6 +297,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155174873}
   m_CullTransparentMesh: 1
+--- !u!114 &282905070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2424523885256818939, guid: 064f54dc25a706746ac6f0f0073580fc, type: 3}
+  m_PrefabInstance: {fileID: 4696075140780909942}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39b024e15029b44bb0f4b43e8c323b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &322354946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -609,7 +620,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 886142543}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 282905070}
+        m_TargetAssemblyTypeName: CrowAnimationAudio, Assembly-CSharp
+        m_MethodName: PlayCaw
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &886142543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4784,6 +4807,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424523885256818939, guid: 064f54dc25a706746ac6f0f0073580fc, type: 3}
+      propertyPath: Caw.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: cf12f230ade26414c8a47d24a2f1da7b, type: 2}
     - target: {fileID: 4696075141378375584, guid: 064f54dc25a706746ac6f0f0073580fc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4844,6 +4871,10 @@ PrefabInstance:
       propertyPath: maxJumps
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4696075141378375598, guid: 064f54dc25a706746ac6f0f0073580fc, type: 3}
+      propertyPath: audioCrow
+      value: 
+      objectReference: {fileID: 282905070}
     - target: {fileID: 4696075141378375598, guid: 064f54dc25a706746ac6f0f0073580fc, type: 3}
       propertyPath: flapForce
       value: 10
