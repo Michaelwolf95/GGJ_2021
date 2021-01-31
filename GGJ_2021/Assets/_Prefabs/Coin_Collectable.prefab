@@ -30,6 +30,50 @@ Transform:
   m_Father: {fileID: 5025692214629707565}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4229883757886004736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2690287964073298795}
+  - component: {fileID: 2703160847889909283}
+  m_Layer: 7
+  m_Name: InteractTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2690287964073298795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4229883757886004736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5025692214629707565}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2703160847889909283
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4229883757886004736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5025692214629707538
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,9 +86,9 @@ GameObject:
   - component: {fileID: 1325013088}
   - component: {fileID: 5409541859482191501}
   - component: {fileID: 7024839483052180823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Coin_Collectable
-  m_TagString: Untagged
+  m_TagString: Grabable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,6 +107,7 @@ Transform:
   - {fileID: 1938612935652239916}
   - {fileID: 6856851628481552489}
   - {fileID: 1579187871}
+  - {fileID: 2690287964073298795}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -84,7 +129,7 @@ MonoBehaviour:
   InteractStartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f99d1992c333b2f4a9814d32d0417345, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 64cde9ee3700e1b4fab047587e355bae, type: 2}
   InteractEndAudio:
     idInternal: 0
     valueGuidInternal: 
@@ -95,6 +140,7 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
+  isGoalObject: 0
   grabObjectTarget: {fileID: 1579187870}
 --- !u!54 &5409541859482191501
 Rigidbody:
