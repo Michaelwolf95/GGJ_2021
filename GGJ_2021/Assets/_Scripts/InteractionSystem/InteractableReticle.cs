@@ -53,7 +53,7 @@ public class InteractableReticle : MonoBehaviour
     
     public void ToggleInteractReticle(bool argEnable)
     {
-        //GetInteractReticleGameObject(currentInteractType).gameObject.SetActive(argEnable);
+        GetInteractReticleGameObject(currentInteractType).gameObject.SetActive(argEnable);
     }
 
     public void SetInteractType(InteractReticleType argType)
