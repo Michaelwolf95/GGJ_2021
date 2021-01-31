@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4169037539">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2251506567">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -390,19 +390,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1568976433" Name="Play_OBJ_Drop_Generic" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Drop_Generic" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.464902" DurationMax="0.552865">
+				<Event Id="1281393260" Name="Play_OBJ_Generic_Interact" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Generic_Interact" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.464902" DurationMax="0.562248">
 					<IncludedMemoryFiles>
 						<File Id="64807053" Language="SFX">
 							<ShortName>OBJ_Drop_Generic.wav</ShortName>
 							<Path>SFX\OBJ_Drop_Generic_10C4C929.wem</Path>
 						</File>
+						<File Id="363833007" Language="SFX">
+							<ShortName>OBJ_Pickup_Generic.wav</ShortName>
+							<Path>SFX\OBJ_Pickup_Generic_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4281314467" Name="Play_OBJ_Drop_Shiny" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Drop_Shiny" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.338699" DurationMax="0.466737">
+				<Event Id="3109608386" Name="Play_OBJ_Shiny_Interact" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Shiny_Interact" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.338699" DurationMax="0.871179">
 					<IncludedMemoryFiles>
 						<File Id="685380559" Language="SFX">
 							<ShortName>OBJ_Drop_Shiny_02.wav</ShortName>
 							<Path>SFX\OBJ_Drop_Shiny_02_10C4C929.wem</Path>
+						</File>
+						<File Id="756975070" Language="SFX">
+							<ShortName>OBJ_Pickup_Shiny.wav</ShortName>
+							<Path>SFX\OBJ_Pickup_Shiny_10C4C929.wem</Path>
 						</File>
 						<File Id="780730696" Language="SFX">
 							<ShortName>OBJ_Drop_Shiny_03.wav</ShortName>
@@ -411,22 +419,6 @@
 						<File Id="908601461" Language="SFX">
 							<ShortName>OBJ_Drop_Shiny_01.wav</ShortName>
 							<Path>SFX\OBJ_Drop_Shiny_01_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3741681902" Name="Play_OBJ_Pickup_Generic" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Generic" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.472792" DurationMax="0.562248">
-					<IncludedMemoryFiles>
-						<File Id="363833007" Language="SFX">
-							<ShortName>OBJ_Pickup_Generic.wav</ShortName>
-							<Path>SFX\OBJ_Pickup_Generic_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1433800392" Name="Play_OBJ_Pickup_Shiny" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Shiny" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.732572" DurationMax="0.871179">
-					<IncludedMemoryFiles>
-						<File Id="756975070" Language="SFX">
-							<ShortName>OBJ_Pickup_Shiny.wav</ShortName>
-							<Path>SFX\OBJ_Pickup_Shiny_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

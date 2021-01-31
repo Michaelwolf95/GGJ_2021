@@ -44,26 +44,9 @@
 								<ActiveSource Name="OBJ_Shiny_Object_LP" ID="{9AAD22DD-5B34-4AD6-A27D-1F7962A91547}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<RandomSequenceContainer Name="OBJ_Pickup_Generic" ID="{FCAAD64B-5288-4331-BCAA-878314F8D73B}" ShortID="579788105">
+						<RandomSequenceContainer Name="OBJ_Generic" ID="{186C0D4A-3C9D-4781-9D75-90FCB2B79A0B}" ShortID="429415672">
 							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>4</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{CA79CC55-D628-48A5-B993-6B79CE4365CE}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="150"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -74,99 +57,126 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="OBJ_Pickup_Generic" ID="{D06866E1-B552-400A-8D55-CA8E8BA82122}" ShortID="12684181">
+								<RandomSequenceContainer Name="OBJ_Pickup_Generic" ID="{FCAAD64B-5288-4331-BCAA-878314F8D73B}" ShortID="579788105">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CA79CC55-D628-48A5-B993-6B79CE4365CE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Obj_Med_Distance" ID="{FC253679-D260-40A2-9131-2EE5BCF53338}" WorkUnitID="{90356D04-4CB4-4D86-890C-232914E27FE8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+											<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="OBJ_Pickup_Generic" ID="{42FD7E9B-A9FA-4678-A04B-4CF8FB415A3E}">
-											<Language>SFX</Language>
-											<AudioFile>OBJ_Pickup_Generic.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="363833007"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="OBJ_Pickup_Generic" ID="{D06866E1-B552-400A-8D55-CA8E8BA82122}" ShortID="12684181">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OBJ_Pickup_Generic" ID="{42FD7E9B-A9FA-4678-A04B-4CF8FB415A3E}">
+													<Language>SFX</Language>
+													<AudioFile>OBJ_Pickup_Generic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="363833007"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OBJ_Pickup_Generic" ID="{42FD7E9B-A9FA-4678-A04B-4CF8FB415A3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="OBJ_Pickup_Generic" ID="{42FD7E9B-A9FA-4678-A04B-4CF8FB415A3E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="OBJ_Pickup_Shiny" ID="{6F632FBA-EC3B-4205-8922-A6088BC53728}" ShortID="866041154">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>4</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{8285E6EB-7493-4B47-A42F-F480CFFC3597}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="150"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="OBJ_Pickup_Shiny" ID="{4A0C306B-1709-4CA2-B169-EBD5B5FC5534}" ShortID="139297787">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="OBJ_Drop_Generic" ID="{F7E75615-8035-4D14-842D-C3F3D2FCF089}" ShortID="437217221">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7AE6FEBC-B529-4EFE-89DC-1073D0E1A014}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Obj_Med_Distance" ID="{FC253679-D260-40A2-9131-2EE5BCF53338}" WorkUnitID="{90356D04-4CB4-4D86-890C-232914E27FE8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+											<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="OBJ_Pickup_Shiny" ID="{F7F1AD25-D3A3-4D34-AD54-B4F9DF68E151}">
-											<Language>SFX</Language>
-											<AudioFile>OBJ_Pickup_Shiny.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="756975070"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="OBJ_Drop_Generic" ID="{994FB8AE-FF6C-4D31-BE1C-6D9F77B252EE}" ShortID="382053234">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OBJ_Drop_Generic" ID="{8514145D-E807-4B44-8A64-E0A190129B87}">
+													<Language>SFX</Language>
+													<AudioFile>OBJ_Drop_Generic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="64807053"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OBJ_Drop_Generic" ID="{8514145D-E807-4B44-8A64-E0A190129B87}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="OBJ_Pickup_Shiny" ID="{F7F1AD25-D3A3-4D34-AD54-B4F9DF68E151}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="OBJ_Pickup_Generic" ID="{FCAAD64B-5288-4331-BCAA-878314F8D73B}"/>
+								<ItemRef Name="OBJ_Drop_Generic" ID="{F7E75615-8035-4D14-842D-C3F3D2FCF089}"/>
+							</Playlist>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="OBJ_Drop_Generic" ID="{F7E75615-8035-4D14-842D-C3F3D2FCF089}" ShortID="437217221">
+						<RandomSequenceContainer Name="OBJ_Shiny" ID="{01614479-BD4D-46BA-BEB0-A6BCF6BAC33E}" ShortID="388546188">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{7AE6FEBC-B529-4EFE-89DC-1073D0E1A014}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="150"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -177,123 +187,167 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="OBJ_Drop_Generic" ID="{994FB8AE-FF6C-4D31-BE1C-6D9F77B252EE}" ShortID="382053234">
+								<RandomSequenceContainer Name="OBJ_Pickup_Shiny" ID="{6F632FBA-EC3B-4205-8922-A6088BC53728}" ShortID="866041154">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8285E6EB-7493-4B47-A42F-F480CFFC3597}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Obj_Med_Distance" ID="{FC253679-D260-40A2-9131-2EE5BCF53338}" WorkUnitID="{90356D04-4CB4-4D86-890C-232914E27FE8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+											<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="OBJ_Drop_Generic" ID="{8514145D-E807-4B44-8A64-E0A190129B87}">
-											<Language>SFX</Language>
-											<AudioFile>OBJ_Drop_Generic.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="64807053"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="OBJ_Pickup_Shiny" ID="{4A0C306B-1709-4CA2-B169-EBD5B5FC5534}" ShortID="139297787">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OBJ_Pickup_Shiny" ID="{F7F1AD25-D3A3-4D34-AD54-B4F9DF68E151}">
+													<Language>SFX</Language>
+													<AudioFile>OBJ_Pickup_Shiny.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="756975070"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OBJ_Pickup_Shiny" ID="{F7F1AD25-D3A3-4D34-AD54-B4F9DF68E151}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="OBJ_Drop_Generic" ID="{8514145D-E807-4B44-8A64-E0A190129B87}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="OBJ_Drop_Shiny" ID="{964EEAD0-C0AA-47FB-BA39-E1D13C5ABA26}" ShortID="544932533">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EF77B8CE-9F24-4300-A13F-7ACF131CA928}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Obj_Med_Distance" ID="{FC253679-D260-40A2-9131-2EE5BCF53338}" WorkUnitID="{90356D04-4CB4-4D86-890C-232914E27FE8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="OBJ_Drop_Shiny_03" ID="{46BED4DE-B2EB-42CB-82E9-F81C98A3672C}" ShortID="145210929">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OBJ_Drop_Shiny_03" ID="{449277A5-0ECE-44AB-B4E7-2C3C6EE20272}">
+													<Language>SFX</Language>
+													<AudioFile>OBJ_Drop_Shiny_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="780730696"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OBJ_Drop_Shiny_03" ID="{449277A5-0ECE-44AB-B4E7-2C3C6EE20272}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OBJ_Drop_Shiny_01" ID="{3639A8D6-690D-4500-9B81-56DF68034B5E}" ShortID="1036394634">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OBJ_Drop_Shiny_01" ID="{8AC9C6F1-5A0C-4F21-8C4E-75DC1F376E72}">
+													<Language>SFX</Language>
+													<AudioFile>OBJ_Drop_Shiny_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="908601461"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OBJ_Drop_Shiny_01" ID="{8AC9C6F1-5A0C-4F21-8C4E-75DC1F376E72}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OBJ_Drop_Shiny_02" ID="{8B524471-94B4-4F81-A38D-7BED66840A9D}" ShortID="276061616">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OBJ_Drop_Shiny_02" ID="{D32F64F2-8A78-469F-BF13-434D6330C6DF}">
+													<Language>SFX</Language>
+													<AudioFile>OBJ_Drop_Shiny_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="685380559"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OBJ_Drop_Shiny_02" ID="{D32F64F2-8A78-469F-BF13-434D6330C6DF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="OBJ_Drop_Shiny" ID="{964EEAD0-C0AA-47FB-BA39-E1D13C5ABA26}" ShortID="544932533">
-							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{EF77B8CE-9F24-4300-A13F-7ACF131CA928}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="150"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="OBJ_Drop_Shiny_03" ID="{46BED4DE-B2EB-42CB-82E9-F81C98A3672C}" ShortID="145210929">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="OBJ_Drop_Shiny_03" ID="{449277A5-0ECE-44AB-B4E7-2C3C6EE20272}">
-											<Language>SFX</Language>
-											<AudioFile>OBJ_Drop_Shiny_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="780730696"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="OBJ_Drop_Shiny_03" ID="{449277A5-0ECE-44AB-B4E7-2C3C6EE20272}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="OBJ_Drop_Shiny_01" ID="{3639A8D6-690D-4500-9B81-56DF68034B5E}" ShortID="1036394634">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="OBJ_Drop_Shiny_01" ID="{8AC9C6F1-5A0C-4F21-8C4E-75DC1F376E72}">
-											<Language>SFX</Language>
-											<AudioFile>OBJ_Drop_Shiny_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="908601461"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="OBJ_Drop_Shiny_01" ID="{8AC9C6F1-5A0C-4F21-8C4E-75DC1F376E72}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="OBJ_Drop_Shiny_02" ID="{8B524471-94B4-4F81-A38D-7BED66840A9D}" ShortID="276061616">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="OBJ_Drop_Shiny_02" ID="{D32F64F2-8A78-469F-BF13-434D6330C6DF}">
-											<Language>SFX</Language>
-											<AudioFile>OBJ_Drop_Shiny_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="685380559"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="OBJ_Drop_Shiny_02" ID="{D32F64F2-8A78-469F-BF13-434D6330C6DF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="OBJ_Pickup_Shiny" ID="{6F632FBA-EC3B-4205-8922-A6088BC53728}"/>
+								<ItemRef Name="OBJ_Drop_Shiny" ID="{964EEAD0-C0AA-47FB-BA39-E1D13C5ABA26}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
