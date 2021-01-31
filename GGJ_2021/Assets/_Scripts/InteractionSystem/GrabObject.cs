@@ -13,6 +13,11 @@ public class GrabObject : InteractableBase
     {
         base.Start();
         isGrabbed = false;
+
+        if (grabObjectTarget == null)
+        {
+            grabObjectTarget = this.gameObject;
+        }
     }
 
     protected override void PerformInteraction()
@@ -42,9 +47,11 @@ public class GrabObject : InteractableBase
     {
         isGrabbed = true;
         // Snap to beak position and disable rigidbody
-        this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        this.gameObject.transform.SetParent(Interactor.instance.grabPoint);
-        this.gameObject.transform.localPosition = Vector3.zero;
+        this.GetComponent<Rigidbody>().isKinematic = true;
+        this.transform.SetParent(Interactor.instance.grabPoint);
+
+        transform.rotation = Interactor.instance.grabPoint.rotation * Quaternion.Inverse(Quaternion.Inverse(transform.rotation) * grabObjectTarget.transform.rotation);
+        transform.position = Interactor.instance.grabPoint.position + (transform.position - grabObjectTarget.transform.position);
         Interactor.instance.heldObject = this;
         HideReticle();
     }
