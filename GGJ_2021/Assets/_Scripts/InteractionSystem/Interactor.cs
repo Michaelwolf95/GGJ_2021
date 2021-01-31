@@ -207,7 +207,8 @@ public class Interactor : MonoBehaviour
     public void ToggleInputPrompt(bool argShow)
     {
         //ToDo: Set Input Text based on input scheme.
-        inputPromptText.gameObject.SetActive(argShow);
+        // DISABLED
+        //inputPromptText.gameObject.SetActive(argShow);
     }
     
 

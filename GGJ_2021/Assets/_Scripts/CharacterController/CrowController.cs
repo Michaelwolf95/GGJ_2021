@@ -111,11 +111,11 @@ namespace CrowGame
                 {
                     // GROUNDED MOVEMENT
                     Vector3 moveDir = GetMoveDirectionXZ(moveInput);
-                    //float angleBetween = Vector3.Angle(characterRoot.forward, moveDir);
+                    float angleBetween = Vector3.Angle(characterRoot.forward, moveDir);
                     RotateTowardsDirection(moveDir, groundedTurnSpeed);
 
-                    //float turnInPlaceScalar = (angleBetween > 90f) ? 0f : Mathf.InverseLerp(90f, 0f, angleBetween);
-                    moveDelta += characterRoot.forward * ( moveInput.magnitude * groundedMoveSpeed * Time.deltaTime);
+                    float turnInPlaceScalar = (angleBetween > 45f) ? 0f : Mathf.InverseLerp(45f, 0f, angleBetween);
+                    moveDelta += characterRoot.forward * (moveInput.magnitude * groundedMoveSpeed * turnInPlaceScalar * Time.deltaTime);
             
                     currentGravityY = defaultGravity;
                 }
