@@ -2039,6 +2039,11 @@
 										<Sound Name="CHR_Crow_Glide_LP" ID="{47BB4E24-6665-4C5E-8DB9-7819C466942B}" ShortID="863958226">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>9</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
