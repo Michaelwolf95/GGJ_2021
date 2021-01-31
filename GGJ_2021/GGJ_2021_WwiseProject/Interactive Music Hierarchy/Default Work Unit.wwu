@@ -110,6 +110,14 @@
 											</ModifierList>
 										</Property>
 									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{82CACD75-14A8-4FA0-9078-0A70CA9A67EF}" ShortID="752935863">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Crows_Dont_Have_Thumbs" ID="{A7E92445-7B60-4D6A-AF43-68341EA15A59}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
@@ -127,6 +135,35 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<ArgumentList>
+						<ArgumentRef Name="Scene" ID="{E7C8C76E-95EA-4D04-91FD-4D90E6167519}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Scene" ID="{E7C8C76E-95EA-4D04-91FD-4D90E6167519}"/>
+							</Path>
+							<AudioNodeInfo>
+								<NoObject Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="None" ID="{45888204-8F45-4DCE-A2E7-075EE0D08A18}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Level" ID="{69C1FA48-4E5E-4C09-9808-1899134B1EB6}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
 				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
