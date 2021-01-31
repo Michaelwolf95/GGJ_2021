@@ -49,10 +49,10 @@ public class ScreenFade : MonoBehaviour
         }, duration, 0f, EaseType.easeInCubic, true);
     }
 
-    public void DoFadeOut(Action callback = null, float duration = 1.25f){
+    public void DoFadeOut(Action callback = null, float duration = 1.25f, float delay = 0f){
         _fadeScreen.raycastTarget = true;
         Color start = _fadeScreen.color;
-        this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(alphaB, opaqueB, lerp); }, callback, duration, 0f, EaseType.easeOutCubic, true);
+        this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(alphaB, opaqueB, lerp); }, callback, duration, delay, EaseType.easeOutCubic, true);
     }
 
     /// <summary>
@@ -66,10 +66,13 @@ public class ScreenFade : MonoBehaviour
             artCanvasGroup.gameObject.SetActive(true);
             DoFadeIn(() =>
             {
-                if (argOnFadeComplete != null)
+                DoFadeOut(() =>
                 {
-                    argOnFadeComplete();
-                }
+                    if (argOnFadeComplete != null)
+                    {
+                        argOnFadeComplete();
+                    }
+                }, 1.25f, 3f);
             });
         });
         //
