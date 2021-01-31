@@ -27,7 +27,9 @@ namespace CrowGame
         [SerializeField] private int maxJumps = 3;
         [SerializeField] private float defaultGravity = -9.8f;
         [SerializeField] private float glideGravity = -4.5f;
-        [SerializeField] private float rotateSpeed = 2f; 
+        [SerializeField] private float rotateSpeed = 2f;
+
+        [SerializeField] private CrowAnimationAudio audioCrow;
 
         private CrowAnimationAudio animationAudioController = null;
 
@@ -64,7 +66,7 @@ namespace CrowGame
                 animationAudioController = animator.GetComponent<CrowAnimationAudio>();
             }
 
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void Update()
@@ -197,8 +199,15 @@ namespace CrowGame
             wasGrounded = moveController.isGrounded;
             moveDelta.y += currentGravityY * Time.deltaTime * Time.deltaTime;// * Time.deltaTime;
             moveController.Move(moveDelta);
+
+            
         }
 
+
+        public void OnCaw()
+        {
+            audioCrow.PlayCaw(); 
+        }
 
         private void RotateTowardsDirection(Vector3 moveDirection, float argRotationSpeed = 0f)
         {

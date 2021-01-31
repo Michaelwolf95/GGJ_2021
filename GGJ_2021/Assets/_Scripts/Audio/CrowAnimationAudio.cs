@@ -24,6 +24,7 @@ public class CrowAnimationAudio : MonoBehaviour
     [Header("Wwise Events")]
     public AK.Wwise.Event Wingflap;
     public AK.Wwise.Event Hop;
+    public AK.Wwise.Event Caw; 
 
     private bool isGrounded = false;
     
@@ -50,6 +51,11 @@ public class CrowAnimationAudio : MonoBehaviour
     public void OnLandOnGround()
     {
         
+    }
+
+    public void PlayCaw()
+    {
+        Caw.Post(gameObject);
     }
 
     private void HopAnimationEvent() // Needs to be made.
