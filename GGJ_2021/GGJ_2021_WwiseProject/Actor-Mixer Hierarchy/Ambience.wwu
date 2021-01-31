@@ -12,6 +12,7 @@
 								<Value>6</Value>
 							</ValueList>
 						</Property>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
