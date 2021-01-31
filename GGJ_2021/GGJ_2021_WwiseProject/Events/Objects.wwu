@@ -4,6 +4,54 @@
 		<WorkUnit Name="Objects" ID="{CBF94367-6584-4E5D-A3E5-F7E6F06A0EC2}" OwnerID="{0D49C615-A7E9-476F-8764-69D95E19282C}" PersistMode="Nested">
 			<ChildrenList>
 				<WorkUnit Name="Human" ID="{B88DC444-7879-44B9-B580-377046055D63}" PersistMode="Reference"/>
+				<Event Name="Play_OBJ_Shiny_Object_LP" ID="{1EC0BB1F-5E4E-4C7C-B6B2-0C451EC4B17A}">
+					<ChildrenList>
+						<Action Name="" ID="{5B4A4D06-34E0-4ADE-885E-22348155DC6C}" ShortID="940337702">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OBJ_Shiny_Object_LP" ID="{A72DE8CA-D9FE-45DD-BA55-8D00B22CD9E3}" WorkUnitID="{2C1BEDC4-D029-4C78-87B6-EE4861DE2D5B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9110363E-2B34-46AC-B0D0-01BBEBC94D46}" ShortID="1043513010">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AB6E3D38-2C3C-4132-A47F-85ECB274B6D2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OBJ_Shiny_Object_LP" ID="{A72DE8CA-D9FE-45DD-BA55-8D00B22CD9E3}" WorkUnitID="{2C1BEDC4-D029-4C78-87B6-EE4861DE2D5B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STOP_OBJ_Shiny_Object_LP" ID="{E6DE9143-2681-49CF-A557-396A9FCCF907}">
+					<ChildrenList>
+						<Action Name="" ID="{2813BEF3-AD1E-491A-871D-84B592C71C84}" ShortID="327449876">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OBJ_Shiny_Object_LP" ID="{A72DE8CA-D9FE-45DD-BA55-8D00B22CD9E3}" WorkUnitID="{2C1BEDC4-D029-4C78-87B6-EE4861DE2D5B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

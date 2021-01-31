@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="680987665">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3989009982">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -56,6 +56,46 @@
 						<File Id="1034617105" Language="SFX">
 							<ShortName>SFX_CHR_Crow_Single_Caw_07.wav</ShortName>
 							<Path>SFX\SFX_CHR_Crow_Single_Caw_07_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1520856432" Name="Play_Crow_Caw_Misc" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Caw_Misc" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.689062" DurationMax="2.327917">
+					<IncludedMemoryFiles>
+						<File Id="117400913" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_02.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_02_10C4C929.wem</Path>
+						</File>
+						<File Id="202332360" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_06.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_06_10C4C929.wem</Path>
+						</File>
+						<File Id="482176789" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_08.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_08_10C4C929.wem</Path>
+						</File>
+						<File Id="664815177" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_07.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_07_10C4C929.wem</Path>
+						</File>
+						<File Id="727094168" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_01.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_01_10C4C929.wem</Path>
+						</File>
+						<File Id="858591020" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_03.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_03_10C4C929.wem</Path>
+						</File>
+						<File Id="1017128551" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_09.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_09_10C4C929.wem</Path>
+						</File>
+						<File Id="1022974050" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_05.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_05_10C4C929.wem</Path>
+						</File>
+						<File Id="1051584556" Language="SFX">
+							<ShortName>CHR_Crow_Caw_Misc_04.wav</ShortName>
+							<Path>SFX\CHR_Crow_Caw_Misc_04_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -302,6 +342,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1065595628" Name="Play_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Shiny_Object_LP" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="184308134" Language="SFX">
+							<ShortName>OBJ_Shiny_Object_LP.wav</ShortName>
+							<Path>SFX\OBJ_Shiny_Object_LP_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="750236145" Name="Play_UI_Button_Press_Generic" ObjectPath="\Events\Default Work Unit\UI\Play_UI_Button_Press_Generic" DurationType="OneShot" DurationMin="0.531125" DurationMax="0.635250">
 					<IncludedMemoryFiles>
 						<File Id="263675457" Language="SFX">
@@ -330,6 +378,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="193541534" Name="STOP_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\STOP_OBJ_Shiny_Object_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="1230601154" Name="Surface_Material" ObjectPath="\Switches\Default Work Unit\Surface_Material">
