@@ -15,32 +15,30 @@ namespace CrowGame
         [SerializeField] private CharacterController moveController;
         [SerializeField] private PlayerInput inputController;
         [SerializeField] private Animator animator;
-        //private Transform characterRoot => animator.transform;
         [SerializeField] private Transform characterRoot;
         [SerializeField] private Transform rotationRoot;
         [SerializeField] private Camera camera;
 
         [Header("Control Parameters")]
         [SerializeField] private float groundedMoveSpeed = 4f;
-        [SerializeField] private float groundedTurnSpeed = 300f;
-        [SerializeField] private float glideMoveSpeed = 4f;
+        [SerializeField] private float groundedTurnSpeed = 720f;
+        [SerializeField] private float fallingMoveSpeed = 4f;
+        [SerializeField] private float fallingTurnSpeed = 720f;
+        [SerializeField] private float glideMoveSpeed = 10f;
         [SerializeField] private float glideTurnSpeed = 130f;
-        [SerializeField] private float fallMoveSpeed = 4f;
         [SerializeField] private float flapForce = 5f;
         [SerializeField] private int maxJumps = 3;
         [SerializeField] private float defaultGravity = -9.8f;
         [SerializeField] private float glideGravity = -4.5f;
-        [SerializeField] private float rotateSpeed = 2f;
 
+        private EventButton jumpButton = null;
+        private EventButton cawButton = null;
+        
         private CrowAnimationAudio animationAudioController = null;
-
-        private int numJumpsSinceGrounded = 0;
         
         private Vector3 groundNormal;
         private ControllerColliderHit currentControllerHit = null;
-        private EventButton jumpButton = null;
-        private EventButton cawButton = null;
-
+        private int numJumpsSinceGrounded = 0;
         private bool wasGrounded = false;
         private bool isGliding = false;
         //private bool glidePress = false;
@@ -59,6 +57,11 @@ namespace CrowGame
             {
                 animationAudioController = animator.GetComponent<CrowAnimationAudio>();
             }
+
+            inputController.actions["Caw"].performed += ctx =>
+            {
+                OnCaw();
+            };
 
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -81,10 +84,17 @@ namespace CrowGame
 
             if (moveController.isGrounded)
             {
-                numJumpsSinceGrounded = 0; 
-                animator.SetBool("flying", false);
-                animator.SetBool("Gliding", false);
-                isGliding = false;
+                if (wasGrounded == false)
+                {
+                    // LANDED
+                    animationAudioController.PlayLandOnGroundSound();
+                    rotationRoot.localRotation = Quaternion.identity;
+                    animator.SetBool("flying", false);
+                    animator.SetBool("Gliding", false);
+                    numJumpsSinceGrounded = 0;
+                    isGliding = false;
+                }
+                
                 if (jumpButton.isPressedDown)
                 {
                     // JUMP FROM GROUND ====
@@ -97,20 +107,18 @@ namespace CrowGame
                     
                     animator.SetTrigger("Flap");
                 }
-                else {
-                    // GROUND MOVEMENT
-                    HandleGroundedMovement(moveInput, ref moveDelta);
+                else 
+                {
+                    // GROUNDED MOVEMENT
+                    Vector3 moveDir = GetMoveDirectionXZ(moveInput);
+                    //float angleBetween = Vector3.Angle(characterRoot.forward, moveDir);
+                    RotateTowardsDirection(moveDir, groundedTurnSpeed);
+
+                    //float turnInPlaceScalar = (angleBetween > 90f) ? 0f : Mathf.InverseLerp(90f, 0f, angleBetween);
+                    moveDelta += characterRoot.forward * ( moveInput.magnitude * groundedMoveSpeed * Time.deltaTime);
+            
                     currentGravityY = defaultGravity;
                 }
-
-                if (wasGrounded == false)
-                {
-                    // LANDED
-                    animationAudioController.PlayLandOnGroundSound();
-                    rotationRoot.localRotation = Quaternion.identity;
-                    
-                }
-                
             }
             else // Not grounded
             {
@@ -176,9 +184,10 @@ namespace CrowGame
                     if (isGliding == false)
                     {
                         // FALLING MOVEMENT
+                        RotateTowardsDirection(moveDir, fallingTurnSpeed);
+                        //moveDelta += moveDir * (fallingMoveSpeed * Time.deltaTime);
+                        moveDelta += characterRoot.forward * (moveInput.magnitude * fallingMoveSpeed * Time.deltaTime);
                         currentGravityY = defaultGravity;
-                        moveDelta += moveDir * (groundedMoveSpeed * Time.deltaTime); // ToDo: Different speed for falling?
-                        RotateTowardsDirection(moveDir, groundedTurnSpeed);
                     }
                 }
             }
@@ -191,47 +200,18 @@ namespace CrowGame
         }
 
 
-        public void OnCaw()
-        {
-            animationAudioController.PlayCaw(); 
-        }
+        
 
         private void RotateTowardsDirection(Vector3 moveDirection, float argRotationSpeed = 0f)
         {
-            // ToDo: Smooth this Rotation.
+            //Smooth this Rotation.
             Vector3 forward = Vector3.RotateTowards(characterRoot.transform.forward, moveDirection.normalized, argRotationSpeed * Mathf.Deg2Rad * Time.deltaTime, 0f);
             characterRoot.LookAt(characterRoot.transform.position + forward.normalized, Vector3.up);
-            //characterRoot.LookAt(Vector3.Lerp(characterRoot.transform.position, characterRoot.transform.position + moveDirection.normalized, rotateSpeed));
-            // characterRoot.rotation = Quaternion.RotateTowards(characterRoot.transform.rotation, Quaternion.LookRotation(characterRoot.transform.position + moveDirection.normalized, Vector3.up), 
-            //     Time.deltaTime * argRotationSpeed);
         }
 
         private void HandleGroundedMovement(Vector2 moveInput, ref Vector3 moveDelta)
         {
-            float slopeAngle = 0f;
-            if (currentControllerHit != null)
-            {
-                // ToDo: Reenable this later.
-                //slopeAngle = Vector3.Angle(Vector3.up, currentControllerHit.normal);
-            }
             
-            if (slopeAngle > moveController.slopeLimit)
-            {
-                // Slide down slope (Not used)
-                // Vector3 g = Vector3.Cross(Vector3.Cross(currentControllerHit.normal, Vector3.down), currentControllerHit.normal);
-                // g *= groundedMoveSpeed * Time.deltaTime;
-                // Debug.DrawLine(currentControllerHit.point + currentControllerHit.normal, currentControllerHit.point + currentControllerHit.normal + (g * 2f), Color.magenta, 0.1f);
-            }
-            else 
-            {
-                // NORMAL GROUNDED MOVEMENT
-                Vector3 moveDir = GetMoveDirectionXZ(moveInput);
-                moveDelta += moveDir * (groundedMoveSpeed * Time.deltaTime);
-                
-                RotateTowardsDirection(moveDir, groundedTurnSpeed);
-            }
-
-            //moveDelta.y += defaultGravity * Time.deltaTime * Time.deltaTime;
         }
 
         private Vector3 GetMoveDirectionXZ(Vector2 moveInput)
@@ -255,6 +235,11 @@ namespace CrowGame
             {
                 animationAudioController.HandleControllerColliderHit(moveController, hit);
             }
+        }
+        
+        public void OnCaw()
+        {
+            animationAudioController.PlayCaw(); 
         }
 
 #if UNITY_EDITOR
