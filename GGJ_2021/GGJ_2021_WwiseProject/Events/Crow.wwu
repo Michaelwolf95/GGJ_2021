@@ -96,6 +96,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{26727461-BE86-4F39-8123-CAE22815F857}" ShortID="726435786">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Crow_Wing_Flap_Med" ID="{B88B2A32-02EC-4F40-A058-CC22EA8FF560}" WorkUnitID="{D292A4AC-58EF-483E-996C-37E1B7D9A68A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>
