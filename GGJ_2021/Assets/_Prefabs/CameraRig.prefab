@@ -313,7 +313,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5155685412875849518}
-  m_LocalRotation: {x: 0.04380219, y: 0.08792252, z: -0.003869944, w: 0.9951563}
+  m_LocalRotation: {x: -0.04380208, y: -0.08792252, z: 0.0038699338, w: -0.9951563}
   m_LocalPosition: {x: -0.7013293, y: 1.31, z: -3.9380372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -546,7 +546,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7779579, y: 1}
+    m_SensorSize: {x: 1.520408, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7779579, y: 1}
+    m_SensorSize: {x: 1.520408, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -645,7 +645,7 @@ GameObject:
   - component: {fileID: 5155685414186908476}
   m_Layer: 0
   m_Name: CM FreeLook1
-  m_TagString: Untagged
+  m_TagString: LookCam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -697,7 +697,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7779579, y: 1}
+    m_SensorSize: {x: 1.520408, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -980,7 +980,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7779579, y: 1}
+    m_SensorSize: {x: 1.520408, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

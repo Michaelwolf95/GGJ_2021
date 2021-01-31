@@ -35,6 +35,7 @@ namespace CrowGame
         private EventButton cawButton = null;
         
         private CrowAnimationAudio animationAudioController = null;
+        [SerializeField]TutorialChat tutChatInput; 
         
         private Vector3 groundNormal;
         private ControllerColliderHit currentControllerHit = null;
@@ -73,7 +74,7 @@ namespace CrowGame
             if (inputController.actions["Pause"].ReadValue<float>() > 0)
             {
                 // ToDo: Replace this when we have the pause menu.
-                Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked)? CursorLockMode.None : CursorLockMode.Locked;
+                
             }
 
             Vector2 moveInput = inputController.actions["Move"].ReadValue<Vector2>();
@@ -230,7 +231,12 @@ namespace CrowGame
             moveDelta.y += currentGravityY * Time.deltaTime * Time.deltaTime;
             moveController.Move(moveDelta);
         }
+        
 
+        public void OnCaw()
+        {
+            animationAudioController.PlayCaw(); 
+        }
 
         
 
@@ -269,13 +275,14 @@ namespace CrowGame
             }
         }
         
-        public void OnCaw()
+
+        public void OnNextChat()
         {
-            animationAudioController.PlayCaw(); 
+            tutChatInput.StartFadeOut();
         }
 
 #if UNITY_EDITOR
-        
+
         private void OnDrawGizmos()
         {
             if (EditorApplication.isPlaying && moveController != null)

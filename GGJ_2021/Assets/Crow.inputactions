@@ -7,9 +7,9 @@
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "77632d25-e030-4c58-8b1a-6eefd9cb8449",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
@@ -65,6 +65,14 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "41494c92-9c5f-45ba-a139-0768118365e9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "NextChat",
+                    "type": "Button",
+                    "id": "262b556a-44bc-4c04-839d-7886f7d1c52d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press"
@@ -398,6 +406,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "JumpHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6ca1e830-5b65-407d-bf7b-37f1a6745878",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextChat",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
