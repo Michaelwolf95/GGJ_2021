@@ -74,7 +74,7 @@ namespace CrowGame
             if (inputController.actions["Pause"].ReadValue<float>() > 0)
             {
                 // ToDo: Replace this when we have the pause menu.
-                Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked)? CursorLockMode.None : CursorLockMode.Locked;
+                
             }
 
             Vector2 moveInput = inputController.actions["Move"].ReadValue<Vector2>();
@@ -235,7 +235,7 @@ namespace CrowGame
 
         public void OnCaw()
         {
-            audioCrow.PlayCaw(); 
+            animationAudioController.PlayCaw(); 
         }
 
         
@@ -275,25 +275,10 @@ namespace CrowGame
             }
         }
         
-        public void OnCaw()
-        {
-            animationAudioController.PlayCaw(); 
-        }
 
         public void OnNextChat()
         {
             tutChatInput.StartFadeOut();
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            Debug.Log("YOYOOO");
-            touchingWall = true; 
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            touchingWall = false; 
         }
 
 #if UNITY_EDITOR

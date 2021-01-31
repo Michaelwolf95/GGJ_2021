@@ -1,0 +1,33 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "AltPlayer",
+            "id": "9f1afbe4-ac9d-489b-ba8b-773b7a9533af",
+            "actions": [
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "fe0f17a7-3bae-437d-923f-a411378d9248",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "44833ef6-9aff-4021-bc3d-be7380e5f83f",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

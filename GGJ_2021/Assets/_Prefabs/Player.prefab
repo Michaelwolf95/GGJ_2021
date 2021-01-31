@@ -2390,7 +2390,7 @@ GameObject:
   - component: {fileID: 1917883185773871179}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2452,6 +2452,7 @@ MonoBehaviour:
   maxJumps: 3
   defaultGravity: -12.5
   glideGravity: -1.5
+  tutChatInput: {fileID: 0}
 --- !u!114 &4696075141378375599
 MonoBehaviour:
   m_ObjectHideFlags: 0
