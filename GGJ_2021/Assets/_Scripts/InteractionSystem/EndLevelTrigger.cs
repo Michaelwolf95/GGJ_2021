@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using MichaelWolfGames;
@@ -9,6 +10,14 @@ public class EndLevelTrigger : MonoBehaviour
 {
     [SerializeField] private ScreenFade screenFade = null;
     [SerializeField] private int nextLevelIndex = 0;
+
+    private void Start()
+    {
+        if (screenFade == null)
+        {
+            screenFade = FindObjectOfType<ScreenFade>();
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
