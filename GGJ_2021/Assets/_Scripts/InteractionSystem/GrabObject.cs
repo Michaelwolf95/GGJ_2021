@@ -16,21 +16,18 @@ public class GrabObject : InteractableBase
 
     protected override void PerformInteraction()
     {
-        Debug.Log(isGrabbed);
+        Debug.Log("Grabbed: " + isGrabbed);
         if(isGrabbed)
         {
             Debug.Log("Dropping...");
             Drop();
-            base.PerformInteraction();
-            return;
         }
         else
         {
             Debug.Log("Grabbing...");
             Grab();
-            base.PerformInteraction();
-            return;
         }
+        base.PerformInteraction();
     }
 
     private void Drop()
@@ -38,16 +35,17 @@ public class GrabObject : InteractableBase
         isGrabbed = false;
         this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         this.gameObject.transform.parent = null;
+        Interactor.instance.heldObject = null;
     }
 
     private void Grab()
     {
         isGrabbed = true;
         // Snap to beak position and disable rigidbody
-        Debug.Log(this.gameObject.GetComponent<Rigidbody>() == null);
         this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
         this.gameObject.transform.SetParent(grabObjectTarget.transform);
         this.gameObject.transform.localPosition = Vector3.zero;
+        Interactor.instance.heldObject = this;
 
     }
 }

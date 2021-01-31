@@ -30,6 +30,8 @@ public class Interactor : MonoBehaviour
     public Action onFinishInteractionEvent = delegate {  };
 
     [SerializeField] private PlayerInput inputController;
+
+    [HideInInspector] public GrabObject heldObject { get; set; }
     
     private void Awake()
     {
@@ -108,6 +110,13 @@ public class Interactor : MonoBehaviour
             }
         }
         */
+
+        if(heldObject != null)
+        {
+            if (heldObject != currentPointerTarget) 
+                SetPointerTarget(heldObject);
+            return;
+        }
 
         RaycastHit[] hits = Physics.RaycastAll(this.gameObject.transform.position, this.gameObject.transform.forward);
         if (hits.Length > 0)
