@@ -41,7 +41,7 @@ public class GrabObject : InteractableBase
         isGrabbed = true;
         // Snap to beak position and disable rigidbody
         this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        this.gameObject.transform.SetParent(grabObjectTarget.transform);
+        this.gameObject.transform.SetParent(Interactor.instance.grabPoint);
         this.gameObject.transform.localPosition = Vector3.zero;
         Interactor.instance.heldObject = this;
 

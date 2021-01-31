@@ -14,6 +14,9 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float interactRange = 1f;
 
     [SerializeField] private LayerMask interactionLayerMask = new LayerMask();
+
+    [SerializeField] private Transform _grabPoint;
+    public Transform grabPoint => _grabPoint;
     
     private InteractableBase currentPointerTarget = null;        // Currently being looked at.
     private InteractableBase currentInteractionTarget = null;    // Actively interacting with
