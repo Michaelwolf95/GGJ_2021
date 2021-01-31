@@ -8,33 +8,46 @@ public class GrabObject : InteractableBase
 
     [SerializeField] private GameObject grabObjectTarget;
 
+    protected override void Start()
+    {
+        base.Start();
+        isGrabbed = false;
+    }
+
     protected override void PerformInteraction()
     {
-        Debug.Log("Interacting");
+        Debug.Log(isGrabbed);
         if(isGrabbed)
         {
+            Debug.Log("Dropping...");
             Drop();
+            base.PerformInteraction();
+            return;
         }
         else
         {
+            Debug.Log("Grabbing...");
             Grab();
+            base.PerformInteraction();
+            return;
         }
-        base.PerformInteraction();
     }
 
     private void Drop()
     {
         isGrabbed = false;
         this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        this.gameObject.transform.parent = null;
     }
 
     private void Grab()
     {
         isGrabbed = true;
         // Snap to beak position and disable rigidbody
+        Debug.Log(this.gameObject.GetComponent<Rigidbody>() == null);
         this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        //this.gameObject.transform.position = grabObjectTarget.transform.position;
         this.gameObject.transform.SetParent(grabObjectTarget.transform);
-        
+        this.gameObject.transform.localPosition = Vector3.zero;
+
     }
 }
