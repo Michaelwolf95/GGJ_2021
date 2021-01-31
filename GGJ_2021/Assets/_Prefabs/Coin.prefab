@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6870679115262114862}
   - component: {fileID: 6870679115262114863}
   - component: {fileID: 6870679115262114860}
+  - component: {fileID: 1052622883213698116}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -97,6 +98,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shineMat: {fileID: 2100000, guid: e5bcf5469a3e5cc42b475d019391dfa6, type: 2}
   plainMat: {fileID: 2100000, guid: a3ef9b2fb1c2b7647910a5b84e851c71, type: 2}
+--- !u!114 &1052622883213698116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870679115262114857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56af5a2797469874fbc6da94e955e62d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trueCoin: {fileID: 0}
 --- !u!1 &6870679115782823116
 GameObject:
   m_ObjectHideFlags: 0
