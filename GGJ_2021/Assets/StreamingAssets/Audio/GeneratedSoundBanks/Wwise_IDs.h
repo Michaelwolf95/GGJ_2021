@@ -31,6 +31,22 @@ namespace AK
         static const AkUniqueID STOP_OBJ_SHINY_OBJECT_LP = 193541534U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace SCENE
+        {
+            static const AkUniqueID GROUP = 1926883983U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LEVEL = 2782712965U;
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace SCENE
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace SURFACE_MATERIAL
