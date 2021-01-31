@@ -2508,6 +2508,8 @@ GameObject:
   - component: {fileID: 4696075141378375599}
   - component: {fileID: 4696075141378375587}
   - component: {fileID: 1917883185773871179}
+  - component: {fileID: 6516733500554068441}
+  - component: {fileID: 12385526244175216}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2643,6 +2645,42 @@ MonoBehaviour:
   _grabPoint: {fileID: 1858208168}
   inputPromptText: {fileID: 125250144}
   inputController: {fileID: 4696075141378375599}
+--- !u!114 &6516733500554068441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696075141378375586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67df2a386a684cd43a98d24f83eb8093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &12385526244175216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696075141378375586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3105d113440ac458051bd447c315ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!1 &8547665198745358099
 GameObject:
   m_ObjectHideFlags: 0
