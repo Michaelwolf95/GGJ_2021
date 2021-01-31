@@ -37,11 +37,14 @@ public class HoseDropPoint : MonoBehaviour
 
     private void DropHose() {
         if(_interactObject == null || headPoint == null) { return; }
+
         goalPointMesh.SetActive(true);
-        headPoint.target = goalPointMesh.transform;
-        coinAnimation.Play("coinAnimation");
-        _interactObject.transform.position = Vector3.zero; // banish this
+        _interactObject.transform.position = goalPointMesh.transform.position;
+        _interactObject.GetComponent<Rigidbody>().isKinematic = true;
         _interactObject.gameObject.SetActive(false);
+
+        coinAnimation.Play("coinAnimation");
+       
         
         reticle.ToggleInteractReticle(false);
         
