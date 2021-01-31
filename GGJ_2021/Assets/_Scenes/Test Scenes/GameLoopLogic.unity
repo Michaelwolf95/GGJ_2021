@@ -946,7 +946,7 @@ GameObject:
   - component: {fileID: 1088087820}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: GoalObject
+  m_TagString: Grabable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -980,6 +980,7 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
+  isGoalObject: 1
   grabObjectTarget: {fileID: 20073519}
 --- !u!54 &1088087821
 Rigidbody:
@@ -1121,23 +1122,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5155685412916993802, guid: 53b47fa27b4daeb4f93b902ec0344762, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.09301857
+      value: 0.09301858
       objectReference: {fileID: 0}
     - target: {fileID: 5155685412916993802, guid: 53b47fa27b4daeb4f93b902ec0344762, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.51965743
+      value: -0.5196574
       objectReference: {fileID: 0}
     - target: {fileID: 5155685412916993802, guid: 53b47fa27b4daeb4f93b902ec0344762, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.05704395
+      value: 0.057043936
       objectReference: {fileID: 0}
     - target: {fileID: 5155685413677558126, guid: 53b47fa27b4daeb4f93b902ec0344762, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.85019785
+      value: 0.8501979
       objectReference: {fileID: 0}
     - target: {fileID: 5155685413677558126, guid: 53b47fa27b4daeb4f93b902ec0344762, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.06217621
+      value: 0.062176205
       objectReference: {fileID: 0}
     - target: {fileID: 5155685413677558126, guid: 53b47fa27b4daeb4f93b902ec0344762, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1145,7 +1146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5155685413677558126, guid: 53b47fa27b4daeb4f93b902ec0344762, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.038129754
+      value: 0.03812975
       objectReference: {fileID: 0}
     - target: {fileID: 5155685414186908478, guid: 53b47fa27b4daeb4f93b902ec0344762, type: 3}
       propertyPath: m_LocalPosition.x

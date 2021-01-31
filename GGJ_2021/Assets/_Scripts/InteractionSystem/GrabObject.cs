@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrabObject : InteractableBase
 {
     public bool isGrabbed { get; protected set; }
+    public bool isGoalObject = false;
 
     [SerializeField] private GameObject grabObjectTarget;
 

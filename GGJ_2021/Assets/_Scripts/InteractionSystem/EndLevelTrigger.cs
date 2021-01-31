@@ -10,19 +10,17 @@ public class EndLevelTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Enter");
         CheckFinishConditions(other);
     }
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Stay");
         CheckFinishConditions(other);
     }
 
     private void CheckFinishConditions(Collider other)
     {
-        if (other.gameObject.tag == "GoalObject")
+        if (other.gameObject.tag == "Grabable")
         {
             GrabObject goal = other.gameObject.GetComponent<GrabObject>();
             if (goal == null)
@@ -34,9 +32,11 @@ public class EndLevelTrigger : MonoBehaviour
             if (goal.isGrabbed)
                 return;
 
-            Debug.Log("Finish!");
-            playerInput.DeactivateInput();
-            screenFade.FadeArtOut();
+            if(goal.isGoalObject)
+            {
+                playerInput.DeactivateInput();
+                screenFade.FadeArtOut();
+            }            
         }
     }
 }
