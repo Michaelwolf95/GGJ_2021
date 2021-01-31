@@ -11,19 +11,17 @@ public class CrowAnimationAudio : MonoBehaviour
     [Serializable]
     public class FootStepMaterial
     {
-        public AK.Wwise.Event footStepEvent;
+        public AK.Wwise.Switch materialSwitch;
         public PhysicMaterial material;
     }
 
-    [SerializeField] private FootStepMaterial dirtFootStepMaterial;
     private FootStepMaterial currentFootStepMaterial = null;
-    private FootStepMaterial defaultFootStepMaterial => dirtFootStepMaterial;
 
     [SerializeField] private FootStepMaterial[] footStepMaterials;
 
     [Header("Wwise Events")]
     public AK.Wwise.Event Wingflap;
-    public AK.Wwise.Event Hop;
+    public AK.Wwise.Event footStepEvent;
     public AK.Wwise.Event Caw; 
 
     private bool isGrounded = false;
@@ -38,10 +36,7 @@ public class CrowAnimationAudio : MonoBehaviour
         Wingflap.Post(gameObject);
     }
 
-    public void PlayHop()
-    {
-        Hop.Post(gameObject);
-    }
+    
 
     private void ResetHopInt()
     {
@@ -58,12 +53,9 @@ public class CrowAnimationAudio : MonoBehaviour
         Caw.Post(gameObject);
     }
 
-    private void HopAnimationEvent() // Needs to be made.
+    private void PlayHop() // Needs to be made.
     {
-        if (currentFootStepMaterial != null)
-        {
-            currentFootStepMaterial.footStepEvent.Post(gameObject);
-        }
+        footStepEvent.Post(gameObject);
     }
 
     public void HandleControllerColliderHit(CharacterController controller, ControllerColliderHit hit)
@@ -78,6 +70,7 @@ public class CrowAnimationAudio : MonoBehaviour
                 if (hit.collider.sharedMaterial == stepMaterial.material)
                 {
                     currentFootStepMaterial = stepMaterial;
+                    stepMaterial.materialSwitch.SetValue(gameObject);
                     hasMaterial = true;
                     break;
                 }

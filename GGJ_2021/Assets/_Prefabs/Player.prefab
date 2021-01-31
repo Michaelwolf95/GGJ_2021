@@ -2207,25 +2207,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39b024e15029b44bb0f4b43e8c323b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dirtFootStepMaterial:
-    footStepEvent:
+  footStepMaterials:
+  - materialSwitch:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 0}
-    material: {fileID: 0}
-  footStepMaterials: []
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 519afb37a832b5e4bb344027272bb64b, type: 2}
+    material: {fileID: 13400000, guid: 2a5c47941ee34bc4aa8d65d6361cd564, type: 2}
+  - materialSwitch:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: d89e483d780111e4b8aa354ed41e5d58, type: 2}
+    material: {fileID: 13400000, guid: e27b4e08adccbdf489784bbe19a479f5, type: 2}
+  - materialSwitch:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: d5263649c703b874f81d785500846027, type: 2}
+    material: {fileID: 13400000, guid: 7d892478bbbfb1a4b8131b2245fdc2b5, type: 2}
+  - materialSwitch:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: f470f1695aedd3b409d2b06ae7960614, type: 2}
+    material: {fileID: 13400000, guid: 648ee0b78b692974297fe30b2f60f3ac, type: 2}
+  - materialSwitch:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 0e446ad3e34008949b5a2c4282aa390c, type: 2}
+    material: {fileID: 13400000, guid: 909e550557bb1af438d1f70b54e68008, type: 2}
   Wingflap:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9fe8fa338bc331e429dfd4d8f715ad99, type: 2}
-  Hop:
+  footStepEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 75517b0870b97ac4380efde1565a63eb, type: 2}
   Caw:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: cf12f230ade26414c8a47d24a2f1da7b, type: 2}
 --- !u!1 &4696075141357027920
 GameObject:
   m_ObjectHideFlags: 0
