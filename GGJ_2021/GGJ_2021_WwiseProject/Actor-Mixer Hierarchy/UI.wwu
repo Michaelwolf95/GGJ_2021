@@ -50,6 +50,19 @@
 									</ValueList>
 								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{ECB4C01A-E37A-4628-BEF0-50ACD8FE8356}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
@@ -94,6 +107,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="UI_Button_Press_Generic_02" ID="{E32FCD1F-9B09-4BF8-B9C1-32D7C32117E6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0239306506849315"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UI_Button_Press_Generic_02.wav</AudioFile>
 											<MediaIDList>
@@ -138,6 +156,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="UI_Button_Press_Generic_04" ID="{0F3C53AE-F02D-46EA-AC10-ADA563BD79C4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.028193279109589"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UI_Button_Press_Generic_04.wav</AudioFile>
 											<MediaIDList>
