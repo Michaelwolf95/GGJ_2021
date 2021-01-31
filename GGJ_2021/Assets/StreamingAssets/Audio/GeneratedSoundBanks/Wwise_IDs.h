@@ -18,7 +18,8 @@ namespace AK
         static const AkUniqueID PLAY_CROW_RASP = 797577932U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_LARGE = 1074723603U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
-        static const AkUniqueID PLAY_GAME_START = 4109843897U;
+        static const AkUniqueID PLAY_UI_BUTTON_PRESS_GENERIC = 750236145U;
+        static const AkUniqueID PLAY_UI_GAME_START = 1580643620U;
     } // namespace EVENTS
 
     namespace SWITCHES

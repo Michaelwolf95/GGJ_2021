@@ -12,6 +12,33 @@
 							<ObjectRef Name="Objects" ID="{BC805B03-2D5A-46FA-92EE-B55286A504BC}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="OBJ_Shiny_Object_LP" ID="{A72DE8CA-D9FE-45DD-BA55-8D00B22CD9E3}" ShortID="329582032">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="OBJ_Shiny_Object_LP" ID="{9AAD22DD-5B34-4AD6-A27D-1F7962A91547}">
+									<Language>SFX</Language>
+									<AudioFile>OBJ_Shiny_Object_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="184308134"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="OBJ_Shiny_Object_LP" ID="{9AAD22DD-5B34-4AD6-A27D-1F7962A91547}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Breakable" ID="{A7479B17-B62D-4222-896D-7E4C166297AC}" ShortID="170615374">
 					<ReferenceList>
