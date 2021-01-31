@@ -2344,6 +2344,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: cf12f230ade26414c8a47d24a2f1da7b, type: 2}
+  Glide:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c458abd87888cf44ea32f1b197b4487a, type: 2}
+  StopGlide:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 17d6dd7eb4f807d49889adcfc5a7d326, type: 2}
 --- !u!1 &4696075141357027920
 GameObject:
   m_ObjectHideFlags: 0

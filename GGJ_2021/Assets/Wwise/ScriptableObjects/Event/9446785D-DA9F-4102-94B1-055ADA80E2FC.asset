@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea0fa817497b3e242addc6252b000b23, type: 3}
+  m_Name: 9446785D-DA9F-4102-94B1-055ADA80E2FC
+  m_EditorClassIdentifier: 
+  objectName: STOP_Crow_Glide_LP
+  id: 2907956634
+  guid: 9446785D-DA9F-4102-94B1-055ADA80E2FC
