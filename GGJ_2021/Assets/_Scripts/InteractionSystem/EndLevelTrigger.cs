@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class EndLevelTrigger : MonoBehaviour
 {
-
+    [SerializeField] private PlayerInput playerInput = null;
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Enter");
@@ -33,6 +34,7 @@ public class EndLevelTrigger : MonoBehaviour
 
             Debug.Log("Finish!");
             // TODO: Add end level logic
+            playerInput.DeactivateInput();
         }
     }
 }

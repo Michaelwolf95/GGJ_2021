@@ -2060,7 +2060,7 @@ Animator:
   m_GameObject: {fileID: 3922595182991210879}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0646ceebc81f52a4e8a676e94ab46092, type: 3}
-  m_Controller: {fileID: 9100000, guid: a24ec9cf4c2103646a47e0497a925d6b, type: 2}
+  m_Controller: {fileID: 9100000, guid: af431d4580dfa9d438393abbfb01393b, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2081,6 +2081,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39b024e15029b44bb0f4b43e8c323b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dirtFootStepMaterial:
+    footStepEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+    material: {fileID: 0}
+  footStepMaterials: []
   Wingflap:
     idInternal: 0
     valueGuidInternal: 
