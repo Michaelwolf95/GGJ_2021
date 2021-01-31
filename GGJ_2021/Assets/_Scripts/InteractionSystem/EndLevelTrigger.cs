@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using MichaelWolfGames;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class EndLevelTrigger : MonoBehaviour
 {
-    [SerializeField] private PlayerInput playerInput = null;
     [SerializeField] private ScreenFade screenFade = null;
-
     private void OnTriggerEnter(Collider other)
     {
         CheckFinishConditions(other);
@@ -31,12 +30,12 @@ public class EndLevelTrigger : MonoBehaviour
 
             if (goal.isGrabbed)
                 return;
-
+            
             if(goal.isGoalObject)
             {
-                playerInput.DeactivateInput();
+                PlayerInstance.Instance.GetComponent<PlayerInput>().DeactivateInput();
                 screenFade.FadeArtOut();
-            }            
+            }
         }
     }
 }
