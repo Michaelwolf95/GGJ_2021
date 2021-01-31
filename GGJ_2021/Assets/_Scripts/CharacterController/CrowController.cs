@@ -86,6 +86,8 @@ namespace CrowGame
                     animator.SetBool("flying", true);
                     currentGravityY = 0f; // No gravity this frame.
                     currentVelocity.y = 0f;
+                    
+                    animator.SetTrigger("Flap");
                 }
                 else
                 {
@@ -113,7 +115,7 @@ namespace CrowGame
                         moveDelta.y = flapForce * Time.deltaTime;
                         currentGravityY = 0f; // No gravity this frame.
                         currentVelocity.y = 0f;
-                        
+                        animator.SetTrigger("Flap");
                         specialJumpFrame = true;
                     }
                     else if (isGliding == false)
@@ -121,6 +123,7 @@ namespace CrowGame
                         // START GLIDE
                         isGliding = true;
                         specialJumpFrame = true;
+                        animator.SetBool("Gliding", true);
                     }
                 }
                 if(specialJumpFrame == false)
@@ -141,6 +144,7 @@ namespace CrowGame
                         {
                             // STOP GLIDE
                             isGliding = false; // Fall instead.
+                            animator.SetBool("Gliding", false);
                         }
                     }
                     
@@ -216,7 +220,7 @@ namespace CrowGame
             animationAudioController = animator.GetComponent<CrowAnimationAudio>();
             if (animationAudioController)
             {
-                animationAudioController.OnControllerColliderHit(moveController, hit);
+                animationAudioController.HandleControllerColliderHit(moveController, hit);
             }
         }
 

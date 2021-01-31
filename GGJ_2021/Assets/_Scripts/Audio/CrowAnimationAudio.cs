@@ -60,7 +60,7 @@ public class CrowAnimationAudio : MonoBehaviour
         }
     }
 
-    public void OnControllerColliderHit(CharacterController controller, ControllerColliderHit hit)
+    public void HandleControllerColliderHit(CharacterController controller, ControllerColliderHit hit)
     {
         isGrounded = controller.isGrounded;
         
