@@ -36,7 +36,9 @@ namespace CrowGame
         private int currentJumpsSinceGrounded;
         private bool lastFramePress = false;
         private bool glidePress = false;
-        private float currentGravityY; 
+        private float currentGravityY;
+        private bool touchingWall;
+        [SerializeField]TutorialChat tutChatInput; 
         public enum ControlState
         {
             Grounded,
@@ -71,10 +73,13 @@ namespace CrowGame
 
         private void Update()
         {
-            jumpButton.HandleUpdate(Time.deltaTime);
 
-            
-            Vector2 moveInput = inputController.actions["Move"].ReadValue<Vector2>();
+            Vector2 moveInput = new Vector2(0, 0);
+            if (!tutChatInput.inProgress)
+            {
+                jumpButton.HandleUpdate(Time.deltaTime);
+                moveInput = inputController.actions["Move"].ReadValue<Vector2>();
+            }
             Vector3 moveDelta = Vector3.zero;
 
             Vector3 currentVelocity = moveController.velocity;
@@ -86,6 +91,7 @@ namespace CrowGame
             
             if (moveController.isGrounded)
             {
+                Debug.Log("grounded");
                 currentJumpsSinceGrounded = 0; 
                 animator.SetBool("flying", false);
                 isGliding = false;
@@ -202,7 +208,7 @@ namespace CrowGame
 
             
         }
-
+        
 
         public void OnCaw()
         {
@@ -241,6 +247,11 @@ namespace CrowGame
                 RotateTowardsDirection(moveDir);
             }
 
+            if (touchingWall)
+            {
+                moveDelta.x = 0;
+                moveDelta.z = 0; 
+            }
             moveDelta.y += defaultGravity * Time.deltaTime * Time.deltaTime;
         }
 
@@ -267,8 +278,24 @@ namespace CrowGame
             }
         }
 
+        public void OnNextChat()
+        {
+            tutChatInput.StartFadeOut();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            Debug.Log("YOYOOO");
+            touchingWall = true; 
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            touchingWall = false; 
+        }
+
 #if UNITY_EDITOR
-        
+
         private void OnDrawGizmos()
         {
             if (EditorApplication.isPlaying && moveController != null)
