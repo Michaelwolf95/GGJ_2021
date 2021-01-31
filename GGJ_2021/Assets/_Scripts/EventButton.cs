@@ -27,7 +27,7 @@ namespace MichaelWolfGames
 		
 		public float timeHeld { get; private set; }
 
-		public bool isPressed { get; private set; }
+		public bool isPressed => isPressedDown || isHeld;
 		public bool isPressedDown => state == ButtonState.Pressed;
 		public bool isHeld => state == ButtonState.Hold;
 		public bool isReleased => state == ButtonState.Released;

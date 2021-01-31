@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1926883983	Scene			\Default Work Unit\Scene	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Scene			
+	2607556080	Menu	Scene			
+	2782712965	Level	Scene			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	988953028	SFXVolume			\Default Work Unit\SFXVolume	
 	1515499284	MXVolume			\Default Work Unit\MXVolume	

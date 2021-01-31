@@ -49,6 +49,7 @@ public class InteractableReticle : MonoBehaviour
     public void ToggleActivatedReticle(bool argEnable)
     {
         activatedReticle.gameObject.SetActive(argEnable && !disableActivatedReticle);
+        //Interactor.instance.eTextMesh.SetActive(argEnable && !disableActivatedReticle);
     }
     
     public void ToggleInteractReticle(bool argEnable)

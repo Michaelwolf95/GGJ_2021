@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3085467951">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1202850935">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2600540353">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4169037539">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -197,17 +197,33 @@
 							<ShortName>CHR_Crow_Footstep_Grass_05.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_05_10C4C929.wem</Path>
 						</File>
+						<File Id="757132057" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Water_02.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Water_02_10C4C929.wem</Path>
+						</File>
 						<File Id="773044199" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Wood_04.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Wood_04_10C4C929.wem</Path>
+						</File>
+						<File Id="784104167" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Water_01.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Water_01_10C4C929.wem</Path>
 						</File>
 						<File Id="836214757" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Metal_06.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Metal_06_10C4C929.wem</Path>
 						</File>
+						<File Id="842613222" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Water_04.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Water_04_10C4C929.wem</Path>
+						</File>
 						<File Id="849112773" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_10.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_10_10C4C929.wem</Path>
+						</File>
+						<File Id="850609152" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Water_03.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Water_03_10C4C929.wem</Path>
 						</File>
 						<File Id="937310878" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_08.wav</ShortName>
@@ -264,7 +280,23 @@
 								<File Id="368732272"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{28AFBC61-7396-4BDA-9D56-E374BDC7912B}">
+							<Media>
+								<File Id="784104167"/>
+								<File Id="757132057"/>
+								<File Id="850609152"/>
+								<File Id="842613222"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="3950425532" Name="Play_Crow_Glide_LP" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Glide_LP" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="721789434" Language="SFX">
+							<ShortName>CHR_Crow_Glide_LP.wav</ShortName>
+							<Path>SFX\CHR_Crow_Glide_LP_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="797577932" Name="Play_Crow_Rasp" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Rasp" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.123201" DurationMax="5.056464">
 					<IncludedMemoryFiles>
@@ -350,7 +382,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3265397713" Name="Play_MUS_Main_Game_LP" ObjectPath="\Events\Default Work Unit\Music\Play_MUS_Main_Game_LP" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="3265397713" Name="Play_MUS_Main_Game_LP" ObjectPath="\Events\Default Work Unit\Music\Play_MUS_Main_Game_LP" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="778566092" Language="SFX">
 							<ShortName>Crows don't have thumbs-02.wav</ShortName>
@@ -358,7 +390,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3741681902" Name="Play_OBJ_Pickup_Generic" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Generic" DurationType="OneShot" DurationMin="0.472792" DurationMax="0.562248">
+				<Event Id="1568976433" Name="Play_OBJ_Drop_Generic" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Drop_Generic" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.464902" DurationMax="0.552865">
+					<IncludedMemoryFiles>
+						<File Id="64807053" Language="SFX">
+							<ShortName>OBJ_Drop_Generic.wav</ShortName>
+							<Path>SFX\OBJ_Drop_Generic_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4281314467" Name="Play_OBJ_Drop_Shiny" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Drop_Shiny" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.338699" DurationMax="0.466737">
+					<IncludedMemoryFiles>
+						<File Id="685380559" Language="SFX">
+							<ShortName>OBJ_Drop_Shiny_02.wav</ShortName>
+							<Path>SFX\OBJ_Drop_Shiny_02_10C4C929.wem</Path>
+						</File>
+						<File Id="780730696" Language="SFX">
+							<ShortName>OBJ_Drop_Shiny_03.wav</ShortName>
+							<Path>SFX\OBJ_Drop_Shiny_03_10C4C929.wem</Path>
+						</File>
+						<File Id="908601461" Language="SFX">
+							<ShortName>OBJ_Drop_Shiny_01.wav</ShortName>
+							<Path>SFX\OBJ_Drop_Shiny_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3741681902" Name="Play_OBJ_Pickup_Generic" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Generic" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.472792" DurationMax="0.562248">
 					<IncludedMemoryFiles>
 						<File Id="363833007" Language="SFX">
 							<ShortName>OBJ_Pickup_Generic.wav</ShortName>
@@ -366,7 +422,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1433800392" Name="Play_OBJ_Pickup_Shiny" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Shiny" DurationType="OneShot" DurationMin="0.732572" DurationMax="0.871179">
+				<Event Id="1433800392" Name="Play_OBJ_Pickup_Shiny" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Shiny" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.732572" DurationMax="0.871179">
 					<IncludedMemoryFiles>
 						<File Id="756975070" Language="SFX">
 							<ShortName>OBJ_Pickup_Shiny.wav</ShortName>
@@ -374,7 +430,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1065595628" Name="Play_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Shiny_Object_LP" DurationType="Infinite">
+				<Event Id="1065595628" Name="Play_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Shiny_Object_LP" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="184308134" Language="SFX">
 							<ShortName>OBJ_Shiny_Object_LP.wav</ShortName>
@@ -414,11 +470,11 @@
 						</File>
 						<File Id="709055608" Language="SFX">
 							<ShortName>UI_Button_Press_Generic_04.wav</ShortName>
-							<Path>SFX\UI_Button_Press_Generic_04_14214BF8.wem</Path>
+							<Path>SFX\UI_Button_Press_Generic_04_8ACFEC64.wem</Path>
 						</File>
 						<File Id="797708624" Language="SFX">
 							<ShortName>UI_Button_Press_Generic_02.wav</ShortName>
-							<Path>SFX\UI_Button_Press_Generic_02_256E4EAB.wem</Path>
+							<Path>SFX\UI_Button_Press_Generic_02_35653C96.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -430,6 +486,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2907956634" Name="STOP_Crow_Glide_LP" ObjectPath="\Events\Default Work Unit\Hero\Crow\STOP_Crow_Glide_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2714774039" Name="Stop_MUS_Main_Game_LP" ObjectPath="\Events\Default Work Unit\Music\Stop_MUS_Main_Game_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="193541534" Name="STOP_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\STOP_OBJ_Shiny_Object_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
@@ -440,6 +497,7 @@
 						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\Surface_Material\Metal"/>
 						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Surface_Material\Wood"/>
 						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Surface_Material\Concrete"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\Surface_Material\Water"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

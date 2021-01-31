@@ -8,8 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Test Scenes/MainMenu.unity
     guid: 3aa2f0737c4aa214e9763f022c2bc74c
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Test Scenes/CharacterControllerTesting.unity
     guid: ba885b488547af344820c91c685309a5
+  - enabled: 1
+    path: Assets/_Scenes/LEVEL_1.unity
+    guid: 6c7ec900d3e49ce42b62c1679ee20686
+  - enabled: 1
+    path: Assets/_Scenes/LEVEL_2.unity
+    guid: 1d098bb0c03a64e42869a12a554bbcb0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 12c36afacfbd5db44ba194e97a5c4c93, type: 2}

@@ -9,6 +9,7 @@
 						<Switch Name="Metal" ID="{D4FB08D6-CB29-4128-861C-160A0C973B57}"/>
 						<Switch Name="Wood" ID="{BA5ACE47-3CDC-4D4A-8457-995C11FA1472}"/>
 						<Switch Name="Concrete" ID="{1E9A7A19-6FE6-44BF-B9C7-F78014AFF3C7}"/>
+						<Switch Name="Water" ID="{28AFBC61-7396-4BDA-9D56-E374BDC7912B}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

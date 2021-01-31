@@ -8,13 +8,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	1074723603	Play_Crow_Wing_Flap_Large			\Default Work Unit\Hero\Crow\Play_Crow_Wing_Flap_Large	
 	1433800392	Play_OBJ_Pickup_Shiny			\Default Work Unit\Objects\Play_OBJ_Pickup_Shiny	
 	1520856432	Play_Crow_Caw_Misc			\Default Work Unit\Hero\Crow\Play_Crow_Caw_Misc	
+	1568976433	Play_OBJ_Drop_Generic			\Default Work Unit\Objects\Play_OBJ_Drop_Generic	
 	1580643620	Play_UI_Game_Start			\Default Work Unit\UI\Play_UI_Game_Start	
 	2296046516	Play_AMB_Park_LP			\Default Work Unit\Ambience\Play_AMB_Park_LP	
 	2714774039	Stop_MUS_Main_Game_LP			\Default Work Unit\Music\Stop_MUS_Main_Game_LP	
+	2907956634	STOP_Crow_Glide_LP			\Default Work Unit\Hero\Crow\STOP_Crow_Glide_LP	
 	2969808743	Play_Crow_Footsteps			\Default Work Unit\Hero\Crow\Play_Crow_Footsteps	
 	3265397713	Play_MUS_Main_Game_LP			\Default Work Unit\Music\Play_MUS_Main_Game_LP	
 	3489561965	Play_Crow_Caw			\Default Work Unit\Hero\Crow\Play_Crow_Caw	
 	3741681902	Play_OBJ_Pickup_Generic			\Default Work Unit\Objects\Play_OBJ_Pickup_Generic	
+	3950425532	Play_Crow_Glide_LP			\Default Work Unit\Hero\Crow\Play_Crow_Glide_LP	
+	4281314467	Play_OBJ_Drop_Shiny			\Default Work Unit\Objects\Play_OBJ_Drop_Shiny	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1230601154	Surface_Material			\Default Work Unit\Surface_Material	
@@ -23,13 +27,23 @@ Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Surface_Material			
 	2058049674	Wood	Surface_Material			
 	2473969246	Metal	Surface_Material			
+	2654748154	Water	Surface_Material			
 	4248645337	Grass	Surface_Material			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1926883983	Scene			\Default Work Unit\Scene	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Scene			
+	2607556080	Menu	Scene			
+	2782712965	Level	Scene			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	3892725	SFX_CHR_Crow_Single_Rasp_06	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Rasp_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Rasp_One_Offs\SFX_CHR_Crow_Single_Rasp_06		772916
 	16189319	CHR_Crow_Footstep_Grass_09	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Grass_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Grass\CHR_Crow_Footstep_Grass_09		228444
 	57331924	SFX_CHR_Crow_Single_Caw_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Caw_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Caw_One_Offs\SFX_CHR_Crow_Single_Caw_05		645456
 	59923441	CHR_Crow_Footstep_Wood_02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Wood_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Wood\CHR_Crow_Footstep_Wood_02		139436
+	64807053	OBJ_Drop_Generic	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\OBJ_Drop_Generic_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Drop_Generic\OBJ_Drop_Generic		97404
 	67392688	SFX_CHR_Crow_Wing_Flap_Large_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Wing_Flap_Large_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Wing_Flap_Oneoffs\CHR_Crow_Wing_Flap_Oneoffs_Large\SFX_CHR_Crow_Wing_Flap_Large_01		519424
 	96047074	SFX_CHR_Crow_Wing_Flap_Med_03	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Wing_Flap_Med_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Wing_Flap_Oneoffs\CHR_Crow_Wing_Flap_Oneoffs_Med\SFX_CHR_Crow_Wing_Flap_Med_03		455172
 	99108993	CHR_Crow_Footstep_Wood_07	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Wood_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Wood\CHR_Crow_Footstep_Wood_07		172680
@@ -75,23 +89,31 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	668472154	CHR_Crow_Footstep_Grass_06	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Grass_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Grass\CHR_Crow_Footstep_Grass_06		199688
 	680890847	SFX_CHR_Crow_Wing_Flap_Med_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Wing_Flap_Med_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Wing_Flap_Oneoffs\CHR_Crow_Wing_Flap_Oneoffs_Med\SFX_CHR_Crow_Wing_Flap_Med_01		382608
 	684792539	UI_Button_Generic_Hover_03	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\UI_Button_Generic_Hover_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\UI_Button_Hover_Generic\UI_Button_Generic_Hover_03		165384
+	685380559	OBJ_Drop_Shiny_02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\OBJ_Drop_Shiny_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Drop_Shiny\OBJ_Drop_Shiny_02		70980
 	700725918	SFX_CHR_Crow_Single_Rasp_02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Rasp_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Rasp_One_Offs\SFX_CHR_Crow_Single_Rasp_02		635376
-	709055608	UI_Button_Press_Generic_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\UI_Button_Press_Generic_04_14214BF8.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\UI_Button_Press_Generic\UI_Button_Press_Generic_04		102040
+	709055608	UI_Button_Press_Generic_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\UI_Button_Press_Generic_04_8ACFEC64.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\UI_Button_Press_Generic\UI_Button_Press_Generic_04		102040
 	711107815	CHR_Crow_Footstep_Wood_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Wood_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Wood\CHR_Crow_Footstep_Wood_05		114204
+	721789434	CHR_Crow_Glide_LP	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Glide_LP_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Fly\CHR_Crow_Glide_LP		480064
 	727094168	CHR_Crow_Caw_Misc_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Caw_Misc_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Misc_Caws\CHR_Crow_Caw_Misc_01		395720
 	744932976	SFX_CHR_Crow_Single_Caw_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Caw_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Caw_One_Offs\SFX_CHR_Crow_Single_Caw_01		390920
 	746728640	CHR_Crow_Footstep_Grass_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Grass_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Grass\CHR_Crow_Footstep_Grass_05		172564
 	756975070	OBJ_Pickup_Shiny	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\OBJ_Pickup_Shiny_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Pickup_Shiny\OBJ_Pickup_Shiny		153448
+	757132057	CHR_Crow_Footstep_Water_02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Water_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Water\CHR_Crow_Footstep_Water_02		99932
 	773044199	CHR_Crow_Footstep_Wood_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Wood_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Wood\CHR_Crow_Footstep_Wood_04		141540
 	778566092	Crows don't have thumbs-02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\Crows don't have thumbs-02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Gameplay_Main\Main_Game\Crows_Dont_Have_Thumbs\Crows don't have thumbs-02		18674720
-	797708624	UI_Button_Press_Generic_02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\UI_Button_Press_Generic_02_256E4EAB.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\UI_Button_Press_Generic\UI_Button_Press_Generic_02		122032
+	780730696	OBJ_Drop_Shiny_03	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\OBJ_Drop_Shiny_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Drop_Shiny\OBJ_Drop_Shiny_03		82240
+	784104167	CHR_Crow_Footstep_Water_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Water_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Water\CHR_Crow_Footstep_Water_01		95856
+	797708624	UI_Button_Press_Generic_02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\UI_Button_Press_Generic_02_35653C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\UI_Button_Press_Generic\UI_Button_Press_Generic_02		122032
 	820903337	SFX_CHR_Crow_Wing_Flap_Med_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Wing_Flap_Med_05_C9754E5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Wing_Flap_Oneoffs\CHR_Crow_Wing_Flap_Oneoffs_Med\SFX_CHR_Crow_Wing_Flap_Med_05		417976
 	821351752	SFX_CHR_Crow_Single_Rasp_07	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Rasp_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Rasp_One_Offs\SFX_CHR_Crow_Single_Rasp_07		815700
 	836214757	CHR_Crow_Footstep_Metal_06	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Metal_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Metal\CHR_Crow_Footstep_Metal_06		161864
+	842613222	CHR_Crow_Footstep_Water_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Water_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Water\CHR_Crow_Footstep_Water_04		148032
 	849112773	CHR_Crow_Footstep_Grass_10	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Grass_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Grass\CHR_Crow_Footstep_Grass_10		352820
+	850609152	CHR_Crow_Footstep_Water_03	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Water_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Water\CHR_Crow_Footstep_Water_03		118684
 	858591020	CHR_Crow_Caw_Misc_03	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Caw_Misc_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Misc_Caws\CHR_Crow_Caw_Misc_03		370600
 	880900297	SFX_CHR_Crow_Wing_Flap_Large_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Wing_Flap_Large_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Wing_Flap_Oneoffs\CHR_Crow_Wing_Flap_Oneoffs_Large\SFX_CHR_Crow_Wing_Flap_Large_05		444124
 	883111834	SFX_CHR_Crow_Single_Rasp_08	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Rasp_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Rasp_One_Offs\SFX_CHR_Crow_Single_Rasp_08		916416
+	908601461	OBJ_Drop_Shiny_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\OBJ_Drop_Shiny_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Drop_Shiny\OBJ_Drop_Shiny_01		72460
 	937310878	CHR_Crow_Footstep_Grass_08	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Grass_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Grass\CHR_Crow_Footstep_Grass_08		252180
 	943325500	SFX_CHR_Crow_Single_Caw_06	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Caw_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Caw_One_Offs\SFX_CHR_Crow_Single_Caw_06		722884
 	952903180	CHR_Crow_Footstep_Metal_03	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Metal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Metal\CHR_Crow_Footstep_Metal_03		123620

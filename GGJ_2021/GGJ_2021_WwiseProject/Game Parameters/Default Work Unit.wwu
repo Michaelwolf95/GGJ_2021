@@ -17,11 +17,16 @@
 				</GameParameter>
 				<GameParameter Name="AMBVolume" ID="{415365A0-8DB0-4979-A865-2574384A878D}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="MasterVolume" ID="{E88D2963-454C-48BF-B968-88FF1275C0CB}"/>
+				<GameParameter Name="MasterVolume" ID="{E88D2963-454C-48BF-B968-88FF1275C0CB}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

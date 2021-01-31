@@ -1,0 +1,7 @@
+newmtl PolygonTown_01_A
+map_Pm PolygonTown_Texture_Metallic.tga
+map_Ke PolygonTown_Emissive_01.png
+map_Kd PolygonTown_Texture_01_A.png
+Kd 1 1 1
+d 1
+

@@ -144,7 +144,7 @@
 								<PathElementRef Name="Scene" ID="{E7C8C76E-95EA-4D04-91FD-4D90E6167519}"/>
 							</Path>
 							<AudioNodeInfo>
-								<NoObject Platform="Linked"/>
+								<AudioNodeRef Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
