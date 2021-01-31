@@ -10,6 +10,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Music" ID="{6333705A-D93E-4A54-8369-184A1112DDA1}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MX" ID="{8B574B4D-C8F3-422E-8E4F-133A95747B0C}" WorkUnitID="{8B574B4D-C8F3-422E-8E4F-133A95747B0C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

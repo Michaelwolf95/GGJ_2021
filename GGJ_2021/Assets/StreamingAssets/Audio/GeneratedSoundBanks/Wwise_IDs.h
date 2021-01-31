@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID PLAY_CROW_RASP = 797577932U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_LARGE = 1074723603U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
+        static const AkUniqueID PLAY_END_CUTSCENE = 16145676U;
+        static const AkUniqueID PLAY_MENU_AUDIO = 3205441028U;
         static const AkUniqueID PLAY_MUS_MAIN_GAME_LP = 3265397713U;
         static const AkUniqueID PLAY_OBJ_GENERIC_INTERACT = 1281393260U;
         static const AkUniqueID PLAY_OBJ_HOSE_TURN_OFF = 1291060093U;
@@ -82,6 +84,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS
 
     namespace BUSSES
