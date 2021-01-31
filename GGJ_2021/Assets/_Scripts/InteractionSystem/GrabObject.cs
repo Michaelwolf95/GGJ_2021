@@ -19,12 +19,10 @@ public class GrabObject : InteractableBase
         Debug.Log("Grabbed: " + isGrabbed);
         if(isGrabbed)
         {
-            Debug.Log("Dropping...");
             Drop();
         }
         else
         {
-            Debug.Log("Grabbing...");
             Grab();
         }
         base.PerformInteraction();
