@@ -43,10 +43,7 @@ public class CrowAnimationAudio : MonoBehaviour
         // Nothing
     }
 
-    public void OnLandOnGround()
-    {
-        
-    }
+    
 
     public void PlayCaw()
     {
@@ -56,6 +53,11 @@ public class CrowAnimationAudio : MonoBehaviour
     private void PlayHop() // Needs to be made.
     {
         footStepEvent.Post(gameObject);
+    }
+    
+    public void PlayLandOnGroundSound()
+    {
+        
     }
 
     public void HandleControllerColliderHit(CharacterController controller, ControllerColliderHit hit)

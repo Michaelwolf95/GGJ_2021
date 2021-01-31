@@ -123,7 +123,7 @@ public class InteractableBase : MonoBehaviour
     protected virtual void HideReticle()
     { 
         reticle.gameObject.SetActive(false);
-        Interactor.instance.eTextMesh.SetActive(false);
+        Interactor.instance.ToggleInputPrompt(false);
     }
     
     protected virtual void UnhideReticle()
@@ -131,7 +131,7 @@ public class InteractableBase : MonoBehaviour
         if (isInteractable)
         {
             reticle.gameObject.SetActive(true);
-            Interactor.instance.eTextMesh.SetActive(true);
+            Interactor.instance.ToggleInputPrompt(true);
         }
     }
 

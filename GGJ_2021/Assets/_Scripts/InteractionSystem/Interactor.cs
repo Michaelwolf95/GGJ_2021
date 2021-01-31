@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using MichaelWolfGames;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -18,8 +19,8 @@ public class Interactor : MonoBehaviour
 
     [SerializeField] private Transform _grabPoint;
     public Transform grabPoint => _grabPoint;
-
-    public GameObject eTextMesh = null;
+    
+    [SerializeField] private TextMeshPro inputPromptText = null;
 
     private InteractableBase currentPointerTarget = null;        // Currently being looked at.
     private InteractableBase currentInteractionTarget = null;    // Actively interacting with
@@ -191,14 +192,22 @@ public class Interactor : MonoBehaviour
                 ClearPointerTarget();
             }
             SetPointerTarget(closestObject);
-            if(closestObject != heldObject)
-                eTextMesh.SetActive(true);
+            if (closestObject != heldObject)
+            {
+                ToggleInputPrompt(true);
+            }
         }
         else
         {
             ClearPointerTarget();
-            eTextMesh.SetActive(false);
+            ToggleInputPrompt(false);
         }
+    }
+
+    public void ToggleInputPrompt(bool argShow)
+    {
+        //ToDo: Set Input Text based on input scheme.
+        inputPromptText.gameObject.SetActive(argShow);
     }
     
 
