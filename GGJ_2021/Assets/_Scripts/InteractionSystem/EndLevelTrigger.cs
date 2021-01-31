@@ -30,6 +30,7 @@ public class EndLevelTrigger : MonoBehaviour
             if (goal.isGrabbed)
                 return;
 
+            Debug.Log("Finish!");
             // TODO: Add end level logic
         }
     }
