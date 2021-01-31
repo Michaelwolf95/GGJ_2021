@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3599152587">
+		<SoundBank Id="3161908922" Language="SFX" Hash="834191860">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -299,6 +299,14 @@
 						<File Id="820903337" Language="SFX">
 							<ShortName>SFX_CHR_Crow_Wing_Flap_Med_05.wav</ShortName>
 							<Path>SFX\SFX_CHR_Crow_Wing_Flap_Med_05_C9754E5A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4109843897" Name="Play_Game_Start" ObjectPath="\Events\Default Work Unit\UI\Play_Game_Start" DurationType="OneShot" DurationMin="4.743458" DurationMax="4.743458">
+					<IncludedMemoryFiles>
+						<File Id="571860872" Language="SFX">
+							<ShortName>UI_Game_Start.wav</ShortName>
+							<Path>SFX\UI_Game_Start_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

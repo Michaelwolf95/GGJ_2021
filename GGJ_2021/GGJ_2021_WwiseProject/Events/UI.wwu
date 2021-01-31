@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C1A0317F-5C58-4A98-A3D7-C2671E6301B3}" SchemaVersion="97" RootDocumentID="{0D49C615-A7E9-476F-8764-69D95E19282C}">
 	<Events>
-		<WorkUnit Name="UI" ID="{C1A0317F-5C58-4A98-A3D7-C2671E6301B3}" OwnerID="{0D49C615-A7E9-476F-8764-69D95E19282C}" PersistMode="Nested"/>
+		<WorkUnit Name="UI" ID="{C1A0317F-5C58-4A98-A3D7-C2671E6301B3}" OwnerID="{0D49C615-A7E9-476F-8764-69D95E19282C}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Game_Start" ID="{44E49A5C-7241-4B85-BB67-0CDAB14A1961}">
+					<ChildrenList>
+						<Action Name="" ID="{AC7AA854-D21C-4F9B-987D-9A406493F964}" ShortID="966645189">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Game_Start" ID="{9DCED6B1-EFBC-428D-9E0B-E6B3F271D4D9}" WorkUnitID="{0D8C6D54-0E9E-4988-95E1-E9CC6260EF27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0D8C6D54-0E9E-4988-95E1-E9CC6260EF27}" SchemaVersion="97" RootDocumentID="{568B7340-4F55-4550-9D23-D07716CAF2B9}">
 	<AudioObjects>
-		<WorkUnit Name="UI" ID="{0D8C6D54-0E9E-4988-95E1-E9CC6260EF27}" OwnerID="{568B7340-4F55-4550-9D23-D07716CAF2B9}" PersistMode="Nested"/>
+		<WorkUnit Name="UI" ID="{0D8C6D54-0E9E-4988-95E1-E9CC6260EF27}" OwnerID="{568B7340-4F55-4550-9D23-D07716CAF2B9}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Buttons" ID="{CAB73A02-D874-4BB1-807D-4B3F6B94D77E}" ShortID="105094840">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="UI_Game_Start" ID="{9DCED6B1-EFBC-428D-9E0B-E6B3F271D4D9}" ShortID="970679047">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Game_Start" ID="{CB6887D8-03AE-4635-8809-D3EC038299A5}">
+									<Language>SFX</Language>
+									<AudioFile>UI_Game_Start.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="571860872"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Game_Start" ID="{CB6887D8-03AE-4635-8809-D3EC038299A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
