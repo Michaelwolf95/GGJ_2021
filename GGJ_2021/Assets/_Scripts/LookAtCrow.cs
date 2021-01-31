@@ -15,6 +15,7 @@ public class LookAtCrow : MonoBehaviour
     void Start()
     {
         grannyIK = this.gameObject.GetComponent<LookAtIK>();
+        grannyIK.solver.target = PlayerInstance.Instance.transform;
     }
 
     // Update is called once per frame
