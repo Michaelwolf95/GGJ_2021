@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9B94B089-99E6-4761-88F1-4425508A0181}" SchemaVersion="97" RootDocumentID="{0D49C615-A7E9-476F-8764-69D95E19282C}">
+	<Events>
+		<WorkUnit Name="Music" ID="{9B94B089-99E6-4761-88F1-4425508A0181}" OwnerID="{0D49C615-A7E9-476F-8764-69D95E19282C}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_MUS_Main_Game_LP" ID="{69DE23A6-53D4-4905-9601-04370A1EF031}">
+					<ChildrenList>
+						<Action Name="" ID="{9B9982A8-4968-42D9-B672-3E479D4AFA9B}" ShortID="262191166">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MUS_Main_Game_LP" ID="{0A12B034-EE88-44A2-84CF-275AA93DF7EC}">
+					<ChildrenList>
+						<Action Name="" ID="{D6DA929B-4C52-4DB6-95FD-5148CC66ACC2}" ShortID="503764992">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

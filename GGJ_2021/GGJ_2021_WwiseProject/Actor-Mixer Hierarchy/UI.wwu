@@ -50,6 +50,19 @@
 									</ValueList>
 								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{ECB4C01A-E37A-4628-BEF0-50ACD8FE8356}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
@@ -94,6 +107,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="UI_Button_Press_Generic_02" ID="{E32FCD1F-9B09-4BF8-B9C1-32D7C32117E6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0239306506849315"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UI_Button_Press_Generic_02.wav</AudioFile>
 											<MediaIDList>
@@ -138,6 +156,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="UI_Button_Press_Generic_04" ID="{0F3C53AE-F02D-46EA-AC10-ADA563BD79C4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.028193279109589"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UI_Button_Press_Generic_04.wav</AudioFile>
 											<MediaIDList>
@@ -147,6 +170,128 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="UI_Button_Press_Generic_04" ID="{0F3C53AE-F02D-46EA-AC10-ADA563BD79C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_Button_Hover_Generic" ID="{AF1577B4-6D3E-406E-86DA-35B96FC0EF05}" ShortID="1039879292">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EE003D2E-36D9-4C80-A2DF-0210F894275D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UI_Button_Generic_Hover_01" ID="{E6FD9594-93F6-4D50-A176-5B112C7A9564}" ShortID="77778589">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Button_Generic_Hover_01" ID="{FE82EE09-2683-4048-B6CA-F5E89EF26332}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Button_Generic_Hover_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="507698187"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Button_Generic_Hover_01" ID="{FE82EE09-2683-4048-B6CA-F5E89EF26332}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Button_Generic_Hover_02" ID="{9BC48B44-2FDA-4D74-AC8A-6A6CA25627F5}" ShortID="342334735">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Button_Generic_Hover_02" ID="{B46C823C-028C-4D3C-B994-4A3593566937}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Button_Generic_Hover_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="580027285"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Button_Generic_Hover_02" ID="{B46C823C-028C-4D3C-B994-4A3593566937}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Button_Generic_Hover_03" ID="{BD240DC9-3D72-45D2-8A8C-A83DC594E9C3}" ShortID="785167062">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Button_Generic_Hover_03" ID="{D1447FDA-BAE0-4A20-9C26-413025594711}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Button_Generic_Hover_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="684792539"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Button_Generic_Hover_03" ID="{D1447FDA-BAE0-4A20-9C26-413025594711}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Button_Generic_Hover_04" ID="{D55319DD-D4CA-490B-924E-306E109A92E1}" ShortID="624946025">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Button_Generic_Hover_04" ID="{798FD06C-930B-4D9F-93B9-CB1012A62BF0}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Button_Generic_Hover_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="514265389"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Button_Generic_Hover_04" ID="{798FD06C-930B-4D9F-93B9-CB1012A62BF0}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

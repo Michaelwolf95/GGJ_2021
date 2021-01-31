@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrabObject : InteractableBase
 {
     public bool isGrabbed { get; protected set; }
+    public bool isGoalObject = false;
 
     [SerializeField] private GameObject grabObjectTarget;
 
@@ -34,6 +35,7 @@ public class GrabObject : InteractableBase
         this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         this.gameObject.transform.parent = null;
         Interactor.instance.heldObject = null;
+        UnhideReticle();
     }
 
     private void Grab()
@@ -41,9 +43,9 @@ public class GrabObject : InteractableBase
         isGrabbed = true;
         // Snap to beak position and disable rigidbody
         this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        this.gameObject.transform.SetParent(grabObjectTarget.transform);
+        this.gameObject.transform.SetParent(Interactor.instance.grabPoint);
         this.gameObject.transform.localPosition = Vector3.zero;
         Interactor.instance.heldObject = this;
-
+        HideReticle();
     }
 }

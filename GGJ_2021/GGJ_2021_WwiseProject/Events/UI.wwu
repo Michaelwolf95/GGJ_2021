@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_UI_Button_Hover_Generic" ID="{7FAB5B9B-4A96-4654-BC34-B40CC902A951}">
+					<ChildrenList>
+						<Action Name="" ID="{673FE540-5FF9-4216-8BD6-C0A72564995D}" ShortID="106975832">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Button_Hover_Generic" ID="{AF1577B4-6D3E-406E-86DA-35B96FC0EF05}" WorkUnitID="{0D8C6D54-0E9E-4988-95E1-E9CC6260EF27}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

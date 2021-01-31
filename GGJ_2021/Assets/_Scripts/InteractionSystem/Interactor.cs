@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using MichaelWolfGames;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Interactor : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float interactRange = 1f;
 
     [SerializeField] private LayerMask interactionLayerMask = new LayerMask();
+
+    [SerializeField] private Transform _grabPoint;
+    public Transform grabPoint => _grabPoint;
     
     private InteractableBase currentPointerTarget = null;        // Currently being looked at.
     private InteractableBase currentInteractionTarget = null;    // Actively interacting with
@@ -31,7 +35,8 @@ public class Interactor : MonoBehaviour
 
     [SerializeField] private PlayerInput inputController;
 
-    [HideInInspector] public GrabObject heldObject { get; set; }
+    public GrabObject heldObject { get; set; }
+    private GameObject[] grabableObjects;
     
     private void Awake()
     {
@@ -41,11 +46,18 @@ public class Interactor : MonoBehaviour
         {
             mainCamera = Camera.main;
         }
+
+        SceneManager.sceneLoaded += PopulateGrabables;
         
         inputController.actions["Grab"].performed += ctx =>
         {
             HandleGrabInput();
         };
+    }
+
+    private void PopulateGrabables(Scene s, LoadSceneMode mode)
+    {
+        grabableObjects = GameObject.FindGameObjectsWithTag("Grabable");
     }
 
     private void HandleGrabInput()
@@ -117,7 +129,7 @@ public class Interactor : MonoBehaviour
                 SetPointerTarget(heldObject);
             return;
         }
-
+        /*
         RaycastHit[] hits = Physics.RaycastAll(this.gameObject.transform.position, this.gameObject.transform.forward);
         if (hits.Length > 0)
         {
@@ -155,6 +167,28 @@ public class Interactor : MonoBehaviour
             {
                 ClearPointerTarget();
             }
+        }
+        */
+
+        InteractableBase closestObject = null;
+        float shortest = float.MaxValue;
+        foreach(GameObject go in grabableObjects)
+        {
+            float dist = Vector3.Distance(this.gameObject.transform.position, go.transform.position);
+            if(dist <= activationRange && dist < shortest)
+            {   
+                closestObject = go.GetComponent<InteractableBase>();
+                shortest = dist;                
+            }
+        }
+
+        if(closestObject != null)
+        {
+            if(currentPointerTarget != null && currentPointerTarget != closestObject)
+            {
+                ClearPointerTarget();
+            }
+            SetPointerTarget(closestObject);
         }
     }
     

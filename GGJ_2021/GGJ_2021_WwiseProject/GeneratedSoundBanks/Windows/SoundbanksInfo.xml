@@ -22,11 +22,19 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3989009982">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2600540353">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2296046516" Name="Play_AMB_Park_LP" ObjectPath="\Events\Default Work Unit\Ambience\Play_AMB_Park_LP" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1022398894" Language="SFX">
+							<ShortName>SND_AMB_PARKWITHBIRDS_LOOP_01.wav</ShortName>
+							<Path>SFX\SND_AMB_PARKWITHBIRDS_LOOP_01_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3489561965" Name="Play_Crow_Caw" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Caw" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.921453" DurationMax="3.988548">
 					<IncludedMemoryFiles>
 						<File Id="57331924" Language="SFX">
@@ -59,7 +67,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1520856432" Name="Play_Crow_Caw_Misc" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Caw_Misc" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.689062" DurationMax="2.327917">
+				<Event Id="1520856432" Name="Play_Crow_Caw_Misc" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Caw_Misc" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.594263" DurationMax="2.466342">
 					<IncludedMemoryFiles>
 						<File Id="117400913" Language="SFX">
 							<ShortName>CHR_Crow_Caw_Misc_02.wav</ShortName>
@@ -342,6 +350,30 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3265397713" Name="Play_MUS_Main_Game_LP" ObjectPath="\Events\Default Work Unit\Music\Play_MUS_Main_Game_LP" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="778566092" Language="SFX">
+							<ShortName>Crows don't have thumbs-02.wav</ShortName>
+							<Path>SFX\Crows don't have thumbs-02_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3741681902" Name="Play_OBJ_Pickup_Generic" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Generic" DurationType="OneShot" DurationMin="0.472792" DurationMax="0.562248">
+					<IncludedMemoryFiles>
+						<File Id="363833007" Language="SFX">
+							<ShortName>OBJ_Pickup_Generic.wav</ShortName>
+							<Path>SFX\OBJ_Pickup_Generic_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1433800392" Name="Play_OBJ_Pickup_Shiny" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Pickup_Shiny" DurationType="OneShot" DurationMin="0.732572" DurationMax="0.871179">
+					<IncludedMemoryFiles>
+						<File Id="756975070" Language="SFX">
+							<ShortName>OBJ_Pickup_Shiny.wav</ShortName>
+							<Path>SFX\OBJ_Pickup_Shiny_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1065595628" Name="Play_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Shiny_Object_LP" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="184308134" Language="SFX">
@@ -350,7 +382,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="750236145" Name="Play_UI_Button_Press_Generic" ObjectPath="\Events\Default Work Unit\UI\Play_UI_Button_Press_Generic" DurationType="OneShot" DurationMin="0.531125" DurationMax="0.635250">
+				<Event Id="155552906" Name="Play_UI_Button_Hover_Generic" ObjectPath="\Events\Default Work Unit\UI\Play_UI_Button_Hover_Generic" DurationType="OneShot" DurationMin="0.543057" DurationMax="0.938973">
+					<IncludedMemoryFiles>
+						<File Id="507698187" Language="SFX">
+							<ShortName>UI_Button_Generic_Hover_01.wav</ShortName>
+							<Path>SFX\UI_Button_Generic_Hover_01_10C4C929.wem</Path>
+						</File>
+						<File Id="514265389" Language="SFX">
+							<ShortName>UI_Button_Generic_Hover_04.wav</ShortName>
+							<Path>SFX\UI_Button_Generic_Hover_04_10C4C929.wem</Path>
+						</File>
+						<File Id="580027285" Language="SFX">
+							<ShortName>UI_Button_Generic_Hover_02.wav</ShortName>
+							<Path>SFX\UI_Button_Generic_Hover_02_10C4C929.wem</Path>
+						</File>
+						<File Id="684792539" Language="SFX">
+							<ShortName>UI_Button_Generic_Hover_03.wav</ShortName>
+							<Path>SFX\UI_Button_Generic_Hover_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="750236145" Name="Play_UI_Button_Press_Generic" ObjectPath="\Events\Default Work Unit\UI\Play_UI_Button_Press_Generic" DurationType="OneShot" DurationMin="0.487044" DurationMax="0.692745">
 					<IncludedMemoryFiles>
 						<File Id="263675457" Language="SFX">
 							<ShortName>UI_Button_Press_Generic_03.wav</ShortName>
@@ -362,11 +414,11 @@
 						</File>
 						<File Id="709055608" Language="SFX">
 							<ShortName>UI_Button_Press_Generic_04.wav</ShortName>
-							<Path>SFX\UI_Button_Press_Generic_04_10C4C929.wem</Path>
+							<Path>SFX\UI_Button_Press_Generic_04_14214BF8.wem</Path>
 						</File>
 						<File Id="797708624" Language="SFX">
 							<ShortName>UI_Button_Press_Generic_02.wav</ShortName>
-							<Path>SFX\UI_Button_Press_Generic_02_10C4C929.wem</Path>
+							<Path>SFX\UI_Button_Press_Generic_02_256E4EAB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -378,6 +430,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2714774039" Name="Stop_MUS_Main_Game_LP" ObjectPath="\Events\Default Work Unit\Music\Stop_MUS_Main_Game_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="193541534" Name="STOP_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\STOP_OBJ_Shiny_Object_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>

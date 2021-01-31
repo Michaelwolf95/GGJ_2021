@@ -57,7 +57,7 @@ public class ScreenFade : MonoBehaviour
         this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(start, opaqueW, lerp); },
         ()=> {
             _illustrationContainer.gameObject.SetActive(true);
-            FadeArtOut();
+            FadeArtIn();
             _illustrationContainer.sprite = _illustrations[cycleIndex];
             cycleIndex++;
         }, duration: 1.0f, easeType: EaseType.linear, useUnscaledTime: true);

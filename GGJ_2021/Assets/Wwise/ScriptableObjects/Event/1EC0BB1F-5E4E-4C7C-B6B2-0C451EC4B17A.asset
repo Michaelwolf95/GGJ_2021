@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea0fa817497b3e242addc6252b000b23, type: 3}
+  m_Name: 1EC0BB1F-5E4E-4C7C-B6B2-0C451EC4B17A
+  m_EditorClassIdentifier: 
+  objectName: Play_OBJ_Shiny_Object_LP
+  id: 1065595628
+  guid: 1EC0BB1F-5E4E-4C7C-B6B2-0C451EC4B17A
