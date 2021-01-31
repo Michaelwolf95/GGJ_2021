@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class EndLevelTrigger : MonoBehaviour
 {
     [SerializeField] private PlayerInput playerInput = null;
+    [SerializeField] private ScreenFade screenFade = null;
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Enter");
@@ -33,8 +35,8 @@ public class EndLevelTrigger : MonoBehaviour
                 return;
 
             Debug.Log("Finish!");
-            // TODO: Add end level logic
             playerInput.DeactivateInput();
+            screenFade.FadeArtOut();
         }
     }
 }
