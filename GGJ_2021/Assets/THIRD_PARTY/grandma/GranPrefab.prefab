@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 2240681352403647763}
   - component: {fileID: 4471375296297185365}
   - component: {fileID: 1828675567066262406}
+  - component: {fileID: 4291108882978786816}
   m_Layer: 0
   m_Name: GranPrefab
   m_TagString: Untagged
@@ -223,6 +224,25 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+--- !u!95 &4291108882978786816
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425897535644482008}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf57dc32387adfa4eb04245b9ab046a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &458815181813416525
 GameObject:
   m_ObjectHideFlags: 0

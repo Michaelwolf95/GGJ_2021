@@ -18,7 +18,9 @@ public class Interactor : MonoBehaviour
 
     [SerializeField] private Transform _grabPoint;
     public Transform grabPoint => _grabPoint;
-    
+
+    public GameObject eTextMesh = null;
+
     private InteractableBase currentPointerTarget = null;        // Currently being looked at.
     private InteractableBase currentInteractionTarget = null;    // Actively interacting with
     private bool isInteracting => currentInteractionTarget != null;
@@ -189,6 +191,13 @@ public class Interactor : MonoBehaviour
                 ClearPointerTarget();
             }
             SetPointerTarget(closestObject);
+            if(closestObject != heldObject)
+                eTextMesh.SetActive(true);
+        }
+        else
+        {
+            ClearPointerTarget();
+            eTextMesh.SetActive(false);
         }
     }
     
