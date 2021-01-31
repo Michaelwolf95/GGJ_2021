@@ -354,6 +354,87 @@
 								<ItemRef Name="OBJ_Drop_Shiny" ID="{964EEAD0-C0AA-47FB-BA39-E1D13C5ABA26}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+						<ActorMixer Name="OBJ_Hose" ID="{AFCB8C8C-AE9D-4179-B4F4-65747276083C}" ShortID="453519846">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="OBJ_Hose_Spray_LP" ID="{2DD4C823-22A6-44D3-95BC-5A63B7705EDE}" ShortID="298586669">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="OBJ_Hose_Spray_LP" ID="{B2609FBB-D198-4DE1-B872-84E4FC1ED24E}">
+											<Language>SFX</Language>
+											<AudioFile>OBJ_Hose_Spray_LP.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="738040215"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="OBJ_Hose_Spray_LP" ID="{B2609FBB-D198-4DE1-B872-84E4FC1ED24E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="OBJ_Hose_Turn_Off" ID="{92245899-71DF-47E6-9C42-ECF81AD0AE6C}" ShortID="638760140">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="OBJ_Hose_Turn_Off" ID="{12DA98F8-8C89-40C1-B291-BA5C4BCF3893}">
+											<Language>SFX</Language>
+											<AudioFile>OBJ_Hose_Turn_Off.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="149547534"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="OBJ_Hose_Turn_Off" ID="{12DA98F8-8C89-40C1-B291-BA5C4BCF3893}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="OBJ_Hose_Turn_On" ID="{4DCFBE75-6F79-4D81-A3C1-9442645BFFA8}" ShortID="23298836">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="OBJ_Hose_Turn_On" ID="{3BC46C16-6625-476D-B89E-F490D7B49253}">
+											<Language>SFX</Language>
+											<AudioFile>OBJ_Hose_Turn_On.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="471771869"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="OBJ_Hose_Turn_On" ID="{3BC46C16-6625-476D-B89E-F490D7B49253}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Breakable" ID="{A7479B17-B62D-4222-896D-7E4C166297AC}" ShortID="170615374">

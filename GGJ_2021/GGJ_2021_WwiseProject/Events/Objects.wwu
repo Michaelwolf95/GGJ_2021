@@ -74,6 +74,71 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_OBJ_Hose_Turn_On" ID="{81D96767-E0D6-4CBD-8397-619AB5823D62}">
+					<ChildrenList>
+						<Action Name="" ID="{05ADF89F-C689-4C58-B217-CC1BD0E376B1}" ShortID="954737166">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OBJ_Hose_Turn_On" ID="{4DCFBE75-6F79-4D81-A3C1-9442645BFFA8}" WorkUnitID="{2C1BEDC4-D029-4C78-87B6-EE4861DE2D5B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C3BF7EBB-EB02-474F-BE9D-05920F36785B}" ShortID="264388161">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OBJ_Hose_Spray_LP" ID="{2DD4C823-22A6-44D3-95BC-5A63B7705EDE}" WorkUnitID="{2C1BEDC4-D029-4C78-87B6-EE4861DE2D5B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B9451867-1899-424A-B114-35D25F796998}" ShortID="547860666">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9D0A698D-30E6-41D0-9C35-032821D9628E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OBJ_Hose_Spray_LP" ID="{2DD4C823-22A6-44D3-95BC-5A63B7705EDE}" WorkUnitID="{2C1BEDC4-D029-4C78-87B6-EE4861DE2D5B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OBJ_Hose_Turn_Off" ID="{D31F46DB-B7B9-40B8-B536-745C22A20F0D}">
+					<ChildrenList>
+						<Action Name="" ID="{2461811A-7AE5-430F-B0C8-A51F5B971E3B}" ShortID="507658023">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OBJ_Hose_Spray_LP" ID="{2DD4C823-22A6-44D3-95BC-5A63B7705EDE}" WorkUnitID="{2C1BEDC4-D029-4C78-87B6-EE4861DE2D5B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8FCDA22C-C9D8-436C-9A27-94E785D5D3B1}" ShortID="14662520">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OBJ_Hose_Turn_Off" ID="{92245899-71DF-47E6-9C42-ECF81AD0AE6C}" WorkUnitID="{2C1BEDC4-D029-4C78-87B6-EE4861DE2D5B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

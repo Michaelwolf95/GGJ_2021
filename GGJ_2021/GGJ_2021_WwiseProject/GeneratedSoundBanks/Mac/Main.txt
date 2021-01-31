@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1065595628	Play_OBJ_Shiny_Object_LP			\Default Work Unit\Objects\Play_OBJ_Shiny_Object_LP	
 	1074723603	Play_Crow_Wing_Flap_Large			\Default Work Unit\Hero\Crow\Play_Crow_Wing_Flap_Large	
 	1281393260	Play_OBJ_Generic_Interact			\Default Work Unit\Objects\Play_OBJ_Generic_Interact	
+	1291060093	Play_OBJ_Hose_Turn_Off			\Default Work Unit\Objects\Play_OBJ_Hose_Turn_Off	
 	1520856432	Play_Crow_Caw_Misc			\Default Work Unit\Hero\Crow\Play_Crow_Caw_Misc	
 	1580643620	Play_UI_Game_Start			\Default Work Unit\UI\Play_UI_Game_Start	
 	2296046516	Play_AMB_Park_LP			\Default Work Unit\Ambience\Play_AMB_Park_LP	
@@ -16,6 +17,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3109608386	Play_OBJ_Shiny_Interact			\Default Work Unit\Objects\Play_OBJ_Shiny_Interact	
 	3265397713	Play_MUS_Main_Game_LP			\Default Work Unit\Music\Play_MUS_Main_Game_LP	
 	3489561965	Play_Crow_Caw			\Default Work Unit\Hero\Crow\Play_Crow_Caw	
+	3825536337	Play_OBJ_Hose_Turn_On			\Default Work Unit\Objects\Play_OBJ_Hose_Turn_On	
 	3950425532	Play_Crow_Glide_LP			\Default Work Unit\Hero\Crow\Play_Crow_Glide_LP	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -52,6 +54,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	117400913	CHR_Crow_Caw_Misc_02	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Caw_Misc_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Misc_Caws\CHR_Crow_Caw_Misc_02		427124
 	125547334	CHR_Crow_Footstep_Metal_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Footstep_Metal_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Metal\CHR_Crow_Footstep_Metal_05		145968
 	134072453	SFX_CHR_Crow_Single_Rasp_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\SFX_CHR_Crow_Single_Rasp_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Rasp_One_Offs\SFX_CHR_Crow_Single_Rasp_04		718852
+	149547534	OBJ_Hose_Turn_Off	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\OBJ_Hose_Turn_Off_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Hose\OBJ_Hose_Turn_Off		298620
 	170764441	CHR_Crow_Footstep_Metal_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Footstep_Metal_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Metal\CHR_Crow_Footstep_Metal_04		133832
 	184308134	OBJ_Shiny_Object_LP	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\OBJ_Shiny_Object_LP_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Shiny_Object_LP		1440064
 	202332360	CHR_Crow_Caw_Misc_06	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Caw_Misc_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Misc_Caws\CHR_Crow_Caw_Misc_06		345480
@@ -75,6 +78,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	450070898	SFX_CHR_Crow_Single_Rasp_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\SFX_CHR_Crow_Single_Rasp_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Rasp_One_Offs\SFX_CHR_Crow_Single_Rasp_05		737364
 	452966496	SFX_CHR_Crow_Wing_Flap_Large_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\SFX_CHR_Crow_Wing_Flap_Large_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Wing_Flap_Oneoffs\CHR_Crow_Wing_Flap_Oneoffs_Large\SFX_CHR_Crow_Wing_Flap_Large_04		518948
 	471331448	CHR_Crow_Footstep_Sand_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Footstep_Sand_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Sand\CHR_Crow_Footstep_Sand_05		265020
+	471771869	OBJ_Hose_Turn_On	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\OBJ_Hose_Turn_On_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Hose\OBJ_Hose_Turn_On		51700
 	472134357	SFX_CHR_Crow_Wing_Flap_Med_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\SFX_CHR_Crow_Wing_Flap_Med_04_6511B877.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Wing_Flap_Oneoffs\CHR_Crow_Wing_Flap_Oneoffs_Med\SFX_CHR_Crow_Wing_Flap_Med_04		358540
 	482176789	CHR_Crow_Caw_Misc_08	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Caw_Misc_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Misc_Caws\CHR_Crow_Caw_Misc_08		447024
 	507698187	UI_Button_Generic_Hover_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\UI_Button_Generic_Hover_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\UI_Button_Hover_Generic\UI_Button_Generic_Hover_01		113768
@@ -99,6 +103,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	711107815	CHR_Crow_Footstep_Wood_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Footstep_Wood_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Wood\CHR_Crow_Footstep_Wood_05		114204
 	721789434	CHR_Crow_Glide_LP	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Glide_LP_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Fly\CHR_Crow_Glide_LP		480064
 	727094168	CHR_Crow_Caw_Misc_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Caw_Misc_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Misc_Caws\CHR_Crow_Caw_Misc_01		395720
+	738040215	OBJ_Hose_Spray_LP	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\OBJ_Hose_Spray_LP_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Hose\OBJ_Hose_Spray_LP		362024
 	744932976	SFX_CHR_Crow_Single_Caw_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\SFX_CHR_Crow_Single_Caw_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Caw_One_Offs\SFX_CHR_Crow_Single_Caw_01		390920
 	746728640	CHR_Crow_Footstep_Grass_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\CHR_Crow_Footstep_Grass_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Grass\CHR_Crow_Footstep_Grass_05		172564
 	756975070	OBJ_Pickup_Shiny	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\OBJ_Pickup_Shiny_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Objects\Interactable\OBJ_Shiny\OBJ_Pickup_Shiny\OBJ_Pickup_Shiny		153448

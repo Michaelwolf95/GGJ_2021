@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2895359890">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1804744191">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -438,6 +438,26 @@
 						<File Id="363833007" Language="SFX">
 							<ShortName>OBJ_Pickup_Generic.wav</ShortName>
 							<Path>SFX\OBJ_Pickup_Generic_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1291060093" Name="Play_OBJ_Hose_Turn_Off" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Hose_Turn_Off" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.554979" DurationMax="1.554979">
+					<IncludedMemoryFiles>
+						<File Id="149547534" Language="SFX">
+							<ShortName>OBJ_Hose_Turn_Off.wav</ShortName>
+							<Path>SFX\OBJ_Hose_Turn_Off_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3825536337" Name="Play_OBJ_Hose_Turn_On" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Hose_Turn_On" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="471771869" Language="SFX">
+							<ShortName>OBJ_Hose_Turn_On.wav</ShortName>
+							<Path>SFX\OBJ_Hose_Turn_On_10C4C929.wem</Path>
+						</File>
+						<File Id="738040215" Language="SFX">
+							<ShortName>OBJ_Hose_Spray_LP.wav</ShortName>
+							<Path>SFX\OBJ_Hose_Spray_LP_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
