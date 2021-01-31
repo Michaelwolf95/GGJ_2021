@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2251506567">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2895359890">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -107,11 +107,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2969808743" Name="Play_Crow_Footsteps" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Footsteps" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.837271">
+				<Event Id="2969808743" Name="Play_Crow_Footsteps" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Footsteps" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.910667">
 					<IncludedMemoryFiles>
 						<File Id="16189319" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_09.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_09_10C4C929.wem</Path>
+						</File>
+						<File Id="47363960" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Sand_01.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Sand_01_10C4C929.wem</Path>
 						</File>
 						<File Id="59923441" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Wood_02.wav</ShortName>
@@ -165,9 +169,25 @@
 							<ShortName>CHR_Crow_Footstep_Grass_04.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Grass_04_10C4C929.wem</Path>
 						</File>
+						<File Id="442083774" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Sand_06.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Sand_06_10C4C929.wem</Path>
+						</File>
 						<File Id="445059064" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Wood_01.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Wood_01_10C4C929.wem</Path>
+						</File>
+						<File Id="471331448" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Sand_05.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Sand_05_10C4C929.wem</Path>
+						</File>
+						<File Id="516481396" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Sand_07.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Sand_07_10C4C929.wem</Path>
+						</File>
+						<File Id="521549240" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Sand_03.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Sand_03_10C4C929.wem</Path>
 						</File>
 						<File Id="582019918" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Wood_08.wav</ShortName>
@@ -205,6 +225,10 @@
 							<ShortName>CHR_Crow_Footstep_Wood_04.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Wood_04_10C4C929.wem</Path>
 						</File>
+						<File Id="775712661" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Sand_04.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Sand_04_10C4C929.wem</Path>
+						</File>
 						<File Id="784104167" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Water_01.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Water_01_10C4C929.wem</Path>
@@ -232,6 +256,10 @@
 						<File Id="952903180" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Metal_03.wav</ShortName>
 							<Path>SFX\CHR_Crow_Footstep_Metal_03_10C4C929.wem</Path>
+						</File>
+						<File Id="993429708" Language="SFX">
+							<ShortName>CHR_Crow_Footstep_Sand_02.wav</ShortName>
+							<Path>SFX\CHR_Crow_Footstep_Sand_02_10C4C929.wem</Path>
 						</File>
 						<File Id="1044726172" Language="SFX">
 							<ShortName>CHR_Crow_Footstep_Grass_03.wav</ShortName>
@@ -286,6 +314,17 @@
 								<File Id="757132057"/>
 								<File Id="850609152"/>
 								<File Id="842613222"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A11EBF96-7AF7-4D00-A5AA-01A4C031207C}">
+							<Media>
+								<File Id="47363960"/>
+								<File Id="993429708"/>
+								<File Id="521549240"/>
+								<File Id="775712661"/>
+								<File Id="471331448"/>
+								<File Id="442083774"/>
+								<File Id="516481396"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -490,6 +529,7 @@
 						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Surface_Material\Wood"/>
 						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Surface_Material\Concrete"/>
 						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\Surface_Material\Water"/>
+						<Switch Id="803837735" Name="Sand" ObjectPath="\Switches\Default Work Unit\Surface_Material\Sand"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

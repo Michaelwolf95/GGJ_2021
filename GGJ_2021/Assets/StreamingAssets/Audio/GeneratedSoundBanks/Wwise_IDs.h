@@ -60,6 +60,7 @@ namespace AK
                 static const AkUniqueID CONCRETE = 841620460U;
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID SAND = 803837735U;
                 static const AkUniqueID WATER = 2654748154U;
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH

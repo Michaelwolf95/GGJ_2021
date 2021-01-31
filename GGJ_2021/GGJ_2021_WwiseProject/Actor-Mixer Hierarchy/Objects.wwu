@@ -6,6 +6,11 @@
 				<ActorMixer Name="Interactable" ID="{9FA2EE7B-4968-4F13-BD86-13AFC63554C3}" ShortID="442973153">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
