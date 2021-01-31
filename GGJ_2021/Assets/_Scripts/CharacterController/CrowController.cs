@@ -29,8 +29,6 @@ namespace CrowGame
         [SerializeField] private float glideGravity = -4.5f;
         [SerializeField] private float rotateSpeed = 2f;
 
-        [SerializeField] private CrowAnimationAudio audioCrow;
-
         private CrowAnimationAudio animationAudioController = null;
 
         private int currentJumpsSinceGrounded;
@@ -206,7 +204,7 @@ namespace CrowGame
 
         public void OnCaw()
         {
-            audioCrow.PlayCaw(); 
+            animationAudioController.PlayCaw(); 
         }
 
         private void RotateTowardsDirection(Vector3 moveDirection, float argRotationSpeed = 0f)
