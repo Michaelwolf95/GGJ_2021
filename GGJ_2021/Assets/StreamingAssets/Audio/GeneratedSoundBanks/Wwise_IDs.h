@@ -14,12 +14,15 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_CROW_CAW = 3489561965U;
+        static const AkUniqueID PLAY_CROW_CAW_MISC = 1520856432U;
         static const AkUniqueID PLAY_CROW_FOOTSTEPS = 2969808743U;
         static const AkUniqueID PLAY_CROW_RASP = 797577932U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_LARGE = 1074723603U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
+        static const AkUniqueID PLAY_OBJ_SHINY_OBJECT_LP = 1065595628U;
         static const AkUniqueID PLAY_UI_BUTTON_PRESS_GENERIC = 750236145U;
         static const AkUniqueID PLAY_UI_GAME_START = 1580643620U;
+        static const AkUniqueID STOP_OBJ_SHINY_OBJECT_LP = 193541534U;
     } // namespace EVENTS
 
     namespace SWITCHES

@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Crow_Caw_Misc" ID="{A79A2C78-41CC-4888-AFA3-2EF1588644E7}">
+					<ChildrenList>
+						<Action Name="" ID="{DB17047C-0617-47FD-B15C-6782B781F9AB}" ShortID="834440759">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Crow_Misc_Caws" ID="{9127DC0E-EB8C-43D0-B59E-22B24FE1C899}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

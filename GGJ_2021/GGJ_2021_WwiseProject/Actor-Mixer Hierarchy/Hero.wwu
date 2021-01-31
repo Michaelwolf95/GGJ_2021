@@ -434,6 +434,225 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="CHR_Crow_Misc_Caws" ID="{9127DC0E-EB8C-43D0-B59E-22B24FE1C899}" ShortID="1005899135">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>14</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHR_Crow_Caw_Misc_01" ID="{4B84FA47-5CE4-4110-87D1-15A6B98DFF07}" ShortID="424590020">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_01" ID="{671F0CCB-2B7A-45C0-87D0-2E139FD31196}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="727094168"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_01" ID="{671F0CCB-2B7A-45C0-87D0-2E139FD31196}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHR_Crow_Caw_Misc_02" ID="{ED81145D-642B-4400-861A-9E1C592A4072}" ShortID="1019124118">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_02" ID="{24D3A0F3-5736-48E1-AD09-D4491B34ADF5}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="117400913"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_02" ID="{24D3A0F3-5736-48E1-AD09-D4491B34ADF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHR_Crow_Caw_Misc_03" ID="{29C01107-8A1F-4D5D-A728-99999EAC2892}" ShortID="653534884">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_03" ID="{060ADB1F-6595-4F21-A89E-092623469282}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="858591020"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_03" ID="{060ADB1F-6595-4F21-A89E-092623469282}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHR_Crow_Caw_Misc_04" ID="{6471090B-DCB6-4E1F-9E42-109C8CFF4455}" ShortID="517842704">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_04" ID="{560D3144-9798-4984-B3FD-E57E0E888344}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1051584556"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_04" ID="{560D3144-9798-4984-B3FD-E57E0E888344}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHR_Crow_Caw_Misc_05" ID="{19377556-A29F-46CC-9B2A-0B154F0ABE1A}" ShortID="203723742">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_05" ID="{A57A10B5-4BA6-494E-918F-BD4DAD306910}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1022974050"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_05" ID="{A57A10B5-4BA6-494E-918F-BD4DAD306910}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHR_Crow_Caw_Misc_06" ID="{6C9CC84C-1354-41EB-8052-8564EAF02737}" ShortID="731812112">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_06" ID="{6CBC86B4-4DE5-4737-AA3A-A70DD43F31C9}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="202332360"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_06" ID="{6CBC86B4-4DE5-4737-AA3A-A70DD43F31C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHR_Crow_Caw_Misc_07" ID="{1F191B21-AE20-445A-8DCD-C0327C74128A}" ShortID="173398228">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_07" ID="{23C0F7CD-8070-4C83-9972-51B1706B23A8}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="664815177"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_07" ID="{23C0F7CD-8070-4C83-9972-51B1706B23A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHR_Crow_Caw_Misc_08" ID="{FB5408CD-59B1-4E35-941D-C0457A14BA24}" ShortID="586940024">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_08" ID="{D7EB38B8-DC3F-4463-92B0-2F954C7F9106}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="482176789"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_08" ID="{D7EB38B8-DC3F-4463-92B0-2F954C7F9106}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHR_Crow_Caw_Misc_09" ID="{B4917CAA-A25C-4A15-A07F-41652E35410A}" ShortID="485945683">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Caw_Misc_09" ID="{5FB60CFD-DF9F-4179-A3C7-D068360C6DB6}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Caw_Misc_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1017128551"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Caw_Misc_09" ID="{5FB60CFD-DF9F-4179-A3C7-D068360C6DB6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Mvmt" ID="{B11874CB-B0FA-419C-BEB6-81C5EAF45024}" ShortID="254388844">
