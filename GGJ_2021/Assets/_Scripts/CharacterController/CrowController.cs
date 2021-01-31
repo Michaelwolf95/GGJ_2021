@@ -122,6 +122,13 @@ namespace CrowGame
             }
             else // Not grounded
             {
+                if (wasGrounded)
+                {
+                    // FELL OFF
+                    animator.SetBool("flying", true);
+                    if (numJumpsSinceGrounded == 0) numJumpsSinceGrounded = 1; // Consume a jump if you fell. ToDo: Consider taking this line out, and use the extra jump as cayotee time?
+                }
+                
                 Vector3 moveDir = GetMoveDirectionXZ(moveInput);
                 bool specialJumpFrame = false;
                 if (jumpButton.isPressedDown)
@@ -184,9 +191,10 @@ namespace CrowGame
                     if (isGliding == false)
                     {
                         // FALLING MOVEMENT
+                        float angleBetween = Vector3.Angle(characterRoot.forward, moveDir);
                         RotateTowardsDirection(moveDir, fallingTurnSpeed);
-                        //moveDelta += moveDir * (fallingMoveSpeed * Time.deltaTime);
-                        moveDelta += characterRoot.forward * (moveInput.magnitude * fallingMoveSpeed * Time.deltaTime);
+                        float turnInPlaceScalar = (angleBetween > 45f) ? 0f : Mathf.InverseLerp(45f, 0f, angleBetween);
+                        moveDelta += characterRoot.forward * (moveInput.magnitude * fallingMoveSpeed * turnInPlaceScalar * Time.deltaTime);
                         currentGravityY = defaultGravity;
                     }
                 }

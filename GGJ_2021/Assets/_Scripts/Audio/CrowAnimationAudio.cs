@@ -57,7 +57,7 @@ public class CrowAnimationAudio : MonoBehaviour
     
     public void PlayLandOnGroundSound()
     {
-        
+        footStepEvent.Post(gameObject); // Temp land sounds
     }
 
     public void HandleControllerColliderHit(CharacterController controller, ControllerColliderHit hit)
