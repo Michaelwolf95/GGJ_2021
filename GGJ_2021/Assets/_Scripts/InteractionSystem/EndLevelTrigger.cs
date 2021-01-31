@@ -37,7 +37,7 @@ public class EndLevelTrigger : MonoBehaviour
             if(goal.isGoalObject)
             {
                 PlayerInstance.Instance.GetComponent<PlayerInput>().DeactivateInput();
-                screenFade.PerformArtSequence((() =>
+                screenFade.PerformEndLevelArtSequence((() =>
                 {
                     SceneManager.LoadScene(nextLevelIndex);
                 }));

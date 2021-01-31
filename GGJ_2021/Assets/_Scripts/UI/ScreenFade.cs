@@ -6,12 +6,16 @@ using UnityEngine.UI;
 
 public class ScreenFade : MonoBehaviour
 {
-    [SerializeField]
-    private Image _fadeScreen;
-    [SerializeField]
-    private Image _illustrationContainer;
-    [SerializeField]
-    private Sprite[] _illustrations;
+    [SerializeField] private Image _fadeScreen;
+    // [SerializeField]
+    // private Image _illustrationContainer;
+    // [SerializeField]
+    // private Sprite[] _illustrations;
+
+    [SerializeField] private CanvasGroup artCanvasGroup;
+
+    [SerializeField] private AK.Wwise.Event onShowArt;
+    
 
 
     private Color alphaB, opaqueB, alphaW, opaqueW;
@@ -35,42 +39,64 @@ public class ScreenFade : MonoBehaviour
         _fadeScreen.raycastTarget = true;
         this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(opaqueB, alphaB, lerp); }, () => { _fadeScreen.raycastTarget = false; }, 1.25f, easeType: EaseType.easeInCubic);
     }
+    
+    public void DoFadeIn(Action callback = null, float duration = 1.25f){
+        _fadeScreen.raycastTarget = true;
+        this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(opaqueB, alphaB, lerp); }, () =>
+        {
+            _fadeScreen.raycastTarget = false;
+            if (callback != null) callback();
+        }, duration, 0f, EaseType.easeInCubic, true);
+    }
 
-    public void DoFadeOut(Action callback = null){
+    public void DoFadeOut(Action callback = null, float duration = 1.25f){
         _fadeScreen.raycastTarget = true;
         Color start = _fadeScreen.color;
-        this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(alphaB, opaqueB, lerp); }, callback, 1.25f, easeType: EaseType.easeOutCubic);
+        this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(alphaB, opaqueB, lerp); }, callback, duration, 0f, EaseType.easeOutCubic, true);
     }
 
     /// <summary>
     /// Triggered by handing items into grandma
     /// </summary>
-    public void PerformArtSequence(Action argOnFadeComplete = null)
+    public void PerformEndLevelArtSequence(Action argOnFadeComplete = null)
     {
-        //out of pics, load next level directly
-        if (cycleIndex > _illustrations.Length) {
-            DoFadeOut(() =>
+        DoFadeOut(() =>
+        {
+            onShowArt.Post(gameObject);
+            artCanvasGroup.gameObject.SetActive(true);
+            DoFadeIn(() =>
             {
                 if (argOnFadeComplete != null)
                 {
                     argOnFadeComplete();
                 }
             });
-        }
-
-        //transparent to solid white
-        Color start = _fadeScreen.color;
-        _fadeScreen.raycastTarget = true;
-        this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(start, opaqueW, lerp); },
-        ()=> {
-            if (_illustrationContainer)
-            {
-                _illustrationContainer.gameObject.SetActive(true);
-                FadeArtIn();
-                _illustrationContainer.sprite = _illustrations[cycleIndex];
-            }
-            cycleIndex++;
-        }, duration: 1.0f, easeType: EaseType.linear, useUnscaledTime: true);
+        });
+        //
+        // //out of pics, load next level directly
+        // if (cycleIndex > _illustrations.Length) {
+        //     DoFadeOut(() =>
+        //     {
+        //         if (argOnFadeComplete != null)
+        //         {
+        //             argOnFadeComplete();
+        //         }
+        //     });
+        // }
+        //
+        // //transparent to solid white
+        // Color start = _fadeScreen.color;
+        // _fadeScreen.raycastTarget = true;
+        // this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(start, opaqueW, lerp); },
+        // ()=> {
+        //     if (_illustrationContainer)
+        //     {
+        //         _illustrationContainer.gameObject.SetActive(true);
+        //         FadeArtIn();
+        //         _illustrationContainer.sprite = _illustrations[cycleIndex];
+        //     }
+        //     cycleIndex++;
+        // }, duration: 1.0f, easeType: EaseType.linear, useUnscaledTime: true);
     }
 
     public void FadeArtIn() {
