@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3466983040">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1508130480">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -266,6 +266,14 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3950425532" Name="Play_Crow_Glide_LP" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Glide_LP" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="721789434" Language="SFX">
+							<ShortName>CHR_Crow_Glide_LP.wav</ShortName>
+							<Path>SFX\CHR_Crow_Glide_LP_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="797577932" Name="Play_Crow_Rasp" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Rasp" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.123201" DurationMax="5.056464">
 					<IncludedMemoryFiles>
 						<File Id="3892725" Language="SFX">
@@ -374,7 +382,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1065595628" Name="Play_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Shiny_Object_LP" MaxAttenuation="40.000000" DurationType="Infinite">
+				<Event Id="1065595628" Name="Play_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\Play_OBJ_Shiny_Object_LP" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="184308134" Language="SFX">
 							<ShortName>OBJ_Shiny_Object_LP.wav</ShortName>
@@ -430,6 +438,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2907956634" Name="STOP_Crow_Glide_LP" ObjectPath="\Events\Default Work Unit\Hero\Crow\STOP_Crow_Glide_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2714774039" Name="Stop_MUS_Main_Game_LP" ObjectPath="\Events\Default Work Unit\Music\Stop_MUS_Main_Game_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="193541534" Name="STOP_OBJ_Shiny_Object_LP" ObjectPath="\Events\Default Work Unit\Objects\STOP_OBJ_Shiny_Object_LP" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>

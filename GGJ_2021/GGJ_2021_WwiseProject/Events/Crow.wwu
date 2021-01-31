@@ -69,6 +69,35 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Crow_Glide_LP" ID="{8D4F1C0C-E91E-4BF6-A55B-663200E77712}">
+					<ChildrenList>
+						<Action Name="" ID="{705EFC5B-1CB2-4FCF-B816-B0AD37E79536}" ShortID="804505922">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Crow_Glide_LP" ID="{47BB4E24-6665-4C5E-8DB9-7819C466942B}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STOP_Crow_Glide_LP" ID="{9446785D-DA9F-4102-94B1-055ADA80E2FC}">
+					<ChildrenList>
+						<Action Name="" ID="{CC25BDC7-0A73-4A49-9D68-95587664AE4C}" ShortID="832434049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Crow_Glide_LP" ID="{47BB4E24-6665-4C5E-8DB9-7819C466942B}" WorkUnitID="{7DF766D1-0BFA-426B-94D4-EB63D1132587}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

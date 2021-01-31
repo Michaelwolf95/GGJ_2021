@@ -1685,9 +1685,112 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="CHR_Crow_Footsteps_Water" ID="{62ADCD6A-A694-4C0A-BCA0-8C31CC2F7EFC}" ShortID="830959790">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="CHR_Crow_Footstep_Water_01" ID="{01D00362-5345-4581-B7C4-2447CD3A599A}" ShortID="563550544">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Water_01" ID="{D80984D2-4C9F-4A4D-8CC7-174D7B140307}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Water_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="784104167"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Water_01" ID="{D80984D2-4C9F-4A4D-8CC7-174D7B140307}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Water_02" ID="{702E794B-7C60-4275-8252-063071FF8F56}" ShortID="453779155">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Water_02" ID="{7FBC8FA2-694A-4663-9AC9-F0903ABC7884}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Water_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="757132057"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Water_02" ID="{7FBC8FA2-694A-4663-9AC9-F0903ABC7884}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Water_03" ID="{D0FD03C6-7F1D-42D4-8B9A-881E276649E8}" ShortID="453953220">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Water_03" ID="{04D24345-C09C-4A6B-B312-11E9DD955B5B}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Water_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="850609152"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Water_03" ID="{04D24345-C09C-4A6B-B312-11E9DD955B5B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Water_04" ID="{531C503B-D55E-4679-BFFE-95686504F85A}" ShortID="474197482">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Water_04" ID="{8AA11F60-A803-41C5-88BB-55F98BD67E66}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Water_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="842613222"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Water_04" ID="{8AA11F60-A803-41C5-88BB-55F98BD67E66}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="CHR_Crow_Footsteps_Water" ID="{62ADCD6A-A694-4C0A-BCA0-8C31CC2F7EFC}"/>
+													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="CHR_Crow_Footsteps_Wood" ID="{50844987-3133-4506-8782-2F12CA715516}"/>
 													</GroupingBehavior>
@@ -1729,6 +1832,43 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="CHR_Crow_Fly" ID="{49272934-5393-4AFB-9B15-D6849D8E1F3C}" ShortID="615931314">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHR_Crow_Glide_LP" ID="{47BB4E24-6665-4C5E-8DB9-7819C466942B}" ShortID="863958226">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHR_Crow_Glide_LP" ID="{22FC82F8-18D6-4B4D-A727-5BF000AD4EDF}">
+													<Language>SFX</Language>
+													<AudioFile>CHR_Crow_Glide_LP.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="721789434"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHR_Crow_Glide_LP" ID="{22FC82F8-18D6-4B4D-A727-5BF000AD4EDF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
