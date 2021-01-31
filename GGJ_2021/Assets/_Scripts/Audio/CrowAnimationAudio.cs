@@ -23,6 +23,9 @@ public class CrowAnimationAudio : MonoBehaviour
     public AK.Wwise.Event Wingflap;
     public AK.Wwise.Event footStepEvent;
     public AK.Wwise.Event Caw; 
+    public AK.Wwise.Event GlideStart; 
+    public AK.Wwise.Event GlideStop; 
+
 
     private bool isGrounded = false;
     
@@ -45,12 +48,12 @@ public class CrowAnimationAudio : MonoBehaviour
 
     public void OnGlideStart()
     {
-        
+        GlideStart.Post(gameObject);
     }
     
     public void OnGlideStop()
     {
-        
+        GlideStop.Post(gameObject);
     }
 
     public void PlayCaw()
