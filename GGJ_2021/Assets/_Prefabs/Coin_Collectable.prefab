@@ -136,11 +136,23 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: e9ae7503343498f419d8387e082f379b, type: 2}
   OnInteractStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1938612937246493389}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
-  isGoalObject: 0
+  isGoalObject: 1
   grabObjectTarget: {fileID: 1579187870}
 --- !u!54 &5409541859482191501
 Rigidbody:
@@ -169,7 +181,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.23219442, y: 0.046290908, z: 0.24339655}
+  m_Size: {x: 0.25, y: 0.1, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1656280984898958935
 PrefabInstance:
@@ -311,10 +323,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6870679115782823105, guid: 19619a96d41481a4b85b2b9e26063b04, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870679115782823105, guid: 19619a96d41481a4b85b2b9e26063b04, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870679115782823107, guid: 19619a96d41481a4b85b2b9e26063b04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870679115782823107, guid: 19619a96d41481a4b85b2b9e26063b04, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870679115782823107, guid: 19619a96d41481a4b85b2b9e26063b04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19619a96d41481a4b85b2b9e26063b04, type: 3}
 --- !u!4 &1938612935652239916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6870679115262114861, guid: 19619a96d41481a4b85b2b9e26063b04, type: 3}
+  m_PrefabInstance: {fileID: 5025692214645478913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1938612937246493389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6870679115782823116, guid: 19619a96d41481a4b85b2b9e26063b04, type: 3}
   m_PrefabInstance: {fileID: 5025692214645478913}
   m_PrefabAsset: {fileID: 0}
