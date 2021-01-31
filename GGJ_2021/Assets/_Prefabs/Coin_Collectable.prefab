@@ -131,7 +131,7 @@ MonoBehaviour:
   InteractStartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 64cde9ee3700e1b4fab047587e355bae, type: 2}
+    WwiseObjectReference: {fileID: 0}
   InteractEndAudio:
     idInternal: 0
     valueGuidInternal: 
@@ -247,6 +247,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5025692214629707565}
     m_Modifications:
+    - target: {fileID: 5319917732367521337, guid: 10d7882aa21e3244982e214846444419, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 5319917732367521337, guid: 10d7882aa21e3244982e214846444419, type: 3}
       propertyPath: m_Name
       value: InteractReticle
