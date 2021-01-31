@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class EndLevelTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Enter");
+        CheckFinishConditions(other);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        Debug.Log("Stay");
+        CheckFinishConditions(other);
+    }
+
+    private void CheckFinishConditions(Collider other)
     {
         if (other.gameObject.tag == "GoalObject")
         {
