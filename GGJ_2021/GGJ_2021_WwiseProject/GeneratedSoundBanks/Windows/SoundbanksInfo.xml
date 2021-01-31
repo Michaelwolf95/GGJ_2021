@@ -22,7 +22,7 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1390663872">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3695819437">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -329,7 +329,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3950425532" Name="Play_Crow_Glide_LP" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Glide_LP" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="3950425532" Name="Play_Crow_Glide_LP" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Glide_LP" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="721789434" Language="SFX">
 							<ShortName>CHR_Crow_Glide_LP.wav</ShortName>

@@ -135,6 +135,158 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Cutscene" ID="{664577B0-837A-4D7B-A4F7-5EB0582835ED}" ShortID="1018771530">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="A penny for your corn" ID="{7BA1C9DD-E98E-4A64-B9FA-E95A78F9C0BE}" ShortID="134472310">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16473.8095238095"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="A penny for your corn" ID="{53B9569D-4052-4C80-AFBC-67CB2DCE8814}" ShortID="616871853">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="A penny for your corn" ID="{74E4B406-A34F-4F4E-B4D1-49ED9D8B2481}">
+													<Language>SFX</Language>
+													<AudioFile>A penny for your corn.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="887032162"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{7939EE42-7807-4CF8-92D0-1FC9E6517ABB}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{123038C9-4632-4CB2-A0CD-8AC3F7EC0503}">
+													<ClipList>
+														<MusicClip Name="A penny for your corn" ID="{BDB7BE73-A804-4C22-9576-79615D9CD176}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16473.8095238095"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="A penny for your corn" ID="{74E4B406-A34F-4F4E-B4D1-49ED9D8B2481}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{FF35A9BD-E1D0-40BA-9D11-FF22F85E6B30}"/>
+										<MusicCue Name="Exit Cue" ID="{918D3B56-D2AB-4548-8064-B54C7B8768A6}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="16473.8095238095"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="Feathered Friend" ID="{0C8349AC-F4B2-4B60-9601-EF8432AC6B7A}" ShortID="404064932">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="15340.589569161"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Feathered Friend" ID="{F5FB2446-17A5-457C-82FA-EA4E1451118B}" ShortID="469981309">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Feathered Friend" ID="{E702CE28-632A-44C0-B008-FF1AFFECDD93}">
+													<Language>SFX</Language>
+													<AudioFile>Feathered Friend.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1062334796"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{FEEED9CE-015D-4A41-BB62-21D76997291D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{EDB9BCF9-C725-41AF-B61C-3C2B7564B931}">
+													<ClipList>
+														<MusicClip Name="Feathered Friend" ID="{0C2D7075-E4FC-48D3-9110-A0185D5AAB56}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="15340.589569161"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Feathered Friend" ID="{E702CE28-632A-44C0-B008-FF1AFFECDD93}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{318061F7-5657-4C6E-B486-20A8321374C3}"/>
+										<MusicCue Name="Exit Cue" ID="{9D482468-E7A8-4D18-B529-B559149ADE6A}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="15340.589569161"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{B8ECD730-2AC5-4EC6-AC6A-B3D344B97501}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{512A553B-3D32-4727-BDBE-51FC7733E466}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{3E263F78-A39E-48B7-8B66-604C39EF89FB}" ShortID="989572580"/>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{1D34F850-A614-4B93-92E2-249389B0E444}">
