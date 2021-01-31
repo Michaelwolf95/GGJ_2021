@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	16145676	Play_End_Cutscene			\MX\Music\Play_End_Cutscene	
+	2714774039	Stop_MUS_Main_Game_LP			\MX\Music\Stop_MUS_Main_Game_LP	
+	3265397713	Play_MUS_Main_Game_LP			\MX\Music\Play_MUS_Main_Game_LP	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1926883983	Scene			\Default Work Unit\Scene	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Scene			
+	2607556080	Menu	Scene			
+	2782712965	Level	Scene			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	778566092	Crows don't have thumbs-02	C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\Crows don't have thumbs-02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Gameplay_Main\Main_Game\Crows_Dont_Have_Thumbs\Crows don't have thumbs-02		18674720
+	887032162	A penny for your corn	C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\A penny for your corn_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Gameplay_Main\Cutscene\A penny for your corn\A penny for your corn		2906044
+

@@ -37,6 +37,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Menu_Audio" ID="{C6A2D29F-6C7F-490B-A70C-D9E4304E9865}">
+					<ChildrenList>
+						<Action Name="" ID="{EEE3C841-8E27-440F-AF6B-84F01434CF6D}" ShortID="449722753">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Feathered Friend" ID="{0C8349AC-F4B2-4B60-9601-EF8432AC6B7A}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{298D17BC-3A4B-4EBE-AAD8-5795C99AB05C}" ShortID="748898916">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SND_AMB_PARKWITHBIRDS_LOOP_01" ID="{0771A313-EA9C-4634-ABDA-ADBE96DA914A}" WorkUnitID="{77676A17-7285-4514-9E96-EC61C72BE862}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

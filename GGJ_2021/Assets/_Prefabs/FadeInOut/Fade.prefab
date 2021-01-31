@@ -227,4 +227,4 @@ MonoBehaviour:
   onShowArt:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a1f6cf9c7f788454c80d6a4211d1b2e0, type: 2}

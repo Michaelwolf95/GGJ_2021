@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9B94B089-99E6-4761-88F1-4425508A0181}" SchemaVersion="97" RootDocumentID="{0D49C615-A7E9-476F-8764-69D95E19282C}">
+<WwiseDocument Type="WorkUnit" ID="{9B94B089-99E6-4761-88F1-4425508A0181}" SchemaVersion="97" RootDocumentID="{8B574B4D-C8F3-422E-8E4F-133A95747B0C}">
 	<Events>
-		<WorkUnit Name="Music" ID="{9B94B089-99E6-4761-88F1-4425508A0181}" OwnerID="{0D49C615-A7E9-476F-8764-69D95E19282C}" PersistMode="Nested">
+		<WorkUnit Name="Music" ID="{9B94B089-99E6-4761-88F1-4425508A0181}" OwnerID="{8B574B4D-C8F3-422E-8E4F-133A95747B0C}" PersistMode="Nested">
 			<ChildrenList>
 				<Event Name="Play_MUS_Main_Game_LP" ID="{69DE23A6-53D4-4905-9601-04370A1EF031}">
 					<ChildrenList>
+						<Action Name="" ID="{4F408F25-66B1-48A6-ACBE-FC0DB989035D}" ShortID="565640809">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cutscene" ID="{664577B0-837A-4D7B-A4F7-5EB0582835ED}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{9B9982A8-4968-42D9-B672-3E479D4AFA9B}" ShortID="262191166">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -19,6 +29,38 @@
 						<Action Name="" ID="{D6DA929B-4C52-4DB6-95FD-5148CC66ACC2}" ShortID="503764992">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_End_Cutscene" ID="{FB9F0223-EF6B-454D-9D7B-34ADD9B5BAC7}">
+					<ChildrenList>
+						<Action Name="" ID="{5C5B691D-E911-4E2B-A604-79BB7E81DAF2}" ShortID="652981146">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7B391F82-DD36-41C5-9F2D-7E101AF8E71D}" ShortID="863954447">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="A penny for your corn" ID="{7BA1C9DD-E98E-4A64-B9FA-E95A78F9C0BE}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2D6B8274-CAFF-42EB-9DE6-2B933EAD482B}" ShortID="974158155">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="14"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
