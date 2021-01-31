@@ -109,6 +109,23 @@ namespace CrowGame
                 }
                 else 
                 {
+                    // SLOPE HANDLING
+                    // float slopeAngle = 0f;
+                    // if (currentControllerHit != null)
+                    // {
+                    //     // ToDo: Reenable this later.
+                    //     slopeAngle = Vector3.Angle(Vector3.up, currentControllerHit.normal);
+                    // }
+                    //
+                    // if (slopeAngle > moveController.slopeLimit) // && currentControllerHit != null
+                    // {
+                    //     Vector3 g = Vector3.Cross(Vector3.Cross(currentControllerHit.normal, Vector3.down), currentControllerHit.normal);
+                    //     g *= 4f * Time.deltaTime;
+                    //     moveDelta += g;
+                    //     Debug.Log(slopeAngle + ", " + currentControllerHit.collider.gameObject.name + ", " + currentControllerHit.normal);
+                    //     Debug.DrawLine(currentControllerHit.point + currentControllerHit.normal, currentControllerHit.point + currentControllerHit.normal + (g * 2f), Color.magenta, 0.1f);
+                    // }
+                    
                     // GROUNDED MOVEMENT
                     Vector3 moveDir = GetMoveDirectionXZ(moveInput);
                     float angleBetween = Vector3.Angle(characterRoot.forward, moveDir);
