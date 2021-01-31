@@ -42,6 +42,115 @@
 								<ActiveSource Name="UI_Game_Start" ID="{CB6887D8-03AE-4635-8809-D3EC038299A5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="UI_Button_Press_Generic" ID="{A40B9F94-E762-4437-9C04-F36D1AB4467A}" ShortID="62285244">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UI_Button_Press_Generic_01" ID="{1F6089E4-D2F9-439D-82DA-4FB882986079}" ShortID="547346665">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Button_Press_Generic_01" ID="{B761EB76-341F-419A-9F8C-69E3F3A0BB2F}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Button_Press_Generic_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="365079447"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Button_Press_Generic_01" ID="{B761EB76-341F-419A-9F8C-69E3F3A0BB2F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Button_Press_Generic_02" ID="{18942037-5B1E-49B0-A178-7E9B56326911}" ShortID="620257838">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Button_Press_Generic_02" ID="{E32FCD1F-9B09-4BF8-B9C1-32D7C32117E6}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Button_Press_Generic_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="797708624"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Button_Press_Generic_02" ID="{E32FCD1F-9B09-4BF8-B9C1-32D7C32117E6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Button_Press_Generic_03" ID="{8CCFC1AF-B0D4-4349-875A-9742972D41D9}" ShortID="808279865">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Button_Press_Generic_03" ID="{BF032D04-DC29-4442-914D-9880E71B1DA2}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Button_Press_Generic_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="263675457"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Button_Press_Generic_03" ID="{BF032D04-DC29-4442-914D-9880E71B1DA2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Button_Press_Generic_04" ID="{1C4C9547-5BA4-4C46-A0C5-3A322DE1131E}" ShortID="313781451">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Button_Press_Generic_04" ID="{0F3C53AE-F02D-46EA-AC10-ADA563BD79C4}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Button_Press_Generic_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="709055608"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Button_Press_Generic_04" ID="{0F3C53AE-F02D-46EA-AC10-ADA563BD79C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
