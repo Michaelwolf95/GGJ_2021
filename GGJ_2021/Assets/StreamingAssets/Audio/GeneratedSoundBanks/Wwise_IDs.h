@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_OBJ_PICKUP_GENERIC = 3741681902U;
         static const AkUniqueID PLAY_OBJ_PICKUP_SHINY = 1433800392U;
         static const AkUniqueID PLAY_OBJ_SHINY_OBJECT_LP = 1065595628U;
+        static const AkUniqueID PLAY_UI_BUTTON_HOVER_GENERIC = 155552906U;
         static const AkUniqueID PLAY_UI_BUTTON_PRESS_GENERIC = 750236145U;
         static const AkUniqueID PLAY_UI_GAME_START = 1580643620U;
         static const AkUniqueID STOP_OBJ_SHINY_OBJECT_LP = 193541534U;
