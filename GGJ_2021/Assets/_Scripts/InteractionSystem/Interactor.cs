@@ -39,8 +39,7 @@ public class Interactor : MonoBehaviour
     [SerializeField] private PlayerInput inputController;
 
     public GrabObject heldObject { get; set; }
-    private GameObject[] grabableObjects;
-    
+
     private void Awake()
     {
         instance = this;
@@ -49,18 +48,11 @@ public class Interactor : MonoBehaviour
         {
             mainCamera = Camera.main;
         }
-
-        SceneManager.sceneLoaded += PopulateGrabables;
         
         inputController.actions["Grab"].performed += ctx =>
         {
             HandleGrabInput();
         };
-    }
-
-    private void PopulateGrabables(Scene s, LoadSceneMode mode)
-    {
-        grabableObjects = GameObject.FindGameObjectsWithTag("Grabable");
     }
 
     private void HandleGrabInput()
@@ -81,111 +73,27 @@ public class Interactor : MonoBehaviour
         {
             return;
         }
-
-        /*
-        Ray ray = new Ray(this.gameObject.transform.position, viewOrigin.forward);
-        RaycastHit[] hits = Physics.RaycastAll(ray, interactRange, interactionLayerMask, QueryTriggerInteraction.Collide);
-        if (hits.Length > 0)
-        {
-            InteractableBase raycastResultTarget = null;
-            float nearestDist = float.MaxValue;
-            for (int i = 0; i < hits.Length; i++)
-            {
-                InteractableBase raycastInteractable = hits[i].collider.GetComponent<InteractableBase>();
-                if (raycastInteractable == null && hits[i].rigidbody != null)
-                {
-                    raycastInteractable = hits[i].rigidbody.GetComponent<InteractableBase>();
-                }
-                if (raycastInteractable != null && raycastInteractable.isInteractable)
-                {
-                    if (hits[i].distance < nearestDist && IsInteractableWithinViewAngle(raycastInteractable))
-                    {
-                        raycastResultTarget = raycastInteractable;
-                        nearestDist = hits[i].distance;
-                    }
-                }
-            } 
-            
-
-            if (raycastResultTarget != null)
-            {
-                if (currentPointerTarget != null && currentPointerTarget != raycastResultTarget)
-                {
-                    ClearPointerTarget();
-                }
-
-                SetPointerTarget(raycastResultTarget);
-            }
-        }
-        else
-        {
-            if (currentPointerTarget != null)
-            {
-                ClearPointerTarget();
-            }
-        }
-        */
-
+        
         if(heldObject != null)
         {
             if (heldObject != currentPointerTarget) 
                 SetPointerTarget(heldObject);
             return;
         }
-        /*
-        RaycastHit[] hits = Physics.RaycastAll(this.gameObject.transform.position, this.gameObject.transform.forward);
-        if (hits.Length > 0)
-        {
-            InteractableBase raycastResultTarget = null;
-            float nearestDist = float.MaxValue;
-            for (int i = 0; i < hits.Length; i++)
-            {
-                InteractableBase raycastInteractable = hits[i].collider.GetComponent<InteractableBase>();
-                if (raycastInteractable == null && hits[i].rigidbody != null)
-                {
-                    raycastInteractable = hits[i].rigidbody.GetComponent<InteractableBase>();
-                }
-                if (raycastInteractable != null && raycastInteractable.isInteractable)
-                {
-                    if (hits[i].distance < nearestDist)
-                    {
-                        raycastResultTarget = raycastInteractable;
-                        nearestDist = hits[i].distance;
-                    }
-                }
-            }
-            if (raycastResultTarget != null)
-            {
-                if (currentPointerTarget != null && currentPointerTarget != raycastResultTarget)
-                {
-                    ClearPointerTarget();
-                }
-
-                SetPointerTarget(raycastResultTarget);
-            }
-        }
-        else
-        {
-            if (currentPointerTarget != null)
-            {
-                ClearPointerTarget();
-            }
-        }
-        */
-
+        
         InteractableBase closestObject = null;
         float shortest = float.MaxValue;
-        foreach(GameObject go in grabableObjects)
+        foreach (InteractableBase interactable in FindObjectsOfType<InteractableBase>())
         {
-            float dist = Vector3.Distance(this.gameObject.transform.position, go.transform.position);
+            float dist = Vector3.Distance(this.gameObject.transform.position, interactable.transform.position);
             if(dist <= activationRange && dist < shortest)
-            {   
-                closestObject = go.GetComponent<InteractableBase>();
+            {
+                closestObject = interactable;
                 shortest = dist;                
             }
         }
-
-        if(closestObject != null)
+        
+        if(closestObject != null && shortest < interactRange)
         {
             if(currentPointerTarget != null && currentPointerTarget != closestObject)
             {

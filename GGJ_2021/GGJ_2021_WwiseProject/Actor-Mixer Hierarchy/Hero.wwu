@@ -1002,11 +1002,6 @@
 												<RandomSequenceContainer Name="CHR_Crow_Footsteps_Grass" ID="{CEC2EBF2-8BDD-4FF2-A0BB-EB58D8C2C31D}" ShortID="105841690">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="MakeUpGain" Type="Real64">
-															<ValueList>
-																<Value>1</Value>
-															</ValueList>
-														</Property>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 													</PropertyList>
@@ -1792,11 +1787,189 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="CHR_Crow_Footsteps_Sand" ID="{B117C06C-177C-4D4A-A9F7-06138094E5BA}" ShortID="922054675">
+													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>7</Value>
+															</ValueList>
+														</Property>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="CHR_Crow_Footstep_Sand_01" ID="{DCC0C5CC-8CB9-4FE5-9C76-13E69D7CCF5F}" ShortID="467921413">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Sand_01" ID="{BE4BFCF2-9B25-43FB-A261-DC74126B9EC1}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Sand_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="47363960"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Sand_01" ID="{BE4BFCF2-9B25-43FB-A261-DC74126B9EC1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Sand_02" ID="{F0B5447C-85EE-4856-907D-F7E11BB65702}" ShortID="994803919">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Sand_02" ID="{EE93B4C9-539A-4B0E-9E91-9B7D9676C2EE}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Sand_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="993429708"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Sand_02" ID="{EE93B4C9-539A-4B0E-9E91-9B7D9676C2EE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Sand_03" ID="{0FA6BB42-40B6-4830-9611-3EEAECDBBF76}" ShortID="241960426">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Sand_03" ID="{CE2B6B61-1E4F-4ADF-BD95-B2E94536ED24}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Sand_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="521549240"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Sand_03" ID="{CE2B6B61-1E4F-4ADF-BD95-B2E94536ED24}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Sand_04" ID="{85F3C0D0-254E-4ACD-A0AF-CBB328D23F35}" ShortID="252955878">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Sand_04" ID="{E36FB4B7-0329-4A20-8CCD-D33D40626055}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Sand_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="775712661"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Sand_04" ID="{E36FB4B7-0329-4A20-8CCD-D33D40626055}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Sand_05" ID="{CDD6F9FF-407C-4A0F-A36C-73A3D2C7FD34}" ShortID="352938457">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Sand_05" ID="{67CD5FAB-4D3E-4FCA-A021-34893723C97B}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Sand_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="471331448"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Sand_05" ID="{67CD5FAB-4D3E-4FCA-A021-34893723C97B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Sand_06" ID="{B806A943-EDCD-48CA-B886-F7076CBEE32F}" ShortID="241242569">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Sand_06" ID="{74E917D1-A542-4E8B-BCCF-45CC5A28D3B7}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Sand_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="442083774"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Sand_06" ID="{74E917D1-A542-4E8B-BCCF-45CC5A28D3B7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHR_Crow_Footstep_Sand_07" ID="{3AD932FE-BF8C-4DB0-9BEA-7E6ACB95681B}" ShortID="780352191">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHR_Crow_Footstep_Sand_07" ID="{734934D5-7648-4F87-A8D9-44BF047D138F}">
+																	<Language>SFX</Language>
+																	<AudioFile>CHR_Crow_Footstep_Sand_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="516481396"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHR_Crow_Footstep_Sand_07" ID="{734934D5-7648-4F87-A8D9-44BF047D138F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupingBehaviorList>
 													<GroupingBehavior>
 														<ItemRef Name="CHR_Crow_Footsteps_Water" ID="{62ADCD6A-A694-4C0A-BCA0-8C31CC2F7EFC}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="CHR_Crow_Footsteps_Sand" ID="{B117C06C-177C-4D4A-A9F7-06138094E5BA}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="CHR_Crow_Footsteps_Wood" ID="{50844987-3133-4506-8782-2F12CA715516}"/>
@@ -1834,6 +2007,12 @@
 														<SwitchRef Name="Grass" ID="{FF275095-AE3F-4DA8-A08B-9D01CE89925B}"/>
 														<ItemList>
 															<ItemRef Name="CHR_Crow_Footsteps_Grass" ID="{CEC2EBF2-8BDD-4FF2-A0BB-EB58D8C2C31D}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Sand" ID="{A11EBF96-7AF7-4D00-A5AA-01A4C031207C}"/>
+														<ItemList>
+															<ItemRef Name="CHR_Crow_Footsteps_Sand" ID="{B117C06C-177C-4D4A-A9F7-06138094E5BA}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>

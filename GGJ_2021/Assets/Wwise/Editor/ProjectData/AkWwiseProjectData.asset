@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 484cd7635dfab345ad5693fb796158c4
     GuidInternal: 
-    m_lastTime: -8585895724533865701
+    m_lastTime: -8585894906711411553
     List:
     - name: AMB
       guid: 7ce060159fbf1944a79d7bbf1f46c269
@@ -142,8 +142,22 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Ambience
     guid: 083c2252849cc745a0258aacb086c456
     GuidInternal: 
-    m_lastTime: -8585896257612032038
-    List: []
+    m_lastTime: -8585895393618536491
+    List:
+    - name: Play_AMB_Park_LP
+      guid: 6c85e3a04e5043459e8586150208df82
+      id: 2296046516
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 12
+      - ElementName: Play_AMB_Park_LP
+        ObjectType: 3
+      Path: Default Work Unit\Ambience\Play_AMB_Park_LP
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Crow.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -155,11 +169,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Hero\Crow
     guid: aca492d2ef583e48996c37e1b7d9a68a
     GuidInternal: 
-    m_lastTime: -8585895729104422702
+    m_lastTime: -8585894893203699310
     List:
-    - name: Play_CHR_Crow_Caw_One_Off
+    - name: Play_Crow_Caw
       guid: 4ec64e0b4421ea4297ca4381b8b3519b
-      id: 334512546
+      id: 3489561965
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -167,15 +181,63 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Crow
         ObjectType: 12
-      - ElementName: Play_CHR_Crow_Caw_One_Off
+      - ElementName: Play_Crow_Caw
         ObjectType: 3
-      Path: Default Work Unit\Hero\Crow\Play_CHR_Crow_Caw_One_Off
-      maxAttenuation: 0
+      Path: Default Work Unit\Hero\Crow\Play_Crow_Caw
+      maxAttenuation: 100
+      maxDuration: 3.988548
+      minDuration: 1.921453
+    - name: Play_Crow_Caw_Misc
+      guid: 782c9aa7cc418848afa32ef1588644e7
+      id: 1520856432
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hero
+        ObjectType: 12
+      - ElementName: Crow
+        ObjectType: 12
+      - ElementName: Play_Crow_Caw_Misc
+        ObjectType: 3
+      Path: Default Work Unit\Hero\Crow\Play_Crow_Caw_Misc
+      maxAttenuation: 100
+      maxDuration: 2.466342
+      minDuration: 1.594263
+    - name: Play_Crow_Footsteps
+      guid: 759773fdefc2134091cb87a0a4befbeb
+      id: 2969808743
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hero
+        ObjectType: 12
+      - ElementName: Crow
+        ObjectType: 12
+      - ElementName: Play_Crow_Footsteps
+        ObjectType: 3
+      Path: Default Work Unit\Hero\Crow\Play_Crow_Footsteps
+      maxAttenuation: 100
+      maxDuration: 1.910667
+      minDuration: 0
+    - name: Play_Crow_Glide_LP
+      guid: 0c1c4f8d1ee9f64ba55b663200e77712
+      id: 3950425532
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hero
+        ObjectType: 12
+      - ElementName: Crow
+        ObjectType: 12
+      - ElementName: Play_Crow_Glide_LP
+        ObjectType: 3
+      Path: Default Work Unit\Hero\Crow\Play_Crow_Glide_LP
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
-    - name: Play_CHR_Crow_Rasp_One_Off
+    - name: Play_Crow_Rasp
       guid: ff17b72d6c55b7408a5b14b08fc9b9f1
-      id: 3855289715
+      id: 797577932
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -183,12 +245,60 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Crow
         ObjectType: 12
-      - ElementName: Play_CHR_Crow_Rasp_One_Off
+      - ElementName: Play_Crow_Rasp
         ObjectType: 3
-      Path: Default Work Unit\Hero\Crow\Play_CHR_Crow_Rasp_One_Off
+      Path: Default Work Unit\Hero\Crow\Play_Crow_Rasp
+      maxAttenuation: 100
+      maxDuration: 5.056464
+      minDuration: 3.123201
+    - name: Play_Crow_Wing_Flap_Large
+      guid: 050f953681d6ed4fb332b2d6f0757cc1
+      id: 1074723603
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hero
+        ObjectType: 12
+      - ElementName: Crow
+        ObjectType: 12
+      - ElementName: Play_Crow_Wing_Flap_Large
+        ObjectType: 3
+      Path: Default Work Unit\Hero\Crow\Play_Crow_Wing_Flap_Large
+      maxAttenuation: 100
+      maxDuration: 3.118896
+      minDuration: 2.312813
+    - name: Play_Crow_Wing_Flap_Med
+      guid: 322a8bb8ec02404fa058cc22ea8ff560
+      id: 550970928
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hero
+        ObjectType: 12
+      - ElementName: Crow
+        ObjectType: 12
+      - ElementName: Play_Crow_Wing_Flap_Med
+        ObjectType: 3
+      Path: Default Work Unit\Hero\Crow\Play_Crow_Wing_Flap_Med
+      maxAttenuation: 100
+      maxDuration: 2.370354
+      minDuration: 1.867068
+    - name: STOP_Crow_Glide_LP
+      guid: 5d7846949fda024194b1055ada80e2fc
+      id: 2907956634
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hero
+        ObjectType: 12
+      - ElementName: Crow
+        ObjectType: 12
+      - ElementName: STOP_Crow_Glide_LP
+        ObjectType: 3
+      Path: Default Work Unit\Hero\Crow\STOP_Crow_Glide_LP
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -196,7 +306,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 15c6490de9a76f47876469d95e19282c
     GuidInternal: 
-    m_lastTime: -8585896257612032038
+    m_lastTime: -8585895402877456606
     List: []
   - PhysicalPath: Events\Hero.wwu
     PathAndIcons:
@@ -207,7 +317,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Hero
     guid: 24b7b90880f09347a52cddba275cd144
     GuidInternal: 
-    m_lastTime: -8585895729104412729
+    m_lastTime: -8585896141056414501
     List: []
   - PhysicalPath: Events\Human.wwu
     PathAndIcons:
@@ -220,8 +330,47 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Objects\Human
     guid: 44c48db87978b944b580377046055d63
     GuidInternal: 
-    m_lastTime: -8585895729104412729
+    m_lastTime: -8585896141056479512
     List: []
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Default Work Unit\Music
+    guid: 89b0949be699614788f14425508a0181
+    GuidInternal: 
+    m_lastTime: -8585895402877351581
+    List:
+    - name: Play_MUS_Main_Game_LP
+      guid: a623de69d4530549960104370a1ef031
+      id: 3265397713
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_MUS_Main_Game_LP
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_MUS_Main_Game_LP
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_MUS_Main_Game_LP
+      guid: 34b0120a88eea24484cf275aa93df7ec
+      id: 2714774039
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_MUS_Main_Game_LP
+        ObjectType: 3
+      Path: Default Work Unit\Music\Stop_MUS_Main_Game_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Objects.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -231,8 +380,64 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Objects
     guid: 6743f9cb84655d4ea3e5f7e6f06a0ec2
     GuidInternal: 
-    m_lastTime: -8585895729104412729
-    List: []
+    m_lastTime: -8585894862036383874
+    List:
+    - name: Play_OBJ_Generic_Interact
+      guid: add97ecfad46324286f95193c076dd0c
+      id: 1281393260
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 12
+      - ElementName: Play_OBJ_Generic_Interact
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_OBJ_Generic_Interact
+      maxAttenuation: 100
+      maxDuration: 0.562248
+      minDuration: 0.464902
+    - name: Play_OBJ_Shiny_Interact
+      guid: 38bed0e3d2fab74ebfadc3abceabf03a
+      id: 3109608386
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 12
+      - ElementName: Play_OBJ_Shiny_Interact
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_OBJ_Shiny_Interact
+      maxAttenuation: 100
+      maxDuration: 0.871179
+      minDuration: 0.338699
+    - name: Play_OBJ_Shiny_Object_LP
+      guid: 1fbbc01e4e5e7c4cb6b20c451ec4b17a
+      id: 1065595628
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 12
+      - ElementName: Play_OBJ_Shiny_Object_LP
+        ObjectType: 3
+      Path: Default Work Unit\Objects\Play_OBJ_Shiny_Object_LP
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
+    - name: STOP_OBJ_Shiny_Object_LP
+      guid: 4391dee68126cf49a557396a9fccf907
+      id: 193541534
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Objects
+        ObjectType: 12
+      - ElementName: STOP_OBJ_Shiny_Object_LP
+        ObjectType: 3
+      Path: Default Work Unit\Objects\STOP_OBJ_Shiny_Object_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\UI.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -242,8 +447,50 @@ MonoBehaviour:
     ParentPath: Default Work Unit\UI
     guid: 7f31a0c1585c984aa3d7c2671e6301b3
     GuidInternal: 
-    m_lastTime: -8585896257612002112
-    List: []
+    m_lastTime: -8585895409132111691
+    List:
+    - name: Play_UI_Button_Hover_Generic
+      guid: 9b5bab7f964a5446bc34b40cc902a951
+      id: 155552906
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Play_UI_Button_Hover_Generic
+        ObjectType: 3
+      Path: Default Work Unit\UI\Play_UI_Button_Hover_Generic
+      maxAttenuation: 0
+      maxDuration: 0.938973
+      minDuration: 0.543057
+    - name: Play_UI_Button_Press_Generic
+      guid: 34ff33ffb649e74bb21c6765fc85b673
+      id: 750236145
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Play_UI_Button_Press_Generic
+        ObjectType: 3
+      Path: Default Work Unit\UI\Play_UI_Button_Press_Generic
+      maxAttenuation: 0
+      maxDuration: 0.692745
+      minDuration: 0.487044
+    - name: Play_UI_Game_Start
+      guid: 5c9ae4444172854bbb670cdab14a1961
+      id: 1580643620
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Play_UI_Game_Start
+        ObjectType: 3
+      Path: Default Work Unit\UI\Play_UI_Game_Start
+      maxAttenuation: 0
+      maxDuration: 4.743458
+      minDuration: 4.743458
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -252,7 +499,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 18a4eac13df0fb4da1dfdc572ba995f8
     GuidInternal: 
-    m_lastTime: -8585895719003345872
+    m_lastTime: -8585894906721333295
     List:
     - name: AMBVolume
       guid: a0655341b08d7949a8652574384a878d
@@ -298,8 +545,39 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8149f05a1685ce47995a271cea586921
     GuidInternal: 
-    m_lastTime: -8585896257611852514
-    List: []
+    m_lastTime: -8585894906711406552
+    List:
+    - name: Scene
+      guid: 6ec7c8e7ea95044d91fd4d90e6167519
+      id: 1926883983
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Scene
+        ObjectType: 9
+      Path: Default Work Unit\Scene
+      values:
+      - name: Level
+        guid: 48fac1695e4e094c98081899134b1eb6
+        id: 2782712965
+        PathAndIcons:
+        - ElementName: Level
+          ObjectType: 8
+      - name: Menu
+        guid: cf458e98c3317a48bbc3929fda057cf3
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: Menu
+          ObjectType: 8
+      - name: None
+        guid: 04828845458fce4da2e7075ee0d08a18
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -308,8 +586,57 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: eb2f5f93fad132448445b01c06592749
     GuidInternal: 
-    m_lastTime: -8585896257611852514
-    List: []
+    m_lastTime: -8585894859078639189
+    List:
+    - name: Surface_Material
+      guid: b45c959c3f7c7549bb77cac33ed6d51a
+      id: 1230601154
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Surface_Material
+        ObjectType: 11
+      Path: Default Work Unit\Surface_Material
+      values:
+      - name: Concrete
+        guid: 197a9a1ee66fbf44b9c7f78014aff3c7
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Concrete
+          ObjectType: 10
+      - name: Grass
+        guid: 955027ff3faea84da08b9d01ce89925b
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Grass
+          ObjectType: 10
+      - name: Metal
+        guid: d608fbd429cb2841861c160a0c973b57
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Metal
+          ObjectType: 10
+      - name: Sand
+        guid: 96bf1ea1f77a004da5aa01a4c031207c
+        id: 803837735
+        PathAndIcons:
+        - ElementName: Sand
+          ObjectType: 10
+      - name: Water
+        guid: 61bcaf289673da4b9d56e374bdc7912b
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Water
+          ObjectType: 10
+      - name: Wood
+        guid: 47ce5abadc3c4a4d8457995c11fa1472
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -320,13 +647,6 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585896257611842546
     List: []
-  ExpandedItems:
-  - /GGJ_2021_WwiseProject
-  - /GGJ_2021_WwiseProject/Events
-  - /GGJ_2021_WwiseProject/Events/Default Work Unit
-  - /GGJ_2021_WwiseProject/Events/Default Work Unit/Hero
-  - /GGJ_2021_WwiseProject/Events/Default Work Unit/Hero/Crow
-  - /GGJ_2021_WwiseProject/SoundBanks
-  - /GGJ_2021_WwiseProject/SoundBanks/Default Work Unit
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

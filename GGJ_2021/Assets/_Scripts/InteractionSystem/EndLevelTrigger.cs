@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using MichaelWolfGames;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class EndLevelTrigger : MonoBehaviour
 {
     [SerializeField] private ScreenFade screenFade = null;
+    [SerializeField] private int nextLevelIndex = 0;
+
     private void OnTriggerEnter(Collider other)
     {
         CheckFinishConditions(other);
@@ -34,7 +37,10 @@ public class EndLevelTrigger : MonoBehaviour
             if(goal.isGoalObject)
             {
                 PlayerInstance.Instance.GetComponent<PlayerInput>().DeactivateInput();
-                screenFade.FadeArtOut();
+                screenFade.PerformArtSequence((() =>
+                {
+                    SceneManager.LoadScene(nextLevelIndex);
+                }));
             }
         }
     }

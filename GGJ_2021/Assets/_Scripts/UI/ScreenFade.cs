@@ -45,10 +45,17 @@ public class ScreenFade : MonoBehaviour
     /// <summary>
     /// Triggered by handing items into grandma
     /// </summary>
-    public void FadeArtOut() {
+    public void PerformArtSequence(Action argOnFadeComplete = null)
+    {
         //out of pics, load next level directly
         if (cycleIndex > _illustrations.Length) {
-            DoFadeOut(() => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); });
+            DoFadeOut(() =>
+            {
+                if (argOnFadeComplete != null)
+                {
+                    argOnFadeComplete();
+                }
+            });
         }
 
         //transparent to solid white
@@ -56,9 +63,12 @@ public class ScreenFade : MonoBehaviour
         _fadeScreen.raycastTarget = true;
         this.DoTween(lerp => { _fadeScreen.color = Color.Lerp(start, opaqueW, lerp); },
         ()=> {
-            _illustrationContainer.gameObject.SetActive(true);
-            FadeArtIn();
-            _illustrationContainer.sprite = _illustrations[cycleIndex];
+            if (_illustrationContainer)
+            {
+                _illustrationContainer.gameObject.SetActive(true);
+                FadeArtIn();
+                _illustrationContainer.sprite = _illustrations[cycleIndex];
+            }
             cycleIndex++;
         }, duration: 1.0f, easeType: EaseType.linear, useUnscaledTime: true);
     }
