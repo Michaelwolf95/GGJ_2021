@@ -22,11 +22,19 @@
 				<GameParameter Id="4209755525" Name="AMBVolume" ObjectPath="\Game Parameters\Default Work Unit\AMBVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2112151350">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2600540353">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2296046516" Name="Play_AMB_Park_LP" ObjectPath="\Events\Default Work Unit\Ambience\Play_AMB_Park_LP" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1022398894" Language="SFX">
+							<ShortName>SND_AMB_PARKWITHBIRDS_LOOP_01.wav</ShortName>
+							<Path>SFX\SND_AMB_PARKWITHBIRDS_LOOP_01_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3489561965" Name="Play_Crow_Caw" ObjectPath="\Events\Default Work Unit\Hero\Crow\Play_Crow_Caw" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.921453" DurationMax="3.988548">
 					<IncludedMemoryFiles>
 						<File Id="57331924" Language="SFX">

@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{52223C08-9C84-45C7-A025-8AACB086C456}" SchemaVersion="97" RootDocumentID="{0D49C615-A7E9-476F-8764-69D95E19282C}">
 	<Events>
-		<WorkUnit Name="Ambience" ID="{52223C08-9C84-45C7-A025-8AACB086C456}" OwnerID="{0D49C615-A7E9-476F-8764-69D95E19282C}" PersistMode="Nested"/>
+		<WorkUnit Name="Ambience" ID="{52223C08-9C84-45C7-A025-8AACB086C456}" OwnerID="{0D49C615-A7E9-476F-8764-69D95E19282C}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_AMB_Park_LP" ID="{A0E3856C-504E-4543-9E85-86150208DF82}">
+					<ChildrenList>
+						<Action Name="" ID="{99E68171-B162-4DEB-9F0E-12B0D0BB0FEF}" ShortID="490519576">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SND_AMB_PARKWITHBIRDS_LOOP_01" ID="{0771A313-EA9C-4634-ABDA-ADBE96DA914A}" WorkUnitID="{77676A17-7285-4514-9E96-EC61C72BE862}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4E08B4C0-5DD0-4920-A9DE-C40D4810428F}" ShortID="598901730">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekTime" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0DA26226-0EDA-4A46-93BB-B01E4E562C76}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SeekType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SND_AMB_PARKWITHBIRDS_LOOP_01" ID="{0771A313-EA9C-4634-ABDA-ADBE96DA914A}" WorkUnitID="{77676A17-7285-4514-9E96-EC61C72BE862}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

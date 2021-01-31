@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1433800392	Play_OBJ_Pickup_Shiny			\Default Work Unit\Objects\Play_OBJ_Pickup_Shiny	
 	1520856432	Play_Crow_Caw_Misc			\Default Work Unit\Hero\Crow\Play_Crow_Caw_Misc	
 	1580643620	Play_UI_Game_Start			\Default Work Unit\UI\Play_UI_Game_Start	
+	2296046516	Play_AMB_Park_LP			\Default Work Unit\Ambience\Play_AMB_Park_LP	
 	2714774039	Stop_MUS_Main_Game_LP			\Default Work Unit\Music\Stop_MUS_Main_Game_LP	
 	2969808743	Play_Crow_Footsteps			\Default Work Unit\Hero\Crow\Play_Crow_Footsteps	
 	3265397713	Play_MUS_Main_Game_LP			\Default Work Unit\Music\Play_MUS_Main_Game_LP	
@@ -96,6 +97,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	952903180	CHR_Crow_Footstep_Metal_03	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Metal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Metal\CHR_Crow_Footstep_Metal_03		123620
 	961838480	SFX_CHR_Crow_Single_Caw_04	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Caw_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Caw_One_Offs\SFX_CHR_Crow_Single_Caw_04		647748
 	1017128551	CHR_Crow_Caw_Misc_09	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Caw_Misc_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Misc_Caws\CHR_Crow_Caw_Misc_09		329840
+	1022398894	SND_AMB_PARKWITHBIRDS_LOOP_01	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SND_AMB_PARKWITHBIRDS_LOOP_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SND_AMB_PARKWITHBIRDS_LOOP_01		53848372
 	1022974050	CHR_Crow_Caw_Misc_05	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Caw_Misc_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Misc_Caws\CHR_Crow_Caw_Misc_05		358040
 	1034617105	SFX_CHR_Crow_Single_Caw_07	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\SFX_CHR_Crow_Single_Caw_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\VOX\CHR_Crow_Caw_One_Offs\SFX_CHR_Crow_Single_Caw_07		722884
 	1044726172	CHR_Crow_Footstep_Grass_03	D:\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Windows\SFX\CHR_Crow_Footstep_Grass_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hero\Crow\Mvmt\CHR_Crow_Footsteps\CHR_Crow_Footsteps\CHR_Crow_Footsteps_Grass\CHR_Crow_Footstep_Grass_03		130760

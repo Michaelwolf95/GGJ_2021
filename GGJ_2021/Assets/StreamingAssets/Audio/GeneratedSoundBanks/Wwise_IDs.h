@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMB_PARK_LP = 2296046516U;
         static const AkUniqueID PLAY_CROW_CAW = 3489561965U;
         static const AkUniqueID PLAY_CROW_CAW_MISC = 1520856432U;
         static const AkUniqueID PLAY_CROW_FOOTSTEPS = 2969808743U;
