@@ -39,7 +39,7 @@ public class InteractableBase : MonoBehaviour
         if (Interactor.instance != null)
         {
             Interactor.instance.onBeginInteractionEvent += HideReticle;
-            Interactor.instance.onFinishInteractionEvent += UnhideReticle;
+            //Interactor.instance.onFinishInteractionEvent += UnhideReticle;
         }
     }
 

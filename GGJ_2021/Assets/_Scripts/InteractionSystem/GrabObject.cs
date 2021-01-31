@@ -35,6 +35,7 @@ public class GrabObject : InteractableBase
         this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         this.gameObject.transform.parent = null;
         Interactor.instance.heldObject = null;
+        UnhideReticle();
     }
 
     private void Grab()
@@ -45,6 +46,6 @@ public class GrabObject : InteractableBase
         this.gameObject.transform.SetParent(Interactor.instance.grabPoint);
         this.gameObject.transform.localPosition = Vector3.zero;
         Interactor.instance.heldObject = this;
-
+        HideReticle();
     }
 }
