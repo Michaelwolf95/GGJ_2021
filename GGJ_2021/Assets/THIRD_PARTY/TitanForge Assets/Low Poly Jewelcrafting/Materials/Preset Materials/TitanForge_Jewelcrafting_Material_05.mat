@@ -93,3 +93,4 @@ Material:
     - _MetalColor: {r: 0.85098046, g: 0.6039216, b: 0.20392159, a: 1}
     - _StoneColor: {r: 0.35294116, g: 0.36862746, b: 0.39999998, a: 1}
     - _WoodColor: {r: 0.41960788, g: 0.39607847, b: 0.34509805, a: 1}
+  m_BuildTextureStacks: []
