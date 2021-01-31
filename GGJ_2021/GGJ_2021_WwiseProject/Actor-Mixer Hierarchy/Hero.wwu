@@ -1825,6 +1825,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Water" ID="{28AFBC61-7396-4BDA-9D56-E374BDC7912B}"/>
+														<ItemList>
+															<ItemRef Name="CHR_Crow_Footsteps_Water" ID="{62ADCD6A-A694-4C0A-BCA0-8C31CC2F7EFC}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Grass" ID="{FF275095-AE3F-4DA8-A08B-9D01CE89925B}"/>
 														<ItemList>
 															<ItemRef Name="CHR_Crow_Footsteps_Grass" ID="{CEC2EBF2-8BDD-4FF2-A0BB-EB58D8C2C31D}"/>
