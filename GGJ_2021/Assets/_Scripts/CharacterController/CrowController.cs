@@ -18,7 +18,7 @@ namespace CrowGame
         //private Transform characterRoot => animator.transform;
         [SerializeField] private Transform characterRoot;
         [SerializeField] private Camera camera;
-        
+
         [Header("Control Parameters")]
         [SerializeField] private float groundedMoveSpeed = 4f;
         [SerializeField] private float glideMoveSpeed = 4f;
@@ -26,8 +26,8 @@ namespace CrowGame
         [SerializeField] private int maxJumps = 3;
         [SerializeField] private float defaultGravity = -9.8f;
         [SerializeField] private float glideGravity = -4.5f;
-        
-        
+
+        private CrowAnimationAudio animationAudioController = null;
 
         private int currentJumpsSinceGrounded;
         private bool lastFramePress = false; 
@@ -40,7 +40,6 @@ namespace CrowGame
         
         private Vector3 groundNormal;
         private ControllerColliderHit currentControllerHit = null;
-
         private EventButton jumpButton = null;
 
         private bool wasGrounded = false;
@@ -55,6 +54,11 @@ namespace CrowGame
             inputController.camera = camera;
 
             jumpButton = new EventButton(inputController, "Jump");
+
+            if (animator)
+            {
+                animationAudioController = animator.GetComponent<CrowAnimationAudio>();
+            }
         }
 
         private void Update()
@@ -208,6 +212,12 @@ namespace CrowGame
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
             currentControllerHit = hit;
+            
+            animationAudioController = animator.GetComponent<CrowAnimationAudio>();
+            if (animationAudioController)
+            {
+                animationAudioController.OnControllerColliderHit(moveController, hit);
+            }
         }
 
 #if UNITY_EDITOR
