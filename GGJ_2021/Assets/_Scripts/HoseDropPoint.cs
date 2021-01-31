@@ -9,9 +9,10 @@ public class HoseDropPoint : MonoBehaviour
 
     public GameObject goalPointMesh;
     public ObiParticleAttachment headPoint;
+    public Animation coinAnimation;
 
     public void OnTriggerEnter(Collider other) {
-        if(other.gameObject.name == "Player") {
+        if(other.gameObject.name == "Player" && _playerInteractor.heldObject != null) {
             _interactObject = _playerInteractor.heldObject;
             _playerInteractor.onFinishInteractionEvent += DropHose;
         }
@@ -26,9 +27,10 @@ public class HoseDropPoint : MonoBehaviour
 
     private void DropHose() {
         if(_interactObject == null || headPoint == null) { return; }
-        headPoint.target = this.transform;
         goalPointMesh.SetActive(true);
-        _playerInteractor.QuitInteraction();
+        headPoint.target = goalPointMesh.transform;
+        coinAnimation.Play("coinAnimation");
+        _interactObject.transform.position = Vector3.zero; // banish this
         _interactObject.gameObject.SetActive(false);
     }
 }
