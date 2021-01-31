@@ -23,6 +23,7 @@ Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Surface_Material			
 	2058049674	Wood	Surface_Material			
 	2473969246	Metal	Surface_Material			
+	2654748154	Water	Surface_Material			
 	4248645337	Grass	Surface_Material			
 
 State Group	ID	Name			Wwise Object Path	Notes
