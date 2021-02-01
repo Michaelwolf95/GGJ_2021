@@ -304,6 +304,96 @@
 								<MusicPlaylistItem Name="" ID="{3E263F78-A39E-48B7-8B66-604C39EF89FB}" ShortID="989572580"/>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Level_3_LP" ID="{FB8C563C-6966-42FE-AE52-982BCFDDF564}" ShortID="1038737571">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Gutter Fiend" ID="{AE2E515F-48B6-49BD-97B8-B6F630ADB2FE}" ShortID="930622080">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="70937.5056689342"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CD083FCF-3B1C-4A59-8B1F-BAF599BDB23C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Gutter Fiend" ID="{01A34A1E-4A97-409A-B414-44D29F8E57D7}" ShortID="335522961">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63D74C48-FA5D-45B3-AD56-93FB796158C4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Gutter Fiend" ID="{5920F034-5F19-414B-A027-4278980ED04A}">
+													<Language>SFX</Language>
+													<AudioFile>Gutter Fiend.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1018714340"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{0F66254B-EC99-4C48-8071-D19A3F404B47}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{A84BC394-539B-42A2-8048-0EFCE343155E}">
+													<ClipList>
+														<MusicClip Name="Gutter Fiend" ID="{8B2A9A4E-E483-425D-B62F-2C31725359E7}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="70937.5056689342"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Gutter Fiend" ID="{5920F034-5F19-414B-A027-4278980ED04A}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{B3017209-234E-46E8-B78A-350ED58DE37C}"/>
+										<MusicCue Name="Exit Cue" ID="{F9E21798-DCAF-4E80-81CC-1FD51B900D34}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="70937.5056689342"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{6D290AD1-5C81-4461-9A4D-FD75C9E1AB4D}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{FD74EE31-EF00-4880-BFC6-412543B4D00C}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{63BB1ACD-B0B7-43E7-A6A8-7C6326E003EF}" ShortID="746987167"/>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{1D34F850-A614-4B93-92E2-249389B0E444}">

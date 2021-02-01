@@ -39,6 +39,28 @@
 				</Event>
 				<Event Name="Play_Menu_Audio" ID="{C6A2D29F-6C7F-490B-A70C-D9E4304E9865}">
 					<ChildrenList>
+						<Action Name="" ID="{CC24B218-5E49-4BF8-A99C-FAE179EF7FFF}" ShortID="905306502">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crows_Dont_Have_Thumbs" ID="{A7E92445-7B60-4D6A-AF43-68341EA15A59}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E3A36606-5908-44D7-8B94-D1F0F2FC81A1}" ShortID="407722042">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="A penny for your corn" ID="{7BA1C9DD-E98E-4A64-B9FA-E95A78F9C0BE}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{EEE3C841-8E27-440F-AF6B-84F01434CF6D}" ShortID="449722753">
 							<ReferenceList>
 								<Reference Name="Target">

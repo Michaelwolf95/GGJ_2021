@@ -8,6 +8,7 @@
 						<Action Name="" ID="{4F408F25-66B1-48A6-ACBE-FC0DB989035D}" ShortID="565640809">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -29,6 +30,7 @@
 						<Action Name="" ID="{D6DA929B-4C52-4DB6-95FD-5148CC66ACC2}" ShortID="503764992">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -43,6 +45,7 @@
 						<Action Name="" ID="{5C5B691D-E911-4E2B-A604-79BB7E81DAF2}" ShortID="652981146">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -57,14 +60,36 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{2D6B8274-CAFF-42EB-9DE6-2B933EAD482B}" ShortID="974158155">
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Level_3_LP" ID="{EBEA181F-57DF-4FE8-8E58-B321FA7DE89D}">
+					<ChildrenList>
+						<Action Name="" ID="{82C2ECAE-2666-4A9B-8760-81EC7E687E55}" ShortID="910445338">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="14"/>
-								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cutscene" ID="{664577B0-837A-4D7B-A4F7-5EB0582835ED}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1D0B34D0-63F5-4C09-B708-EC0C8F4AFD87}" ShortID="274110463">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Main_Game" ID="{45D3FB56-12A1-472E-A5D8-0F564DCCD9F0}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9533B84E-7575-44D7-9E17-CD2FA377049F}" ShortID="971268645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level_3_LP" ID="{FB8C563C-6966-42FE-AE52-982BCFDDF564}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
