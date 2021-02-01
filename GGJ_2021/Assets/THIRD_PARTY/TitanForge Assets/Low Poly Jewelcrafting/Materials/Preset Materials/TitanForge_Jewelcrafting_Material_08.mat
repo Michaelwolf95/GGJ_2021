@@ -68,17 +68,17 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GemstoneSmoothness: 0.6
+    - _GemstoneSmoothness: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MetalSmoothness: 0.6
-    - _Metallic: 0.8
+    - _MetalSmoothness: 0.113
+    - _Metallic: 1
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmallTexture: 1
-    - _Smoothness: 0
+    - _Smoothness: 0.28
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -87,7 +87,7 @@ Material:
     m_Colors:
     - _ClothColor: {r: 0.5921569, g: 0.56078434, b: 0.34117648, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 2.2122226, g: 0.32773668, b: 0.12290125, a: 1}
+    - _EmissionColor: {r: 766.9961, g: 116.4549, b: 44.17255, a: 1}
     - _GemstoneColor: {r: 0.6666667, g: 0.7843138, b: 0.93725497, a: 1}
     - _LeatherColor: {r: 0.5471698, g: 0.39027986, b: 0.2710039, a: 1}
     - _MetalColor: {r: 0.85098046, g: 0.6039216, b: 0.20392159, a: 1}
