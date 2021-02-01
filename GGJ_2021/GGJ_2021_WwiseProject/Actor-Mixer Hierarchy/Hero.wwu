@@ -986,7 +986,6 @@
 										<SwitchContainer Name="CHR_Crow_Footsteps" ID="{76309E5B-AC7E-4986-8448-1DBB8EC938EC}" ShortID="924456445">
 											<PropertyList>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
