@@ -14,6 +14,7 @@ public class MainMenuControl : MonoBehaviour
     private Action loadCallback;
 
     private void OnEnable() {
+        Cursor.lockState = CursorLockMode.None;
         string unlocks = PlayerPrefs.GetString("LevelUnlocks");
         return;
         _levelButtons[0].interactable = true;
