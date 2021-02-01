@@ -42,6 +42,17 @@
 				</Event>
 				<Event Name="Play_End_Cutscene" ID="{FB9F0223-EF6B-454D-9D7B-34ADD9B5BAC7}">
 					<ChildrenList>
+						<Action Name="" ID="{4F8FCA28-16AA-421C-BC70-612695DEA8E3}" ShortID="249002270">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level_3_LP" ID="{FB8C563C-6966-42FE-AE52-982BCFDDF564}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{5C5B691D-E911-4E2B-A604-79BB7E81DAF2}" ShortID="652981146">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
@@ -89,7 +100,29 @@
 						<Action Name="" ID="{9533B84E-7575-44D7-9E17-CD2FA377049F}" ShortID="971268645">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Level_3_LP" ID="{FB8C563C-6966-42FE-AE52-982BCFDDF564}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+									<ObjectRef Name="Gutter Fiend" ID="{AE2E515F-48B6-49BD-97B8-B6F630ADB2FE}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Level_3_End" ID="{A8013844-2351-4F1A-837E-360346B074FC}">
+					<ChildrenList>
+						<Action Name="" ID="{2C683A0F-682F-4606-B7A1-001C09BC248C}" ShortID="368097444">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gutter Fiend" ID="{AE2E515F-48B6-49BD-97B8-B6F630ADB2FE}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0706C2EE-617F-44E0-885F-D6BB2D1F89F2}" ShortID="831588281">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Forever and Always" ID="{ED567AFC-F850-43C5-9C4E-C5D839AFCB76}" WorkUnitID="{10472627-E9F5-4614-97B8-58924FF9534E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

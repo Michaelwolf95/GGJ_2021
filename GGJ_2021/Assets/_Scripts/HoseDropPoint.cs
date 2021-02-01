@@ -7,6 +7,8 @@ public class HoseDropPoint : MonoBehaviour
     private Interactor _playerInteractor;
     private GrabObject _interactObject;
 
+    public AK.Wwise.Event HoseStart;
+
     public GameObject goalPointMesh;
     public ObiParticleAttachment headPoint;
     public Animation coinAnimation;
@@ -49,6 +51,7 @@ public class HoseDropPoint : MonoBehaviour
         reticle.ToggleInteractReticle(false);
         
         _playerInteractor.onFinishInteractionEvent -= DropHose;
+        HoseStart.Post(gameObject);
         used = true;
     }
 }

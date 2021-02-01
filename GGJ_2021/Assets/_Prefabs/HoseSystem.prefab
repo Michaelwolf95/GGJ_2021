@@ -14960,11 +14960,11 @@ MonoBehaviour:
   InteractStartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 52eac60a84704e841aec4a9f5b1ce5b0, type: 2}
   InteractEndAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 52eac60a84704e841aec4a9f5b1ce5b0, type: 2}
   OnInteractStart:
     m_PersistentCalls:
       m_Calls: []

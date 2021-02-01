@@ -22,6 +22,8 @@ namespace AK
         static const AkUniqueID PLAY_CROW_WING_FLAP_LARGE = 1074723603U;
         static const AkUniqueID PLAY_CROW_WING_FLAP_MED = 550970928U;
         static const AkUniqueID PLAY_END_CUTSCENE = 16145676U;
+        static const AkUniqueID PLAY_LEVEL_3_END = 1117553768U;
+        static const AkUniqueID PLAY_LEVEL_3_LP = 3559331925U;
         static const AkUniqueID PLAY_MENU_AUDIO = 3205441028U;
         static const AkUniqueID PLAY_MUS_MAIN_GAME_LP = 3265397713U;
         static const AkUniqueID PLAY_OBJ_GENERIC_INTERACT = 1281393260U;

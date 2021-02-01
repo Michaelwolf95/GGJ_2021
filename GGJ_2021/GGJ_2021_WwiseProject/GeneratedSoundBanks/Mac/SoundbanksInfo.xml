@@ -561,7 +561,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="947809014">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2017234547">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -571,6 +571,22 @@
 						<File Id="887032162" Language="SFX">
 							<ShortName>A penny for your corn.wav</ShortName>
 							<Path>SFX\A penny for your corn_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1117553768" Name="Play_Level_3_End" ObjectPath="\Events\MX\Music\Play_Level_3_End" DurationType="OneShot" DurationMin="20.000000" DurationMax="20.000000">
+					<IncludedMemoryFiles>
+						<File Id="629832509" Language="SFX">
+							<ShortName>Forever and Always.wav</ShortName>
+							<Path>SFX\Forever and Always_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3559331925" Name="Play_Level_3_LP" ObjectPath="\Events\MX\Music\Play_Level_3_LP" DurationType="OneShot" DurationMin="70.937508" DurationMax="70.937508">
+					<IncludedMemoryFiles>
+						<File Id="1018714340" Language="SFX">
+							<ShortName>Gutter Fiend.wav</ShortName>
+							<Path>SFX\Gutter Fiend_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

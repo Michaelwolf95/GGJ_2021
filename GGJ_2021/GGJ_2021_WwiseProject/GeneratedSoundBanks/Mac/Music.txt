@@ -1,7 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	16145676	Play_End_Cutscene			\MX\Music\Play_End_Cutscene	
+	1117553768	Play_Level_3_End			\MX\Music\Play_Level_3_End	
 	2714774039	Stop_MUS_Main_Game_LP			\MX\Music\Stop_MUS_Main_Game_LP	
 	3265397713	Play_MUS_Main_Game_LP			\MX\Music\Play_MUS_Main_Game_LP	
+	3559331925	Play_Level_3_LP			\MX\Music\Play_Level_3_LP	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1926883983	Scene			\Default Work Unit\Scene	
@@ -12,6 +14,8 @@ State	ID	Name	State Group			Notes
 	2782712965	Level	Scene			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	629832509	Forever and Always	C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\Forever and Always_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Gameplay_Main\Cutscene\Forever and Always\Forever and Always		3528064
 	778566092	Crows don't have thumbs-02	C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\Crows don't have thumbs-02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Gameplay_Main\Main_Game\Crows_Dont_Have_Thumbs\Crows don't have thumbs-02		18674720
 	887032162	A penny for your corn	C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\A penny for your corn_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Gameplay_Main\Cutscene\A penny for your corn\A penny for your corn		2906044
+	1018714340	Gutter Fiend	C:\Users\ywjos\Documents\GitHub\GGJ_2021\GGJ_2021\GGJ_2021_WwiseProject\.cache\Mac\SFX\Gutter Fiend_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Gameplay_Main\Level_3_LP\Gutter Fiend\Gutter Fiend		12513440
 
