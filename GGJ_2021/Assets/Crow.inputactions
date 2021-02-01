@@ -324,7 +324,7 @@
                 {
                     "name": "",
                     "id": "50ce825a-ffdd-4fbd-950e-42adda628bcd",
-                    "path": "<Keyboard>/c",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -335,7 +335,7 @@
                 {
                     "name": "",
                     "id": "86b38603-f797-494d-91b5-0c8b672da618",
-                    "path": "<Gamepad>/dpad/up",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
